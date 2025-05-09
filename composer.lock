@@ -593,12 +593,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/raphaelramosds/pdf-to-txt.git",
-                "reference": "b6fbb0d48fd65336d232be8b1067944d17f27040"
+                "reference": "f967d2bcf400ed483b75ccdbb24b5ae8bcb6d436"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/raphaelramosds/pdf-to-txt/zipball/b6fbb0d48fd65336d232be8b1067944d17f27040",
-                "reference": "b6fbb0d48fd65336d232be8b1067944d17f27040",
+                "url": "https://api.github.com/repos/raphaelramosds/pdf-to-txt/zipball/f967d2bcf400ed483b75ccdbb24b5ae8bcb6d436",
+                "reference": "f967d2bcf400ed483b75ccdbb24b5ae8bcb6d436",
                 "shasum": ""
             },
             "require": {
@@ -627,7 +627,7 @@
                 "issues": "https://github.com/raphaelramosds/pdf-to-txt/issues",
                 "source": "https://github.com/raphaelramosds/pdf-to-txt/tree/main"
             },
-            "time": "2025-05-09T19:44:36+00:00"
+            "time": "2025-05-09T20:03:01+00:00"
         },
         {
             "name": "thiagoalessio/tesseract_ocr",

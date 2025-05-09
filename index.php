@@ -4,19 +4,22 @@ use raphaelramosds\PdfToTxt\PdfToTxt;
 
 require 'vendor/autoload.php';
 
+require_once 'functions.php';
+
 include_once ("env.php");
 
 // ---------- PDF to TXT conversion
 
 $pdfh = new PdfToTxt('NPP', './assets/pdf/NPP.pdf', TXT_PATH);
+$pdfh->setReloadPdf(false);
 $pdfh->convert();
 
 
 // ---------- XLSX PARSING
 
-$excel = EXCEL_PATH . '/102-modelo-nd.xlsx';
+$excel = EXCEL_PATH . '/081_NOTIFICACAO_PERFURACAO_POCO.xlsx';
 
-$sections = [];
+$xlsx_sections = [];
 try {
     if (!file_exists($excel)) {
         return new InvalidArgumentException("Path {$excel} does not exit");
@@ -36,13 +39,13 @@ $sheets = $sheet->getSheetNames();
 foreach ($sheets as $s) {
     $worksheet = $sheet->setActiveSheetIndexByName($s);
     $dataArray = $worksheet->toArray();
-    $sections[$s] = $dataArray[0];
+    $xlsx_sections[$s] = $dataArray[0];
 }
 
 
 // ---------- TXT PARSING
 
-$txt = TXT_PATH . '/'  . $pdfh->getFilename() . '.txt';
+$txt = TXT_PATH . '/NPP.txt';
 
 $sanitizeStr = function ($str) {
     $find = ['.'];
@@ -72,33 +75,34 @@ array_shift($chunks);
 
 // Parse chunks and re-index result by the field column
 $fields = [];
-foreach ($chunks as $c) {
+foreach ($chunks as $c)
+{
     $str = trim($c);
 
     if (preg_match('/^Nome\sXML\:(.+)/m', $str, $matches)) {
-        $s['field'] = $this->sanitizeStr(trim($matches[1]));
+        $sec['field'] = $sanitizeStr(trim($matches[1]));
     }
 
     if (preg_match('/^Natureza\:(.+)/m', $str, $matches)) {
-        $s['type'] = trim($matches[1]);
+        $sec['type'] = trim($matches[1]);
     }
 
     if (preg_match('/^Tamanho\:(.+)/m', $str, $matches)) {
-        $s['length'] = trim($matches[1]);
+        $sec['length'] = trim($matches[1]);
     }
 
     if (preg_match('/^Obrigatoriedade\:(.+)/m', $str, $matches)) {
-        $s['required'] = trim($matches[1]);
+        $sec['required'] = trim($matches[1]);
     }
 
-    $fields[] = $s ?? [];
+    $fields[] = $sec ?? [];
 }
 $txt_fields = array_combine(array_column($fields, 'field'), $fields);
 
 // ---------- TXT and XLSX mapping
 
 $mapping = [];
-foreach ($xls_sections as $key => $fields) {
+foreach ($xlsx_sections as $key => $fields) {
     array_walk($fields, function ($field) use (&$mapping, $txt_fields) {
         $f = trim(str_replace('_', ' ', $field));
         if (!array_key_exists($f, $txt_fields)) {
