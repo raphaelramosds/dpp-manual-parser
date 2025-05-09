@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^4.2",
+        "thiagoalessio/tesseract_ocr": "^2.13",
+        "raphaelramosds/pdf-to-txt": "dev-main"
+    }
+}

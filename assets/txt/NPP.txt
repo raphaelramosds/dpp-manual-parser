@@ -1,0 +1,3935 @@
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+I-Englne
+Serviço de Processamento de Dados da ANP
+
+NOTIFICAÇÃO DE PERFURAÇÃO DE POÇO
+
+OBJETIVOS DA CARGA
+
+A Carga de NPP (Notificação de Periuração de Poço) tem o objetivo de automatizar o recebimento de
+informações destinando-se a informar à ANP sobre a proximidade do Início de Perfuração, para fins de
+acompanhamento e possível fiscalização, e os objetivos pretendidos com a perfuração do prospecto.
+
+SUPERINTENDÊNCIAS RELACIONADAS
+
+SDP - SUPERINTENDÊNCIA DE DESENVOLVIMENTO E PRODUÇÃO
+SEP - SUPERINTENDÊNCIA DE EXPLORAÇÃO
+SSO - SUPERINTENDÊNCIA. DE SEGURANÇA OPERACIONAL
+
+GLOSSÁRIO
+
+INFORMAÇÕES ADICIONAIS
+
+Etapas para o procedimento de envio de Arquivo Anexo Complementar, a carga em questão se trata de
+um arquivo a ser enviado após o envio da carga NPP através de uma tela de preenchimento via web,
+encontrado no módulo "I-Engine” do DPP no processo de "Envio de Anexo Complentar”.
+
+NOME DA CARGA
+Nesta lista deve-se escolher a opção de carga a qual será associado o arquivo complementar, nesse
+caso o "NPP - Notificação de Periuração de Poço”.
+
+NOME POÇO OPERADOR
+
+Campo onde deve ser informado o poço referente a carga NPP anteriormente enviada. Só serão exibidos
+poços que possuam NPP recebidas sem erros.
+
+TIPO DE ARQUIVO
+
+Lista de itens que podem ser enviados via arquivo complementar, caso selecione a opção "Outros”, favor
+
+detalhar o tipo de arquivo no campo Descrição.
+
+DESCRIÇÃO DO ARQUIVO
+Campo texto livre para dissertar sobre o arquivo que será anexado.
+
+PROCURAR
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 1/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Botão para fazer o upload do arquivo que deve ser em formato de imagem, sendo aceito somente as
+extensões BMP, JPG e GIF e o tamanho máximo aceito é 5Mb. Após escolher o arquivo, deve-se
+pressionar o botão "Adicionar".
+
+Ao final de todo o preenchimento o sistema precisa de alguns minutos para verificar o arquivo e os
+dados, somente após essa verificação, o sistema apresentará na lista inferior.
+
+CONCEITOS RELATIVOS A DADOS BÁSICOS
+
+IDENTIFICADOR EXTERNO
+
+Código próprio de cada Agente Regulado para identificar sua carga, permitindo que ele rastreie as
+informações enviadas para a ANP. Os valores informados não são criticados pela ANP e é devolvido no
+arquivo de log da carga.
+
+CODIGO BACIA PORTARIA
+Código da bacia na qual o poço sendo notificado será perfurado, segundo Resolução ANP 699/2017.
+
+CODIGO BLOCO
+
+Nome oficial do bloco onde será perfurado este prospecto, se for o caso de poço dentro de área
+exploratória, incluindo o plano de avaliação. Ex: RIOP-T-20. Atenção: refere-se ao nome do bloco,
+conforme Edital de Licitação, e não ao nome do contrato.
+
+CODIGO CAMPO
+Código do campo onde será perfurado este prospecto, se for o caso de poço dentro de campo de
+produção, conforme consulta no IENGINE.
+
+SIGLA POCO
+
+Referência nominal no nome do poço ANP. No caso de poços exploratórios, é a sigla dada para cada
+operador (ex.: BRSA, para a Petrobras; PTRA, para a Petra; REPF para a Repsol). No caso de poços
+explotatórios, é a própria sigla do campo de produção.
+
+TIPO CATEGORIA POCO
+
+Número inteiro entre 1 e 10, de acordo com a Resolução ANP 699/2017, definindo a finalidade do poço: 1
+- Pioneiro 2 - Estratigráfico 3 - Extensão 4 - Pioneiro Adjacente 5 - Prospecto Mais Raso 6 - Prospecto
+Mais Profundo 7 - Produção 8 - Injeção 9 - Especial 10 - Estocagem
+
+TIPO POCO
+Letra de acordo com a trajetória do poço: V - Vertical H - Horizontal D - Direcional
+
+VALOR KICK OF. POINT
+Profundidade medida do poço em que se inicia o trecho desviado durante a perfuração do poço
+direcional.
+
+VALOR DOG LEG SEVERITY MAXIMO
+Máxima taxa de variação de ângulo da trajetória do poço.
+
+VALOR AFASTAMENTO HORIZONTAL MAXIMO
+
+Distância máxima no plano horizontal que o poço se afasta da origem na mesa rotativa ao longo de sua
+trajetória.
+
+VALOR INCLINACAO MAXIMA
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
+2184
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Maior ângulo que a tangente à trajetória do poço em cada ponto estabelece em relação a uma linha
+vertical imaginária.
+
+POCO PARTILHADO
+Indica se o poço notificado é partilhado ou não.
+
+SIGLA UF
+Sigla do estado em que o poço está sendo perfurado, no caso de poços terrestres, ou com o qual ele é
+confrontante (para a nomenclatura, na ortogonal), no caso de poços marítimos.
+
+POCO SUBMARINO
+Indica se o poço notificado é submarino ou não.
+
+POCO INVESTIGACAO
+Indica se o poço está sendo notificado é para investigação de riscos geológicos rasos ou não.
+
+OBSERVACOES
+Observações gerais, incluindo detalhamento da opção outros do tipo de poço especial e shallow hazards.
+
+VALOR LAMINA AGUA
+Indica a profundidade entre o nível do mar e o assoalho marinho.
+
+VALOR COTA ALTIMETRICA BAP
+Cota altimétrica da boca do antepoço em relação ao nível do mar.
+
+VALOR COTA ALTIMETRICA BAP
+Cota altimétrica da mesa rotativa em relação ao nível do mar.
+
+VALOR COTA MESA ROTATIVA REFERENCIA
+Pressão de poros máxima prevista.
+
+VALOR PREVISAO TEMPERATURA MAXIMA
+Temperatura máxima prevista.
+
+OBJETIVO POCO ESPECIAL
+
+Finalidade do poço especial: 1 - Poço piloto para horizontal; 2 - Poço de aquisição de dados de
+reservatório (ADR); 3 - Poço de captação de água; 4 - Poço de descarte de água; 5 - Poço de alívio; 6 -
+Poço de interceptação para abandono; 7 - Outro (descrever na observação)
+
+PREVISAO SHALLOW HAZARD
+Indica a previsão de riscos geológicos rasos; caso positivo indicar o tipo em observação.
+
+VALOR PRESSAO INJECAO MAXIMA PREVISTA
+Pressão máxima de injeção prevista, frente ao reservatório, no caso de poço injetor.
+
+CONCEITOS RELATIVOS À NOTIFICAÇÃO
+
+DATA NOTIFICAÇÃO
+Data em que a presente notificação está sendo enviada.
+
+NOME POCO OPERADOR
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 vB
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Identificação do poço dada pelo operador previamente ao início da perfuração, quando então o poço
+receberá sua nomenclatura oficial.
+
+NOME LOCACAO
+Nome da locação a que este prospecto se refere, que o identifica por um 'nome vulgar, como, por
+exemplo, Tupi, Carioca, Wahoo, Riacho Novo, etc.
+
+IDENTIFICACAO PAT
+Número de ordem do poço constante da planilha de poços do Programa Anual de Trabalho (PAT),
+acrescentando o ano de referência do PAT, no caso de poços dentro de campo de produção.
+
+NOME POCO PARTILHACAO
+Nome do paço com o qual o poço a ser perfurado será compartilhado.
+
+POCO ANTERIOR INVESTIGACAO
+
+Nome ANP do poço de investigação de riscos geológicos rasos previamente perfurado nesta locação,
+caso tenha havido. O poço presentemente notificado terá o mesmo sequencial do poço cujo cadastro é
+informado neste campo.
+
+CODIGO LICENCA AMBIENTAL
+Código da licença ambiental que autoriza a perturação deste prospecto.
+
+QUADRICULA
+Identificação do poço na licença ambiental, se for o caso.
+
+LATITUDE PROVISORIA BASE
+Latitude do ponto onde se planeja localizar a cabeça do poço, pelo datum SIRGAS2000, em formato de
+coordenadas geográficas (GG: MM:SS,SSS).
+
+LONGITUDE PROVISORIA BASE
+Longitude do ponto onde se planeja localizar a cabeça do poço, pelo datum SIRGAS2000, em formato de
+coordenadas geográficas (GG:MM:SS,SSS).
+
+JUSTIFICATIVA
+Justificativa para a NPP estar sendo enviada sem licença ambiental, ou para que a sonda não esteja
+ainda incluída na licença ambiental, em caso de poços marítimos.
+
+LATITUDE PROVISORIA ALVO
+
+Latitude do ponto onde se planeja localizar o alvo do poço (entrada no objetivo principal, ou início de
+trecho horizontal, no caso de poços deste tipo), pelo datum SIRGAS2000, em formato de coordenadas
+geográficas (GG: MM:SS,SSS), preenchida no caso de poços explotatórios, de forma global para o poço.
+
+LONGITUDE PROVISORIA ALVO
+
+Longitude Provisória do Alvo - Longitude do ponto onde se planeja localizar o alvo do poço (entrada no
+objetivo principal, ou início de trecho horizontal, no caso de poços deste tipo), pelo datum SIRGAS2000,
+em formato de coordenadas geográficas (GG: MM:SS,SSS), preenchida no caso de poços explotatórios,
+de forma global para o poço.
+
+CONCEITOS RELATIVOS AO PROSPECTO
+
+TIPO OBJETIVO
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Tipo de Objetivo: "P” Principal; "S” Secundário. Deve haver apenas 1 objetivo principal. Caso haja certa
+dificuldade em se definir apenas 1 principal, arbitrar e colocar o outro como secundário, fazendo as
+observações pertinentes.
+
+VALOR GERACAO
+Probabilidade de ocorrência deste elemento do sistema petrolífero.
+
+VALOR MIGRACAO
+Probabilidade de ocorrência deste elemento do sistema petrolífero.
+
+VALOR RESERVATORIO
+Probabilidade de ocorrência deste elemento do sistema petrolífero.
+
+VALOR SINCRONISMO
+Probabilidade de ocorrência deste elemento do sistema petrolífero.
+
+VALOR CAPEADOR
+Probabilidade de ocorrência deste elemento do sistema petrolífero.
+
+VALOR TRAPA
+Probabilidade de ocorrência deste elemento do sistema petrolífero.
+
+P90 VALOR AREA
+Valor conservador da extensão areal da possível acumulação até os limites correspondentes a contato,
+spill point, limite por falhas ou acunhamento, conforme o caso.
+
+P90 VALOR ESPESSURA
+Valor conservador da espessura efetiva média da possível acumulação nos limites determinados pela
+área mapeada.
+
+P90 VALOR POROSIDADE
+Valor conservador da porosidade média da possível acumulação.
+
+P90 VALOR SATGAS
+Valor conservador da saturação de gás média da possível acumulação.
+
+P90 VALOR SATOLEO
+Valor conservador da saturação de óleo média da possível acumulação.
+
+P90 VALOR VOIP
+Valor conservador do volume de óleo in place da possível acumulação.
+
+P90 VALOR VGIP
+Valor conservador do volume de gás in place da possível acumulação.
+
+P50 VALOR AREA
+Valor esperado da extensão areal da possível acumulação até os limites correspondentes a contato, spill
+point, limite por falhas ou acunhamento, conforme o caso.
+
+P50 VALOR ESPESSURA
+Valor esperado da espessura efetiva média da possível acumulação nos limites determinados pela área
+mapeada.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+P50 VALOR POROSIDADE
+Valor esperado da porosidade média da possível acumulação.
+
+P50 VALOR SATGAS
+Valor esperado da saturação de gás média da possível acumulação.
+
+P50 VALOR SATOLEO
+Valor esperado da saturação de óleo média da possível acumulação.
+
+P50 VALOR VOIP
+Valor esperado do volume de óleo in place da possível acumulação.
+
+P50 VALOR VGIP
+Valor esperado do volume de gás in place da possível acumulação.
+
+P10 VALOR AREA
+Valor otimista da extensão areal da possível acumulação até os limites correspondentes a contato, spill
+point, limite por falhas ou acunhamento, conforme o caso.
+
+P10 VALOR ESPESSURA
+Valor otimista da espessura efetiva média da possível acumulação nos limites determinados pela área
+mapeada.
+
+P10 VALOR POROSIDADE
+Valor otimista da porosidade média da possível acumulação.
+
+P10 VALOR SATGAS
+Valor otimista da saturação de gás média da possível acumulação.
+
+P10 VALOR SATOLEO
+Valor otimista da saturação de óleo média da possível acumulação.
+
+P10 VALOR VOIP
+Volume de óleo in place da possível acumulação.
+
+P10 VALOR VGIP
+Valor otimista do volume de gás in place da possível acumulação.
+
+GEOCRONOLOGIA CODIGO PERIODO
+Período em que foi depositada a camada sedimentar na qual se encontra o objetivo, em termos de
+geocronologia, de acordo com os códigos exibidos na seção de Consultas do IENGINE.
+
+GEOCRONOLOGIA CODIGO EPOCA
+
+Época em que foi depositada a camada sedimentar na qual se encontra o objetivo, em termos de
+geocronologia, de acordo com os códigos exibidos na seção de Consultas do IENGINE.
+GEOCRONOLOGIA CODIGO IDADE
+
+Idade em que foi depositada a camada sedimentar na qual se encontra o objetivo, em termos de
+
+geocronologia, de acordo com os códigos exibidos na seção de Consultas do IENGINE.
+
+LITOESTRATIGRAFIA CODIGO GRUPO
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Grupo em que foi depositada a camada sedimentar na qual se encontra o objetivo, em termos de
+
+litoestratigrafia, de acordo com a carta estratigráfica da bacia e com os códigos exibidos na seção de
+Consultas do IENGINE.
+
+LITOESTRATIGRAFIA CODIGO FORMACAO
+
+Formação em que foi depositada a camada sedimentar na qual se encontra o objetivo, em termos de
+litoestratigrafia, de acordo com a carta estratigráfica da bacia e com os códigos exibidos na seção de
+Consultas do IENGINE.
+
+LITOESTRATIGRAFIA CODIGO MEMBRO
+
+Membro em que foi depositada a camada sedimentar na qual se encontra o objetivo, em termos de
+litoestratigrafia, de acordo com a carta estratigráfica da bacia e com os códigos exibidos na seção de
+Consultas do IENGINE.
+
+DESCRICAO OBJETIVO
+Descrição sucinta de cada objetivo.
+
+COORDENADAS PROVISORIAS ALVO LATITUDE
+
+Latitude do ponto onde se planeja localizar a entrada do poço no objetivo, ou início de seu trecho
+horizontal, no caso de poços deste tipo, pelo datum SIRGAS2000, em formato de coordenadas
+geográficas (GG:MM:SS,SSS).
+
+COORDENADAS PROVISORIAS ALVO LONGITUDE
+
+Longitude do ponto onde se planeja localizar a entrada do poço no objetivo, ou início de seu trecho
+horizontal, no caso de poços deste tipo, pelo datum SIRGAS2000, em formato de coordenadas
+geográficas (GG:MM:SS,SSS).
+
+COORDENADAS PROVISORIAS ALVO FINAL LATITUDE
+
+Latitude do ponto onde se planeja localizar a saída do poço do objetivo, ou sua profundidade final,
+devendo ser preenchido para poços horizontais, pelo datum SIRGAS2000, em formato de coordenadas
+geográficas (GG:MM:SS,SSS).
+
+COORDENADAS PROVISORIAS ALVO FINAL LONGITUDE
+
+Longitude do ponto onde se planeja localizar a saída do poço do objetivo, ou sua profundidade final,
+devendo ser preenchido para poços horizontais, pelo datum SIRGAS2000, em formato de coordenadas
+geográficas (GG:MM:SS,SSS).
+
+PROFUNDIDADES TOPO VERTICAL
+Topo do objetivo em profundidade vertical (True Vertical Depth).
+
+PROFUNDIDADES TOPO MEDIDA
+Topo do objetivo em profundidade medida (Measured Depth).
+
+PROFUNDIDADES BASE VERTICAL
+Base do objetivo em profundidade vertical (True Vertical Depth).
+
+PROFUNDIDADES BASE MEDIDA
+Base do objetivo em profundidade medida (Measured Depth).
+
+CONCEITOS RELATIVOS A PREVISÕES GEOLÓGICAS
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TIBA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+GEOCRONOLOGIA CODIGO PERIODO
+Período em que foi depositada a camada sedimentar, conforme quadro de previsões, de acordo com os
+códigos exibidos na seção de Consultas do IENGINE.
+
+GEOCRONOLOGIA CODIGO EPOCA
+Época em que foi depositada a camada sedimentar, conforme quadro de previsões, de acordo com os
+códigos exibidos na seção de Consultas do IENGINE.
+
+GEOCRONOLOGIA CODIGO IDADE
+Idade em que foi depositada a camada sedimentar, conforme quadro de previsões, de acordo com os
+códigos exibidos na seção de Consultas do IENGINE.
+
+LITOESTRATIGRAFIA CODIGO GRUPO
+
+Grupo a que pertence a camada sedimentar, conforme quadro de previsões, de acordo com as cartas
+estratigráficas das bacias sedimentares brasileiras, e com os códigos exibidos nas Consultas do
+IENGINE.
+
+LITOESTRATIGRAFIA CODIGO FORMACAO
+
+Formação a que pertence a camada sedimentar, conforme quadro de previsões, de acordo com as cartas
+estratigráficas das bacias sedimentares brasileiras, e com os códigos exibidos nas Consultas do
+IENGINE.
+
+LITOESTRATIGRAFIA CODIGO MEMBRO
+
+Membro a que pertence a camada sedimentar, conforme quadro de previsões, de acordo com as cartas
+estratigráficas das bacias sedimentares brasileiras, e com os códigos exibidos nas Consultas do
+IENGINE.
+
+PROFUNDIDADES TOPO VERTICAL
+Topo, em profundidade vertical (True Vertical Depth), daquela unidade estratigráfica a ser atravessada.
+
+PROFUNDIDADES TOPO MEDIDA
+Topo, em profundidade medida (Measured Depth), daquela unidade estratigráfica a ser atravessada.
+
+PROFUNDIDADES BASE VERTICAL
+Base, em profundidade vertical (True Vertical Depth), daquela unidade estratigráfica a ser atravessada.
+
+PROFUNDIDADES BASE MEDIDA
+Base, em profundidade medida (Measured Depth), daquela unidade estratigráfica a ser atravessada.
+
+CONCEITOS RELATIVOS A RISCO COLISÕES
+
+NOME POCO ANP
+Nome ANP do poço que possui o risco de colidir com o poço sendo notificado.
+
+CONCEITOS RELATIVOS A FASES
+
+NUMERO FASE
+Número sequencial da fase informada.
+
+CODIGO SONDA
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Sonda que perfurará a fase, conforme código do SIGEP.
+
+EXIGE MEDIDAS CONTROLE ADEQUACAO
+Informa a ocorrência de modificação na unidade de perfuração para execução do projeto.
+
+TIPO TECNICA PERFURACAO
+Técnica de perfuração utilizada.
+
+DATA PREVISAO INICIO
+Data prevista para o início da perfuração da fase.
+
+DATA PREVISAO FIM
+Data prevista para o término da perfuração da fase.
+
+DIAMETRO
+Diâmetro final do furo da fase.
+
+ALARGADOR
+Indicar se foi utilizado alargador.
+
+PROFUNDIDADES TOPO VERTICAL
+Topo da profundidade vertical (TVD) da fase.
+
+PROFUNDIDADES TOPO MEDIDA
+Topo da profundidade medida (MD) da fase.
+
+PROFUNDIDADES BASE VERTICAL
+Base da profundidade vertical (TVD) da fase.
+
+PROFUNDIDADES BASE MEDIDA
+Base da profundidade medida (MD) da fase.
+
+FLUIDO TIPO
+Tipo de fluido, informando se é à base de água ou sintético.
+
+FLUIDO VALOR DENSIDADE MAXIMA
+Peso específico máximo do fluido previsto para a fase.
+
+FLUIDO VALOR DENSIDADE MINIMA
+Peso específico mínimo do fluido previsto para a fase.
+
+RISERLESS
+Indicar se a fase será perfurada sem riser.
+
+VALOR GRADIENTE POROS MAXIMO
+Maior gradiente de pressão de poros previsto para a fase.
+
+INFLUENCIA INJETOR
+Indicar se a região perfurada sobre influência de poço injetor.
+
+VALOR GRADIENTE FRATURA MINIMO
+Menor gradiente de fratura previsto para a fase.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+VALOR ECD MAXIMO SAPATA ANTERIOR
+ECD (densidade equivalente de circulação) máximo na sapata anterior previsto para a fase.
+
+VALOR KICK MAXIMA PRESSAO POROS
+Máxima pressão de poros equivalente utilizada na avaliação do critério de tolerência ao kick.
+
+VALOR KICK MAXIMO VOLUME GAS
+Volume de gás estimado em caso de ocorrência de kick utilizado no cálculo do critério de tolerância ao
+kick.
+
+MSM
+Indicar se possui margem de segurança de manobra.
+
+MSR
+Indicar se possui margem de segurança de riser.
+
+VALOR PREVISAO H2S
+Valor máximo previsto de H2S.
+
+VALOR PREVISAO C02
+Valor máximo previsto de CO2.
+
+PREVISAO PERDAS SEVERAS
+Indicar se há previsão de perdas severas.
+
+PERFURACAO OVERBALANCE
+Indicar se é previsto que a fase seja perfurada com pressão de lama equivalente acima da maior pressão
+de poros da formação.
+
+ESTUDO ESPECIFICO GEOMECANICA
+Indicar se foi realizado estudo específico de geomecânica.
+
+PREVISAO AQUIFEROS
+Indicar se há aquíferos de uso viável segundo definição da RANP 46/2016.
+
+PREVISAO FALHAS GEOLOGICAS ZONAS HC
+Indicar se há previsão de falhas geológicas não selantes atravessando zonas que contém
+hidrocarbonetos.
+
+PREVISAO FORMACOES REATIVAS
+Indicar se há previsão de formações reativas.
+
+PREVISAO SAL ALTA TAXA FLUENCIA
+Indicar se há previsão de sal com alta taxa de fluência.
+
+CONCEITOS RELATIVOS A REVESTIMENTOS
+
+NUMERO FASE
+Número da fase a que o tubo de revestimento informado se refere.
+
+DIAMETRO
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 1084
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Diâmetro extemo do tubo de revestimento indicado.
+
+CONTINGENTE
+Indicar se este revestimento é contingente no projeto.
+
+TIPO CLASSIFICAÇAO
+Indicar se o revestimento é condutor, superfície, intermediário ou de produção.
+
+TIPO REVESTIMENTO
+Indicar se o revestimento é integral, liner ou com tie back.
+
+GRAU ACO
+Grau do aço do tubo de revestimento.
+
+PESO
+Peso linear do tubo de revestimento.
+
+TIPO CONEXAO
+Tipo de conexão utilizado para a seção de tubos de revestimento informada.
+
+CONEXAO GAS TIGHT
+Indicar se as conexões do revestimento são à prova de vazamento de gás.
+
+ANULAR CONFINADO
+Indicar se há anular confinado no trecho do revestimento.
+
+DIMENSIONAMENTO APB
+Indicar se houve dimensionamento em relação a crescimento de pressão do anular.
+
+RESISTENTE H2S
+Indicar se o revestimento possui tratamento/metalurgia quanto a corrosão por H2S.
+
+RESISTENTE CO2
+Indicar se o revestimento possui tratamento/metalurgia quanto a corrosão por COZ.
+
+METALURGIA ATENDE CONCESSIONARIO
+Indicar se a metalurgia do revestimento atende o critério de aceitação do operador.
+
+DIMENSIONAMENTO REGIME ELASTICO
+Indicar se o dimensionamento de revestimentos foi baseado em metodologia determinística e considerou
+regime elástico de tensões e deformações.
+
+DIMENSIONAMENTO ATENDE CONCESSIONARIO
+Indicar se o dimensionamento dos revestimentos atende o critério de aceitação do operador.
+
+PROFUNDIDADES TOPO VERTICAL
+Topo do revestimento em profundidade vertical (True Vertical Depth).
+
+PROFUNDIDADES TOPO MEDIDA
+Topo do revestimento em profundidade medida (Measured Depth).
+
+BPROFUNDIDADES BASE VERTICAL
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 11/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Base do revestimento em profundidade vertical (True Vertical Depth).
+
+PROFUNDIDADES BASE MEDIDA
+Base do revestimento em profundidade medida (Measured Depth).
+
+CONCEITOS RELATIVOS À CIMENTAÇÃO
+
+NUMERO FASE
+Número da fase a que o processo de cimentação anular informado se refere.
+
+TIPO ESTAGIO
+Número do estágio de cimentação daquela fase cujas informações estão indicadas neste registro.
+
+TIPO PASTA
+
+Tipo de pasta empregada na operação informada naquela linha, colocando os principais aditivos
+empregados, obrigatoriamente incluindo bloqueadores de gás e/ou para a resistência de fluidos
+corrosivos,como CO2 e H2S, se for o caso.
+
+VALOR MASSA ESPECIFICA
+Peso especifico da pasta de cimento a ser empregada na operação de cimentação informada neste
+registro
+
+CONTROLE GAS
+Indicar se a pasta recebeu algum tratamento para controle de migração de gás.
+
+RESISTENCIA CO2
+Indicar se a pasta é resistente a CO2.
+
+PROFUNDIDADES TOPO VERTICAL
+Topo em profundidade vertical (TVD) da pasta deslocada.
+
+PROFUNDIDADES TOPO MEDIDA
+Topo em profundidade medida (MD) da pasta deslocada.
+
+PROFUNDIDADES BASE VERTICAL
+Base em profundidade vertical (TVD) da pasta deslocada.
+
+PROFUNDIDADES BASE MEDIDA
+Base em profundidade medida (MD) da pasta deslocada.
+
+PREVISAO FORMACAO PERMEAVEL EXPOSTA
+Indicar se haverá formação permeável exposta em trecho revestido sem cimentação.
+
+CONCEITOS RELATIVOS A OUTRAS ATIVIDADES
+
+TIPO
+Enumerar o tipo de atividade adicional (além da perfuração) que será realizada. Ex. Completação,
+estimulação, teste.
+
+DATA PREVISAO INICIO
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 1284
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Data de previsão do início da atividade.
+
+DATA PREVISAO FIM
+Data de previsão do término da atividade.
+
+CODIGO SONDA
+Código da unidade, conforme cadastro ANP, que irá realizar a atividade em questão.
+
+METALURGIA ATENDE CONCESSIONARIO
+Indicar se a metalurgia da coluna (produção/injeção;teste) atende aos critérios de aceitação do operador.
+
+DIMENSIONAMENTO ATENDE CONCESSIONARIO
+Indicar se o dimensionamento da coluna (produção/injeção/teste) atende ao critério de aceitação do
+operador.
+
+DIMENSIONAMENTO REGIME ELASTICO
+Apontar SIM caso o dimensionamento da coluna (produção/injeção/teste) tenha sido baseado na
+metodologia deterministica em regime elástico. Em caso de outra metodologia marcar NÃO.
+
+VALOR PRESSAO FLUXO SUPERFICIE
+Durante operações de teste de poço, indicar a pressão máxima estimada para o fluxo medida na
+superfície.
+
+VALOR PRESSAO FRATURAMENTO SUPERFICIE
+Em caso de estimulação por fraturamento, apresentar a pressão de fraturamento máxima medida na
+superfície.
+
+CONCEITOS RELATIVOS A POÇOS CORRELAÇÃO
+
+NOME POCO ANP
+Nome ANP do paço de correlação utilizado no projeto deste poço.
+
+DISTANCIA
+Distância em metros do poço de correlação. Utilizar as cabeças de poços como localização de referência.
+
+ETAPAS PARA O PROCEDIMENTO DE ENVIO DE CARGA VIA XML
+
+O procedimento para a “Carga de Dados via Intemet” consiste nas seguintes etapas:
+* Geração do arquivo XML pelo agente regulado;
+e Compactação do arquivo XML em arquivo zip pelo agente regulado;
+* Assinatura digital do arquivo zip (caso necessário) em formato p7s pelo agente regulado;
+e Envio do arquivo zip ou p7s pelo agente regulado via Web Service;
+* Validação automática do arquivo XML feita pela ANP;
+* Reenvio pelo agente regulado dos arquivos não carregados ou posteriormente reprovados pela
+ANP.
+
+O formato do arquivo deve ser compatível com o validador XSD da carga que acompanha este manual.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 1384
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+A nomenclatura do arquivo é padronizada e obedece ao formato 081 RAIZ-
+CNPJ AAAAMMDDHHMM TTTTTTTTITTTITTTddd, onde:
+
+e 081 é o número identificador da carga e não deve ser alterado.
+
+e RAIZ-CNPJ são os 8 primeiros dígitos (sem ponto ou barra) do CNPJ da empresa operadora que
+está enviando os dados para a ANP.
+
+e AAAAMMDD é a data de envio do arquivo, sendo AAAA 4 dígitos correspondentes ao ano (ex.:
+2011), MM 2 dígitos correspondentes ao mês (ex.: 04 para abril) e DD dois dígitos correspondentes
+ao dia do mês.
+
+e HHMM é a hora de envio do arquivo, sendo HH 2 dígitos correspondentes à hora e MM 2 dígitos
+correspondentes ao minuto. Não é necessário que a hora seja exatamente a hora de carga. Isso
+serve apenas para diferenciar as versões carregadas pela mesma empresa operadora em
+determinada data.
+
+» TTTIITTITTITTTTT são 15 dígitos livres para melhor identificação do arquivo. Pode ser omitido e
+não deve conter espaços vazios.
+
+e ddd é a extensão do arquivo: Será 'xml' para o arquivo XML, 'zip' para o arquivo compactado e
+'p7s' para o arquivo assinado
+
+Exemplo: 081 33000167 201205231523 ABCDEF 123.xml (arquivo enviado pela Petrobrás no dia
+23/05/2012 às 15:23 referente a dado identificado como ABCDEF 123).
+
+Atenção aos pontos a segulr:
+
+1) Este aquivo pode ser enviado assinado digitalmente. Para isso assine o arquivo ZIP e envie para a
+ANP o arquivo .P7S resultante, com o zip anexado intemamente. Maiores detalhes no Manual do
+Webservice Externo (../../Ajuda).
+
+2) O arquivo ZIP deve ter o mesmo nome utilizado para o arquivo XML.
+
+3) Caso a carga não tenha sido efetuada por alguma falha no envio ou erro no preenchimento, um novo
+arquivo deverá ser encaminhado com as devidas alterações de data e/ou hora.
+
+4) Os arquivos com status “rejeitado” e “parcialmente carregado” não tiveram seus dados carregados no
+banco de dados da ANP e, portanto, deverão ser corrigidos e enviados novamente. O reenvio deve
+seguir o mesmo processo cujas etapas estão acima enumeradas.
+
+ENVIO DA CARGA VIA ARQUIVO EXCEL
+
+A opção de envio de carga através de planilhas Excel está disponível para esta carga. Para maiores
+informações consulte o Manual para envio de carga por arquivo excel (../../Ajuda).
+
+DESCRIÇÃO DA NATUREZA DOS CAMPOS
+
+A natureza do campo sinaliza o tipo de dado que pode ser informado num determinado campo, as
+principais são:
+* Ano- Ano no formato AMAM.
+* Ano Mês - Ano e mês no formato AAAAMM. Não informar caracteres de separação entre o ano e
+o mês.
+* Ano Trimestre - Ano e trimestre no formato AAAAT. Não informar caracteres de separação entre o
+ano e o trimestre.
+e CNPJ - Número válido de um Cadastro Nacional de Pessoa Jurídica. Informar apenas dígitos.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 14/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+e CPF- Número válido de um Cadastro de Pessoa Física. Informar apenas dígitos.
+
+* Coordenada - Coordenada de um local (Latitude/l ongitude) no formato (+GG:MM:SS,SSS).
+
+e Data - Dia, mês e ano no formato YYYY-MM-DD (Exemplo: 2002-09-24).
+
+e Data hora - Dia, mês, ano, hora, minuto e segundo no formato YYYY-MM-DDThh:mm:ss. Deve ter
+19 caracteres. (Exemplo: 2002-05-307T09:00:00).
+
+e Domínio - Lista de possíveis valores que podem ser informados, separados por vírgula.
+
+* Imagem - Imagem no formato 'JPG' ou 'GIF".
+
+* Mês - Mês no formato numérico (MM).
+
+* Número Decimal - Número com uma parte inteira e outra fracionária, separado por vírgula. (Ex.:
+(2,3) = 27,354).
+
+* Número Decimal Negativo - Número negativo com uma parte inteira e outra fracionária, separado
+por vírgula. (Ex.: (2,3) = -27,354)
+
+* Número Decimal Positivo - Número positivo com uma parte inteira e outra fracionária, separado
+por vírgula. (Ex.: (2,3) = 27,354)
+
+« Número Natural - É um número inteiro não-negativo (0, 1, 2,3, ...).
+
+* Número Inteiro - São constituídos dos números naturais (0, 1, 2, ...) e dos seus simétricos (0, -1,
+2...)
+
+* PDF -Arquivo no formato PDF.
+
+* Shapefile - Arquivo no formato SHP a ser gravado num campo do tipo BLOB no banco de dados.
+
+* Sim/Não - Preencher com "S” para sim e "N” para não.
+
+* Texto - Texto livre, obedecendo ao tamanho máximo de caracteres definido.
+
+* UF - Sigla da Unidade da Federação. Informar: AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS,
+MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP ou TO.
+
+DETALHES DE PREENCHIMENTO DOS CAMPOS
+
+CONCEITOS RELATIVOS A DADOS BÁSICOS - Neste grupo de Informações devem ser
+preenchidos os dados básicos da perfuração de poço. Quantidade de registros esperados
+para este grupo de Informação: Mínimo: 1 / Máximo: 1.
+
+Título: Identificador Externo
+Nome XML: IDENTIFICADOR EXTERNO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 50
+Obrigatoriedade: Não
+
+Preenchimento: Não se aplica
+
+Título: Bacia
+Nome XML: CODIGO BACIA PORTARIA
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 15/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Tamanho: 5
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Bacia" só será considerado válido se estiver cadastrado no SIGEP. Para
+consultar os valores válidos para este campo, favor acessar q link disponível na subseção
+Documentação da API de Consulta de Códigos da seção Informações Adicionais.
+
+Título: Bloco
+Nome XML: CODIGO BLOCO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 10
+Obrigatoriedade: Não
+
+Preenchimento: O campo "Bloco” ou "Campo" (um ou outro) obrigatoriamente deve ser
+preenchido. Caso o campo "Bloco" seja preenchido, ele só será considerado válido se existir um
+contrato associado a ele no sistema SIGEP e o número da raiz do CNPJ do operador contido nesse
+contrato deve ser igual a raiz do CNPJ do usuário que está enviando a carga. Para consultar os
+valores válidos para este campo, favor acessar o link disponível na subseção Documentação da API
+de Consulta de Códigos da seção Informações Adicionais.
+
+Título: Campo
+Nome XML: CODIGO CAMPO
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Não
+
+Preenchimento: O campo "Bloco” ou "Campo" (um ou outro) obrigatoriamente deve ser
+preenchido. Caso o campo "Campo” seja preenchido, ele só será considerado válido se existir um
+contrato associado a ele no sistema SIGEP e o número da raiz do CNPJ do operador contido nesse
+contrato deve ser igual a raiz do CNPJ do usuário que está enviando a carga. Para consultar os
+valores válidos para este campo, favor acessar o link disponível na subseção Documentação da API
+de Consulta de Códigos da seção Informações Adicionais.
+
+Título: Sigla
+Nome XML: SIGLA POCO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 4
+Obrigatoriedade: Sim
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 16/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Preenchimento: Não se aplica
+
+Título: Categoria
+Nome XML: TIPO CATEGORIA POCO
+Unidade de Medida: Não se aplica
+
+Natureza: NATURAL
+Tamanho: 2
+Obrigatoriedade: Sim
+
+Preenchimento: Número inteiro entre 1 e 10, de acordo com a Resolução ANP 699/2017, definindo
+a finalidade do poço: 1 - Pioneiro 2 - Estratigráfico 3 - Extensão 4 - Pioneiro Adjacente 5 - Prospecto
+Mais Raso 6 - Prospecto Mais Profundo 7 - Produção 8 - Injeção 9 - Especial 10 - Estocagem
+
+Título: Tipo de Poço
+Nome XML: TIPO POCO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Letra de acordo com a trajetória do poço: V - Vertical; H - Horizontal; D -
+Direcional.
+
+Título: Ponto de Desvio (KOP)
+Nome XML: VALOR KICK OF POINT
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Se o campo "Tipo de Poço” for preenchido com o valor "V- Vertical", o campo
+"Ponto de Desvio (KOP)" só será válido se for preenchido com o valor 0. Se o campo "Tipo de Poço”
+for preenchido com o valor diferente de "V-Vertical” o campo "Ponto de Desvio (KOP)" só será válido
+se for preenchido com valor maior que 0.
+
+Título: Intensidade da Variação da Trajetória / Dog Leg Severity (DLS)
+Nome XML: VALOR DOG LEG SEVERITY MAXIMO
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 17IBA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Unidade de Medida: graus/30 metros
+
+Natureza: DECIMAL
+Tamanho: 3 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Se o campo "Tipo de Poço” for preenchido com o valor "V- Vertical", o campo
+"Intensidade da Variação da Trajetória / Dog Leg Severity (DLS)” só será válido se for preenchido
+com o valor 0. Se o campo "Tipo de Poço” for preenchido com o valor diferente de "V-Vertical" o
+campo "Intensidade da Variação da Trajetória / Dog Leg Severity (DLS)" só será válido se for
+preenchido com valor maior que 0.
+
+Título: Afastamento Horizontal Máximo
+Nome XML: VALOR AFASTAMENTO HORIZONTAL MAXIMO
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Se o campo "Tipo de Poço” for preenchido com o valor "V- Vertical", o campo
+"Afastamento Horizontal Máximo” só será válido se for preenchido com o valor 0. Se o campo "Tipo
+de Poço” for preenchido com o valor diferente de "V-Vertical" o campo "Afastamento Horizontal
+Máximo” só será válido se for preenchido com valor maior que 0.
+
+Título: Inclinação Máxima
+Nome XML: VALOR INCLINACAO MAXIMA
+Unidade de Medida: graus
+
+Natureza: DECIMAL
+Tamanho: 3 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Se o campo "Tipo de Poço” for preenchido com o valor "V- Vertical", o campo
+"Inclinação Máxima" só será válido se for preenchido com o valor 0. Se o campo "Tipo de Poço" for
+preenchido com o valor diferente de "V-Vertical" o campo "Inclinação Máxima" só será válido se for
+preenchido com valor maior que 0.
+
+Título: Partilhado
+Nome XML: POCO PARTILHADO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 18/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Estado (UF)
+Nome XML: SIGLA UF
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 2
+Obrigatoriedade: Sim
+
+Preenchimento: Sigla de todos os estados da federação.
+
+Título: Poço Submarino
+Nome XML: POCO SUBMARINO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Poço Investigação
+Nome XML: POCO INVESTIGACAO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Observações
+Nome XML: OBSERVACOES
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 1000
+Obrigatoriedade: Não
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 1984
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Preenchimento: Não se aplica.
+
+Título: Lâmina d'água
+Nome XML: VALOR LAMINA AGUA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Quando o campo "Poço Submarino" for preenchido com "NÃO", o campo "Lâmina
+d'água" só será válido se for preenchido com o valor 0. Quando o campo "Poço Submarino” for
+preenchido com o valor "SIM” o campo "Lâmina d'água” só será válido se for preenchido com
+valores maiores que 0 e iguais ou menores que 5250.
+
+Título: Cota Altimétrica BAP
+Nome XML: VALOR COTA ALTIMETRICA BAP
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Quando o campo "Poço Submarino” for preenchido com o valor NÃO, o campo
+"Cota Altimética BAP” só será válido se for preenchido com o valor igual ou superior a 0. Quando o
+campo "Poço Submarino” for preenchido com o valor "SIM", o campo "Cota Altimética BAP” só será
+válido se for preenchido com valor igual a 0.
+
+Título: Cota Mesa Rotativa Referência
+Nome XML: VALOR COTA MESA ROTATIVA REFERENCIA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Quando o campo "Poço Submarino” for preenchido com o valor "SIM”, o campo
+
+"Cota Mesa Rotativa Referência" só será considerado válido se for preenchido com valor maior do
+que o da "Cota Altimétrica BAP”.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2084
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Título: Pressão Máxima Prevista
+Nome XML: VALOR PREVISAO PRESSAO MAXIMA
+Unidade de Medida: psi
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Pressão Máxima Prevista” só será considerado válido se for
+preenchido com o valores maiores que 0.
+
+Título: Temperatura Máxima Prevista
+Nome XML: VALOR PREVISAO TEMPERATURA MAXIMA
+Unidade de Medida: graus
+
+Natureza: DECIMAL
+Tamanho: 3 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Temperatura Máxima Prevista” só será considerado válido se for
+preenchido com q valores maiores que 0.
+
+Título: Objetivo Poço Especial
+Nome XML: OBJETIVO POCO ESPECIAL
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Objetivo Poço Especial” passa a ser de preenchimento obrigatório caso
+o campo categoria seja preenchido com valor "9- Especial”. O campo "Objetivo Poço Especial” não
+deve ser preenchido caso o campo "Categoria" seja preenchido com valor diferente de "9-Especial”.
+Valores válidos: 1 - Poço piloto para horizontal; 2 - Poço de aquisição de dados de reservatório
+(ADR); 3 - Poço de captação de água; 4 - Poço de descarte de água; 5 - Poço de alívio; 6 - Poço de
+interceptação para abandono; 7 - Outro
+
+Título: Riscos Geológicos rasos (Shallow Hazards)
+Nome XML: PREVISAO SHALLOW HAZARD
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2184
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Pressão Injeção Máxima Prevista
+Nome XML: VALOR PRESSAO INJECAO MAXIMA PREVISTA
+Unidade de Medida: psi
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Pressão Injeção Máxima Prevista” só será considerado válido se for
+preenchido com valor superior a O quando campo "Categoria" for preenchido com o valor "8 -
+Injeção”. Para os demais casos este campo não é obrigatório. O campo "Pressão Injeção Máxima
+Prevista” não deve ser preenchido caso o campo "Categoria" seja preenchido com valor diferente de
+"8-Injeção”.
+
+CONCEITOS RELATIVOS À NOTIFICAÇÃO - Neste grupo de Informações devem ser
+preenchidos os dados sobre a notificação de perfuração do poço. Quantidade de registros
+esperados para este grupo de Informação: Mínimo: 1 / Máximo: 1.
+
+Título: Data Notificação
+Nome XML:
+Unidade de Medida: Não se aplica
+
+Natureza: DATA
+Tamanho: 10
+Obrigatoriedade: Sim
+
+Preenchimento: Esta data não deve estar presente no XML. Este campo deve ser armazenado na
+carga e preechido autormáticamente pelo sistema com a data corrente do recebimento da carga na
+ANP.
+
+Título: Nome Poço Operador
+Nome XML: NOME POCO OPERADOR
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 20
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Nome Poço Operador” não pode estar associado a um Poço
+cadastrado no sistema SIGEP. Para esta regra são considerados os registros da NPP no SIGEP que
+passaram pelas validações do DPP e que estão com situação "EM ANÁLISE" ou "CARREGADO".
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 22/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Locação
+Nome XML: NOME LOCACAO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 50
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Locação” é obrigatório se o campo "Categoria" for preenchido com o
+valor: "1 - Pioneiro”, "2 - Estratigráfico”, "3 - Extensão”, "4 - Pioneiro adjacente”, "5 - Jazida mais
+rasa" ou "6 - Jazida mais profunda”,
+
+Título: Identificação PAT
+Nome XML: IDENTIFICACAO PAT
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 50
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Identificação PAT” é de preenchimento obrigatório quando o campo
+"Categoria" for preenchido com o valor: "7 - Produção”, "8 - Injeção” ou "9 - Especial”.
+
+Título: Partilhação - Poço
+Nome XML: NOME POCO PARTILHACAO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 50
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Partilhação - Poço” deve ser preenchido quando o campo "Partilhado”
+for preenchido com o valor "S - Sim”. O campo "Partilhação - Poço” não deve ser preenchido
+quando o campo "Partilhado” for preenchido com valor "N - Não”.
+
+Título: Poço Anterior Investigação
+Nome XML: POCO ANTERIOR INVESTIGACAO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 12
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2384
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Obrigatoriedade: Não
+
+Preenchimento: O campo "Poço Anterior Investigação” só pode ser preenchido se o campo "Poço
+Investigação” for preenchido com o valor "N”. Este campo é opcional, mas caso seja preenchido
+deve ser informado um poço cadastrado no SIGEP e que seja do tipo Investigação.
+
+Título: Licença Ambiental
+Nome XML: CODIGO LICENCA AMBIENTAL
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Não
+
+Preenchimento: O campo "Licença Ambiental" só será considerado válido se estiver cadastrado no
+SIGEP. As licenças cadastradas no SIGEP podem ser visualizadas a partir do SIGEP Módulo
+Exploração > Menu LICENÇAS AMBIENTAIS.
+
+Título: Quadrícula
+Nome XML: QUADRICULA
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 100
+Obrigatoriedade: Não
+
+Preenchimento: Não se aplica
+
+Título: Latitude Provisória Base
+Nome XML: LATITUDE PROVISORIA BASE
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 13
+Obrigatoriedade: Sim
+
+Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato *-
++GG:MM:SS,SSS” onde :GG- Graus, MM minutos, SS segundos parte inteira e SSS parte decimal
+dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “-* negativo.
+
+Título: Longitude Provisória Base
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 248.
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Nome XML: LONGITUDE PROVISORIA BASE
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 13
+Obrigatoriedade: Sim
+
+Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato *-
++GG:MM:SS,SSS” onde :GG- Graus, MM minutos, SS segundos parte inteira e SSS parte decimal
+dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “* negativo.
+
+Título: Justificativa
+Nome XML: JUSTIFICATIVA
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 1000
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo Justificativa obrigatoriamente deve ser preenchido caso o campo
+Licença Ambiental não seja informado.
+
+Título: Latitude Provisória do Alvo
+Nome XML: LATITUDE PROVISORIA ALVO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 13
+Obrigatoriedade: Sim
+
+Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato *-
++GG:MM:SS,SSS” onde :GG- Graus, MM minutos, SS segundos parte inteira e SSS parte decimal
+dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “-* negativo.
+
+Título: Longitude Provisória do Alvo
+Nome XML: LONGITUDE PROVISORIA ALVO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 13
+Obrigatoriedade: Sim
+
+Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato *-
++GG:MM:SS,SSS” onde :GG- Graus, MM minutos, SS segundos parte inteira e SSS parte decimal
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 25/84
+12/07/2023, 10:23 Do poço ao posto - Visualizar Manual da Carga
+dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “* negativo.
+
+CONCEITOS RELATIVOS A PROSPECTO - Neste grupo de Informações devem ser
+preenchidos os dados sobre os prospectos. Quantidade de registros esperados para este
+grupo de Informação: Mínimo: 0 / Máximo: Infinito.
+
+Título: Tipo Objetivo
+Nome XML: TIPO OBJETIVO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: P - Principal, S - Secundário. Entre os prospectos declarados na
+carga é obrigatório que o "Tipo de Objetivo” de apenas 1 seja definido com P - Principal e os demais
+como S - Secundário.
+
+Título: Geração
+Nome XML: VALOR GERACAO
+Unidade de Medida: Não se aplica
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Geração” só deve ser considerado válido se for preenchido com valor
+igual ou maior que 0 e igual ou menor que 1.
+
+Título: Migração
+Nome XML: VALOR MIGRACAO
+Unidade de Medida: Não se aplica
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Migração" só deve ser considerado válido se for preenchido com valor
+igual ou maior que 0 e igual ou menor que 1.
+
+Título: Resevatório
+Nome XML: VALOR RESERVATÓRIO
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2684
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Unidade de Medida: Não se aplica
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Reservatório" só deve ser considerado válido se for preenchido com
+valor igual ou maior que 0 e igual ou menor que 1.
+
+Título: Sincronismo
+Nome XML: VALOR SINCRONISMO
+Unidade de Medida: Não se aplica
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Sincronismo" só deve ser considerado válido se for preenchido com
+valor igual ou maior que 0 e igual ou menor que 1.
+
+Título: Capeador
+Nome XML: VALOR CAPEADOR
+Unidade de Medida: Não se aplica
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Capeador” só deve ser considerado válido se for preenchido com valor
+igual ou maior que 0 e igual ou menor que 1.
+
+Título: Trapa
+Nome XML: VALOR TRAPA
+Unidade de Medida: Não se aplica
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Trapa" só deve ser considerado válido se for preenchido com valor igual
+ou maior que 0 e igual ou menor que 1.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2TIBA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: P90 Área
+Nome XML: PSO VALOR AREA
+Unidade de Medida: km?
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P90 Espessura
+Nome XML: P90 VALOR ESPESSURA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: PO VALOR POROSIDADE
+Nome XML: P90 Porosidade
+Unidade de Medida: %
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P90 Satgas
+Nome XML: P90 VALOR SATGAS
+Unidade de Medida: %
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 28/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Título: P90 Satóleo
+Nome XML: P90 VALOR SATOLEO
+Unidade de Medida: %
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P90 Voip
+Nome XML: P90 VALOR VOIP
+Unidade de Medida: milhões de m*
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P90 Vgip
+Nome XML: P90 VALOR VGIP
+Unidade de Medida: milhões de m*?
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P50 Área
+Nome XML: P50 VALOR AREA
+Unidade de Medida: km?
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P50 Espessura
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2984
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Nome XML: P50 VALOR ESPESSURA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P5O Porosidade
+Nome XML: P50 VALOR POROSIDADE
+Unidade de Medida: %
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P50 Satgas
+Nome XML: P50 VALOR SATGAS
+Unidade de Medida: %
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P50 Satóleo
+Nome XML: P50 VALOR SATOLEO
+Unidade de Medida: %
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P50 Voip
+Nome XML: P50 VALOR VOIP
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 3084
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Unidade de Medida: milhões de m*
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P50 Vgip
+Nome XML: P50 VALOR VGIP
+Unidade de Medida: milhões de m*?
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P10 Área
+Nome XML: P10 VALOR AREA
+Unidade de Medida: km?
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P1i0O Espessura
+Nome XML: P10 VALOR ESPESSURA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P10 Porosidade
+Nome XML: P10 VALOR POROSIDADE
+Unidade de Medida: %
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 31/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P10 Satgas
+Nome XML: P10 VALOR SATGAS
+Unidade de Medida: %
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P10 Satóleo
+Nome XML: P10 VALOR SATOLEO
+Unidade de Medida: %
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P10 Voip
+Nome XML: P10 VALOR VOIP
+Unidade de Medida: milhões de m*?
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: P10 Vgip
+Nome XML: P10 VALOR VGIP
+Unidade de Medida: milhões de m*?
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 32/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Período
+Nome XML: GEOCRONOLOGIA CODIGO PERIODO
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Perlodo” deve estar cadastrado no SIGEP para ser considerado válido.
+
+Título: Época
+Nome XML: GEOCRONOLOGIA CODIGO EPOCA
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Epoca" deve estar cadastrado no SIGEP para ser considerado válido.
+
+Título: Idade
+Nome XML: GEOCRONOLOGIA CODIGO IDADE
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Idade" deve estar cadastrado no SIGEP para ser considerado válido.
+
+Título: Grupo
+Nome XML: LITOESTRATIGRAFIA CODIGO GRUPO
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 38
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Tamanho: 10
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Grupo" deve estar cadastrado no SIGEP para ser considerado válido.
+
+Título: Formação
+Nome XML: LITOESTRATIGRAFIA CODIGO FORMACAO
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Formação" deve estar cadastrado no SIGEP para ser considerado
+válido.
+
+Título: Membro
+Nome XML: LITOESTRATIGRAFIA CODIGO MEMBRO
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Membro" deve estar cadastrado no SIGEP para ser considerado válido.
+
+Título: Descrição
+Nome XML: DESCRICAO OBJETIVO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 500
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Latitude Provisória Alvo
+Nome XML: COORDENADAS PROVISORIAS ALVO LATITUDE
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Tamanho: 13
+Obrigatoriedade: Sim
+
+Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato *-
++GG:MM:SS,SSS” onde: GG- Graus, MM minutos, SS segundos parte inteira e SSS parte decimal
+dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “* negativo.
+
+Título: Longitude Provisória Alvo
+Nome XML: COORDENADAS PROVISORIAS ALVO LONGITUDE
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 13
+Obrigatoriedade: Sim
+
+Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato *-
++GG:MM:SS,SSS” onde: GG- Graus, MM minutos, SS segundos parte inteira e SSS parte decimal
+dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “* negativo.
+
+Título: Latitude Provisória Alvo Final
+Nome XML: COORDENADAS PROVISORIAS ALVO FINAL LATITUDE
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 13
+Obrigatoriedade: Condicional
+
+Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato “-
++GG:MM:SS,SSS” onde: GG- Graus, MM minutos, SS segundos parte inteira e SSS parte decimal
+dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “* negativo. O
+campo "Latitude Provisória Alvo Final” passa a ser obrigatório se o campo "Tipo de Poço” for
+preenchido com o valor "H - Horizontal” ou "D - Direcional”.
+
+Título: Longitude Provisória Alvo Final
+Nome XML: COORDENADAS PROVISORIAS ALVO FINAL LONGITUDE
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 13
+Obrigatoriedade: Condicional
+
+Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato “-
+
++GG:MM:SS,SSS” onde: GG- Graus, MM minutos, SS segundos parte inteira e SSS parte decimal
+
+dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “* negativo. O
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+campo "Longitude Provisória Alvo Final" passa a ser obrigatório se o campo "Tipo de Poço” for
+preenchido com o valor "H - Horizontal" ou "D - Direcional”.
+
+Título: Topo Profundidade Vertical
+Nome XML: PROFUNDIDADES TOPO VERTICAL
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Topo Profundidade Vertical" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Topo Profundidade Medida
+Nome XML: PROFUNDIDADES TOPO MEDIDA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Topo Profundidade Medida" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Base Profundidade Vertical
+Nome XML: PROFUNDIDADES BASE VERTICAL
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Base Profundidade Vertical” seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Base Profundidade Medida
+Nome XML: PROFUNDIDADES BASE MEDIDA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 3684
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Base Profundidade Medida" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+CONCEITOS RELATIVOS À PREVISÃO GEOLÓGICA - Neste grupo de Informações devem ser
+preenchidos os dados sobre as previsões geológicas. Quantidade de registros esperados
+para este grupo de Informação: Mínimo: 1 / Máximo: Infinito.
+
+Título: Período
+Nome XML: GEOCRONOLOGIA CODIGO PERIODO
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Não
+
+Preenchimento: O campo "Perlodo” deve estar cadastrado no SIGEP para ser considerado válido.
+
+Título: Época
+Nome XML: GEOCRONOLOGIA CODIGO EPOCA
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Não
+
+Preenchimento: O campo "Época" deve estar cadastrado no SIGEP para ser considerado válido.
+
+Título: Idade
+Nome XML: GEOCRONOLOGIA CODIGO IDADE
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Não
+
+Preenchimento: O campo "Idade" deve estar cadastrado no SIGEP para ser considerado válido.
+
+Título: Grupo
+Nome XML: LITOESTRATIGRAFIA CODIGO GRUPO
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 STIBA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Não
+
+Preenchimento: O campo "Grupo" deve estar cadastrado no SIGEP para ser considerado válido.
+
+Título: Formação
+Nome XML: LITOESTRATIGRAFIA CODIGO FORMACAO
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Não
+
+Preenchimento: O campo "Formação" deve estar cadastrado no SIGEP para ser considerado
+válido.
+
+Título: Membro
+Nome XML: LITOESTRATIGRAFIA CODIGO MEMBRO
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 8,2
+Obrigatoriedade: Não
+
+Preenchimento: O campo "Membro" deve estar cadastrado no SIGEP para ser considerado válido.
+
+Título: Topo Profundidade Vertical
+Nome XML: PROFUNDIDADES TOPO VERTICAL
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Topo Profundidade Vertical" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Topo Profundidade Medida
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 au
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Nome XML: PROFUNDIDADES TOPO MEDIDA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Topo Profundidade Medida" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Base Profundidade Vertical
+Nome XML: PROFUNDIDADES BASE VERTICAL
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Base Profundidade Vertical” seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Base Profundidade Medida
+Nome XML: PROFUNDIDADES BASE MEDIDA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Base Profundidade Medida" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+CONCEITOS RELATIVOS A RISCO COLISÃO - Neste grupo de Informações devem ser
+preenchidos os dados sobre riscos de colisão. Quantidade de registros esperados para este
+grupo de Informação: Mínimo: 0 / Máximo: Infinito.
+
+Título: Nome Poço ANP
+Nome XML: NOME. POCO ANP
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+
+Tamanho: 20
+Obrigatoriedade: Sim
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 ag
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Preenchimento: O campo "Nome Poço ANP” só será considerado válido se estiver cadastrado na
+base de dados da ANP. Um exemplo de preenchimento do nome do poço seria "9-RO-234-TESTE".
+
+CONCEITOS RELATIVOS A FASES - Neste grupo de Informações devem ser preenchidos os
+dados sobre as fases da perfuração. Quantidade de registros esperados para este grupo de
+Informação: Mínimo: 1 / Máximo: Infinito.
+
+Título: Número da Fase
+Nome XML: NUMERO FASE
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 2
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Sonda
+Nome XML: CODIGO SONDA
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Sonda" só será considerado válido se estiver cadastrado na base de
+dados do SIGEP com o status "Aprovado”. Além de estar cadastrado no SIGEP o tipo de sonda
+informada também deve ser compatível com o campo "Poço Submarino”. Caso o campo "Poço
+Submarino” tenha sido preenchido com o valor "S” os tipos de sondas válidos são: "Fixa", "Auto-
+elevável”, "Semi-submersível”, "Navio-sonda” (ambiente Marítimo). Caso o campo "Poço
+Submarino” tenha sido preenchido com o valor "N" os tipos de sondas válidos são: "Rotativa”,
+"Roto-Pneumática”, "Completação/Workver” (ambiente terrestre). Essas informações são
+apresentadas no menu SIGEP Exploração > CADASTROS > Sondas.
+
+Título: A sonda exigiu medidas de controle para adequação ao projeto de poço?
+Nome XML: EXIGE MEDIDAS CONTROLE ADEQUACAO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Técnica de Periuração
+Nome XML: TIPO TECNICA PERFURACAO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: 1 - Convencional 2 - Managed Pressure Drilling (MPD) 3 -
+Underbalanced 4 - Dual Gradient 5 - Outro
+
+Título: Data prevista de início
+Nome XML: DATA PREVISAO INICIO
+Unidade de Medida: Não se aplica
+
+Natureza: DATA
+Tamanho: 10
+Obrigatoriedade: Sim
+
+Preenchimento: Preenchimento no formato: DD/MM/AMAA.
+
+Título: Data prevista de fim
+Nome XML: DATA PREVISAO FIM
+Unidade de Medida: Não se aplica
+
+Natureza: DATA
+Tamanho: 10
+Obrigatoriedade: Sim
+
+Preenchimento: Preenchimento no formato: DD/MM/AMAA.
+
+Título: Diâmetro final
+Nome XML: DIAMETRO
+Unidade de Medida: polegadas
+
+Natureza: DECIMAL
+Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 41/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Utilizado alargador?
+Nome XML: ALARGADOR
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Topo Profundidade Vertical
+Nome XML: PROFUNDIDADES TOPO VERTICAL
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Topo Profundidade Vertical" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Topo Profundidade Medida
+Nome XML: PROFUNDIDADES TOPO MEDIDA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Topo Profundidade Medida" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Base Profundidade Vertical
+Nome XML: PROFUNDIDADES BASE VERTICAL
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Base Profundidade Vertical” seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 42/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Base Profundidade Medida
+Nome XML: PROFUNDIDADES BASE MEDIDA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo Base Profundidade Medida" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Tipo de Fluido
+Nome XML: FLUIDO TIPO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: 1 - Sintético 2 - Base Água 3 - Ar
+
+Título: Densidade Máxima Fluido
+Nome XML: FLUIDO VALOR DENSIDADE MAXIMA
+Unidade de Medida: Ib/gal
+
+Natureza: DECIMAL
+Tamanho: 2 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Densidade Mínima Fluido
+Nome XML: FLUIDO VALOR DENSIDADE MINIMA
+Unidade de Medida: Ib/gal
+
+Natureza: DECIMAL
+Tamanho: 2 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Riserless
+Nome XML: RISERLESS
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Gradiente Poros Máximo
+Nome XML: VALOR GRADIENTE POROS MAXIMO
+Unidade de Medida: Ib/gal
+
+Natureza: DECIMAL
+Tamanho: 2 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Influência Injetor
+Nome XML: INFLUENCIA INJETOR
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Gradiente Fratura Mínimo
+Nome XML: VALOR GRADIENTE FRATURA MINIMO
+Unidade de Medida: Ib/gal
+
+Natureza: DECIMAL
+Tamanho: 2 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: ECD Máximo na Sapata Anterior
+Nome XML: VALOR ECD MAXIMO SAPATA ANTERIOR
+Unidade de Medida: Ib/gal
+
+Natureza: DECIMAL
+Tamanho: 2 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Tolerância ao Kick Máxima Pressão Poros Equivalente
+Nome XML: VALOR KICK MAXIMA PRESSAO POROS
+Unidade de Medida: Ib/gal
+
+Natureza: DECIMAL
+Tamanho: 2 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Tolerância Kick Máximo Volume Gás
+Nome XML: VALOR KICK MAXIMO VOLUME GAS
+Unidade de Medida: bb!
+
+Natureza: DECIMAL
+Tamanho: 3 dígitos na parte inteira e 2 dígitos na parte decimal.
+
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: MSM
+Nome XML: MSM
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: MSR
+Nome XML: MSR
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: H2S
+Nome XML: VALOR PREVISAO H2S
+Unidade de Medida: ppm
+
+Natureza: DECIMAL
+Tamanho: 3 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: COZ
+Nome XML: VALOR PREVISAO CO2
+Unidade de Medida: %
+
+Natureza: DECIMAL
+Tamanho: 3 dígitos na parte inteira e 2 dígitos na parte decimal.
+
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Previsão Perdas Severas
+Nome XML: PREVISAO PERDAS SEVERAS
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Título: Perfuração Overbalance
+Nome XML: PERFURACAO OVERBALANCE
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Estudo Específico Geomecânica
+Nome XML: ESTUDO ESPECIFICO GEOMECANICA
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Previsão Aquiferos
+Nome XML: PREVISAO AQUIFEROS
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Previsão Falhas Geológicas Não Selantes Atravessando Zonas HC
+Nome XML: PREVISAO FALHAS GEOLOGICAS ZONAS HC
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Previsão Formações Reativas
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 4TIBA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Nome XML: PREVISAO FORMACOES REATIVAS
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Previsão Sal Alta Taxa Fluência
+Nome XML: PREVISAO SAL ALTA TAXA FLUENCIA
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+CONCEITOS RELATIVOS À REVESTIMENTOS - Neste grupo de Informações devem ser
+preenchidos os dados sobre os revestimentos. Quantidade de registros esperados para este
+grupo de Informação: Mínimo: 1 / Máximo: Infinito.
+
+Título: Número Fase
+Nome XML: NUMERO FASE
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 2
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Número Fase" de cada Revestimento só será considerado válido se o
+número tiver sido declarado na lista de Fases dessa carga.
+
+Título: Diâmetro
+Nome XML: DIAMETRO
+Unidade de Medida: polegadas
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Contingente
+Nome XML: CONTINGENTE
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Classificação
+Nome XML: TIPO CLASSIFICACAO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: 1 - CONDUTOR 2 - SUPERFÍCIE 3 - INTERMEDIÁRIO 4 -
+PRODUTOR
+
+Título: Tipo de Revestimento
+Nome XML: TIPO REVESTIMENTO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: 1 - INTEGRAL 2 - LINER 3 - TIE BACK
+
+Título: Topo Profundidade Vertical
+Nome XML: PROFUNDIDADES TOPO VERTICAL
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Topo Profundidade Vertical" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Topo Profundidade Medida
+Nome XML: PROFUNDIDADES TOPO MEDIDA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Topo Profundidade Medida" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Base Profundidade Vertical
+Nome XML: PROFUNDIDADES BASE VERTICAL
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Base Profundidade Vertical” seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Base Profundidade Medida
+Nome XML: PROFUNDIDADES BASE MEDIDA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo Base Profundidade Medida" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Grau Aço
+Nome XML: GRAU ACO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 20
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Peso
+Nome XML: PESO
+Unidade de Medida: Ib/ft
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Tipo Conexão
+Nome XML: TIPO CONEXAO
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 100
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Conexão Gás Tight
+Nome XML: CONEXAO GAS TIGHT
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Anular Confinado
+Nome XML: ANULAR CONFINADO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 51/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Dimensionamento APB
+Nome XML: DIMENSIONAMENTO APB
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Revestimento Resistente H2s
+Nome XML: RESISTENTE H2S
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Revestimento Resistente CO2
+Nome XML: RESISTENTE CO2
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Metalurgia Revestimentos Atende o Critério de Aceitação Concessionário
+Nome XML: METALURGIA ATENDE CONCESSIONARIO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 E28A
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Dimensionamento de Revestimentos Baseado em Metodologia Determinística Regime
+Elástico
+
+Nome XML: DIMENSIONAMENTO REGIME ELASTICO
+
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Dimensionamento em Revestimentos Atende Critério Aceitação Concessionário
+Nome XML: DIMENSIONAMENTO ATENDE CONCESSIONARIO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+CONCEITOS RELATIVOS À CIMENTAÇÃO - Neste grupo de Informações devem ser
+preenchidos os dados sobre clmentação. Quantidade de registros esperados para este grupo
+de Informação: Mínimo: 0 / Máximo: Infinito.
+
+Título: Número Fase
+Nome XML: NUMERO FASE
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 2
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Número Fase” de cada Cimentação só será considerado válido se o
+número tiver sido declarado na lista de Fases dessa carga.
+
+Título: Estágio
+Nome XML: TIPO ESTAGIO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+
+Tamanho: 1
+Obrigatoriedade: Sim
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 E [ie]
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Preenchimento: Valores válidos: 1 - Primeiro 2 - Segundo
+
+Título: Pasta
+Nome XML: TIPO PASTA
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 200
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Massa Específica
+Nome XML: VALOR MASSA ESPECIFICA
+Unidade de Medida: Ib/gal
+
+Natureza: DECIMAL
+Tamanho: 2 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Controle de gás
+Nome XML: CONTROLE GAS
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Resistência CO2
+Nome XML: RESISTENCIA CO2
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Não
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Topo Profundidade Vertical
+Nome XML: PROFUNDIDADES TOPO VERTICAL
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Topo Profundidade Vertical" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Topo Profundidade Medida
+Nome XML: PROFUNDIDADES TOPO MEDIDA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Não
+
+Preenchimento: Para que o campo "Topo Profundidade Medida" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Base Profundidade Vertical
+Nome XML: PROFUNDIDADES BASE VERTICAL
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: Para que o campo "Base Profundidade Vertical” seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Base Profundidade Medida
+Nome XML: PROFUNDIDADES BASE MEDIDA
+Unidade de Medida: metros
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Não
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 5584
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Preenchimento: Para que o campo Base Profundidade Medida" seja considerado válido deve ser
+preenchido com valor igual ou maior que zero.
+
+Título: Previsão de Formação Permeável Exposta
+Nome XML: PREVISAO FORMACAO PERMEAVEL EXPOSTA
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+CONCEITOS RELATIVOS A OUTRAS ATIVIDADES - Neste grupo de Informações devem ser
+preenchidos os dados sobre outras atividades. Quantidade de registros esperados para este
+grupo de Informação: Mínimo: 0 / Máximo: Infinito.
+
+Título: Tipo
+Nome XML: TIPO
+Unidade de Medida: Não se aplica
+
+Natureza: DOMÍNIO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: 1 - Completação 2 - Teste de Formação
+
+Título: Previsão Início
+Nome XML: DATA PREVISAO INICIO
+Unidade de Medida: Não se aplica
+
+Natureza: DATA
+Tamanho: 10
+Obrigatoriedade: Sim
+
+Preenchimento: Preenchimento no formato: DD/MM/AAAA. O campo "Previsão Infcio” deve ser
+maior que a data informada no campo "Previsão Fim” relativa a última fase informada para 0 poço.
+
+Título: Previsão Fim
+Nome XML: DATA PREVISAO FIM
+Unidade de Medida: Não se aplica
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Natureza: DATA
+Tamanho: 10
+Obrigatoriedade: Sim
+
+Preenchimento: Preenchimento no formato: DD/MM/AAAA. O campo "Previsão Fim" só será válido
+se for maior ou igual ao campo "Previsão Início”. A comparação deverá ser feita entre os campos
+"Previsão Fim” e "Previsão Início” de um mesmo registro da lista de registros "Outras Atividades”.
+
+Título: Sonda
+Nome XML: CODIGO SONDA
+Unidade de Medida: Não se aplica
+
+Natureza: INTEIRO
+Tamanho: 10
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Sonda" só será considerado válido se estiver cadastrado na base de
+dados do SIGEP com o status "Aprovado”. Além de estar cadastrado no SIGEP o tipo de sonda
+informada também deve ser compatível com o campo "Poço Submarino”. Caso o campo "Poço
+Submarino” tenha sido preenchido com o valor "S” os tipos de sondas válidos são: "Fixa", "Auto-
+elevável", "Semi-submersível”, "Navio-sonda” (ambiente Marítimo). Caso o campo "Poço
+Submarino” tenha sido preenchido com o valor "N" os tipos de sondas válidos são: "Rotativa”,
+"Roto-Pneumática”, "Completação/Workver” (ambiente terrestre). Essas informações são
+apresentadas no menu SIGEP Exploração > CADASTROS > Sondas.
+
+Título: Metalurgia coluna (produção/injeção/teste) atende aos critérios de aceitação do
+concessionário?
+
+Nome XML: METALURGIA ATENDE CONCESSIONARIO
+
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Dimensionamento coluna (produção/injeção/teste) atende ao critério de aceitação do
+concessionário?
+
+Nome XML: DIMENSIONAMENTO ATENDE CONCESSIONARIO
+
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 1
+Obrigatoriedade: Não
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 STA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Preenchimento: Não se aplica
+
+Título: Dimensionamento coluna (produção/injeçãoiteste) foi baseado na metodologia deterministica
+em regime elástico?
+
+Nome XML: DIMENSIONAMENTO REGIME ELASTICO
+
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Não se aplica
+
+Título: Pressão Fluxo Superfície
+Nome XML: VALOR PRESSAO FLUXO SUPERFICIE
+Unidade de Medida: psi
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Pressão Fluxo Superfície” só será considerado válido se for preenchido
+com valor maior que 0.
+
+Título: Pressão Fluxo Superfície
+Nome XML: VALOR PRESSAO FRATURAMENTO SUPERFICIE
+Unidade de Medida: psi
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Sim
+
+Preenchimento: O campo "Pressão Fraturamento Superfície” só será considerado válido se for
+preenchido com valor maior que 0.
+
+CONCEITOS RELATIVOS A POÇOS CORRELAÇÃO - Neste grupo de Informações devem ser
+preenchidos os dados sobre poços correlacionados. Quantidade de registros esperados para
+este grupo de Informação: Mínimo: 0 / Máximo: Infinito.
+
+Título: Nome Poço ANP
+Nome XML: NOME. POCO ANP
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Unidade de Medida: Não se aplica
+
+Natureza: TEXTO
+Tamanho: 20
+Obrigatoriedade: Sim
+
+Preenchimento: O "Nome do Poço ANP” informado deve estar cadastrado nas bases de dados da
+ANP. Um exemplo de preenchimento do nome do poço seria "9-RO-234-TESTE”.
+
+Título: Distância
+Nome XML: DISTANCIA
+Unidade de Medida: km
+
+Natureza: DECIMAL
+
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+
+Obrigatoriedade: Condicional
+
+Preenchimento: O campo "Distância" é de preenchimento obrigatório apenas quando o campo
+
+"Código do Poço” da aba "Poço de Correlação” for preenchido. Quando o campo "Distância" for
+obrigatório, ele só será considerado válido se for preenchido com o valor maior que O.
+
+VALIDAÇÕES APLICADAS AUTOMATICAMENTE AO ARQUIVO
+
+Código da validação: 1
+
+Mensagem apresentada: O nome do arquivo não é válido.
+
+Situação em que ocorre: O nome do arquivo não obedece ao padrão estabelecido pela ANP.
+Ação corretiva: A nomenclatura do arquivo deve obedecer ao formato: x RAIZ-
+
+CNPJ AAAAMMDDHHMM TTTTITTITITTTITTddA, onde: xxx é o número identificador da carga;
+RAIZ-CNPJ são os 8 primeiros dígitos (sem ponto ou barra) do CNPJ da empresa que está
+carregando os dados; AAAAMMDDHHMM é a data e hora de envio do arquivo no formato ano
+
+(AAAA), mês (MM), dia (DD), hora (HH) e minuto (MM); TT..T são 15 dígitos livres; ddd é a extensão
+do arquivo: Será 'zip' ou 'p7s' (para arquivos assinados digitalmente).
+
+Código da validação: 2
+
+Mensagem apresentada: A extensão do arquivo não é válida.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Situação em que ocorre: O sistema i-engine foi programado para processar apenas arquivos com
+extensão .ZIP ou .P7S.
+
+Ação corretiva: O arquivo XML deve ser enviado compactado (.zip). Se houver a obrigatoriedade
+de assinatura digital, o arquivo 'zip' deve ser assinado, gerando o arquivo com extensão 'p7s'.
+
+Código da validação: 3
+
+Mensagem apresentada: Problema relacionado a Assinatura Digital.
+Situação em que ocorre: Este erro ocorre em duas situações: (1) quando o arquivo foi enviado
+SEM a assinatura digital, mas deveria ser assinado ou (2) quando o arquivo foi enviado COM a
+
+assinatura digital, mas não deveria ser assinado.
+
+Ação corretiva: Verifique a necessidade de assinatura digital do arquivo para o arquivo de carga
+que está sendo enviado. Tal informação deve constar no manual da carga.
+
+Código da validação: 4
+
+Mensagem apresentada: Assinatura Digital inválida.
+
+Situação em que ocorre: Não foi possível validar os dados do certificado usado para assinar o
+arquivo.
+
+Ação corretiva: É preciso assinar digitalmente o arquivo com um certificado digital emitido pela
+
+Autoridade Certificadora Raiz ICP-BRASIL e que este certificado esteja associado à mesma
+empresa do usuário que está enviando o arquivo.
+
+Código da validação: 5
+
+Mensagem apresentada: Falha ao recuperar informação de arquivo.
+
+Situação em que ocorre: Ao tentar ler os dados do certificado digital usado para assinar o arquivo
+o sistema não encontrou as informações que esperava encontrar.
+
+Ação corretiva: É preciso assinar o arquivo com um certificado digital válido, do tipo e-CNPJ,
+emitido por uma autoridade certificadora raiz brasileira.
+
+Código da validação: 6
+
+Mensagem apresentada: Arquivo ZIP inválido.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 60
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Situação em que ocorre: Não foi possível a leitura e descompactação do arquivo ZIP.
+
+Ação corretiva: O arquivo enviado para a ANP deve estar compactado com o compactador ZIP. No
+caso do arquivo assinado digitalmente, o arquivo ZIP deve ser assinado.
+
+Código da validação: 7
+
+Mensagem apresentada: Conteúdo do arquivo Zip não é válido.
+Situação em que ocorre: Não foi encontrado dentro do ZIP o arquivo esperado pelo sistema.
+
+Ação corretiva: Verifique se dentro do arquivo consta apenas um 1 XML.
+
+Código da validação: 9
+
+Mensagem apresentada: O arquivo tem falha de estrutura ou dados.
+
+Situação em que ocorre: O formato do arquivo XML não obedece ao formato exigido para o tipo de
+arquivo. Possivelmente a estrutura do arquivo não está válida conforme as regras estabelecidas no
+arquivo XSD.
+
+Ação corretiva: Verifique o detalhamento da mensagem para verificar os problemas encontrados.
+Também é possível validar o arquivo no site do sistema antes de envia-lo à ANP.
+
+Código da validação: 10
+
+Mensagem apresentada: O nome do XML não é válido.
+
+Situação em que ocorre: O nome do arquivo XML presente no conteúdo do arquivo compactado
+não está no padrão esperado.
+
+Ação corretiva: O arquivo XML deve ter o mesmo nome que o arquivo ZIP, diferenciando apenas a
+extensão.
+
+Código da validação: 11
+
+Mensagem apresentada: Arquivo não encontrado.
+
+Situação em que ocorre: O arquivo XML faz referência um outro arquivo não encontrado no
+conteúdo do arquivo ZIP.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 61/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Ação corretiva: Verifique se o arquivo citado no XML realmente está presente no pacote ZIP com o
+mesmo nome.
+
+Código da validação: 12
+
+Mensagem apresentada: Arquivo ZIP inválido.
+Situação em que ocorre: O sistema não conseguiu ler o arquivo como um arquivo ZIP.
+
+Ação corretiva: Verifique se o arquivo realmente está compactado ou se o mesmo não está
+corrompido.
+
+Código da validação: 1403
+
+Mensagem apresentada: O operador que realiza a carga do arquivo não é compatível com o
+operador da NPP.
+
+Situação em que ocorre: Quando o número da raiz do CNPJ (8 primeiros dígitos) do usuário
+autenticado no sistema não é o msmo do operador da Bacia/Bloco ou Campo informado na carga.
+
+Ação corretiva: Enviar a carga se autenticando com um usuário que pertença ao operador da
+Bacia/Bloco ou Campo.
+
+Código da validação: 1404
+
+Mensagem apresentada: O campo "CODIGO BACIA PORTARIA” foi preenchido com um valor
+inválido.
+
+Situação em que ocorre: Quando a "CODIGO BACIA PORTARIA" informada não for localizada
+no sistema SIGEP.
+
+Ação corretiva: Preencher o campo "CODIGO BACIA PORTARIA" com com valor válido.
+
+Código da validação: 1405
+
+Mensagem apresentada: O campo "CODIGO BLOCO” foi preenchido com um valor inválido.
+
+Situação em que ocorre: Quando o "CODIGO BLOCO" informado não for localizado no sistema
+SIGEP.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 6284
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Ação corretiva: Preencher o campo "CODIGO BLOCO" com um bloco que esteja cadastrado no
+sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1406
+
+Mensagem apresentada: O "CODIGO CAMPO” foi preenchido com um valor inválido.
+
+Situação em que ocorre: Quando o "CODIGO CAMPO” informado não for localizado no sistema
+SIGEP.
+
+Ação corretiva: Preencher o campo "CODIGO CAMPO" com um campo que esteja associado a
+um contrato no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1407
+
+Mensagem apresentada: O campo "VALOR KICK OF POINT" foi preenchido com valor diferente
+de zero.
+
+Situação em que ocorre: "Quando o campo "VALOR KICK OF POINT" for preenchido com um
+valor diferente O e o campo "Tipo de Poço” for preenchido com o valor "V-Vertical” . ”
+
+Ação corretiva: "Preencher o campo "VALOR KICK OF POINT" com zero.”
+
+Código da validação: 1408
+
+Mensagem apresentada: O campo "VALOR KICK OF POINT" foi preenchido com valor igual ou
+inferior a zero.
+
+Situação em que ocorre: Quando o campo "VALOR KICK OF POINT" for preenchido com um
+valor menor ou igual a O e o campo "Tipo de Poço” for preenchido com o valor diferente de "V-
+Vertical”.
+
+Ação corretiva: Preencher o campo "VALOR KICK OF POINT” com um valor maior que zero.
+
+Código da validação: 1409
+
+Mensagem apresentada: O campo "VALOR DOG LEG SEVERITY MAXIMO" foi preenchido com
+valor diferente de zero.
+
+Situação em que ocorre: "Quando o campo "VALOR DOG LEG SEVERITY MAXIMO" for
+preenchido com um valor diferente O e o campo "Tipo Poço” for preenchido com o valor "V-Vertical”.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Ação corretiva: "Preencher o campo "VALOR DOG LEG SEVERITY MAXIMO" com zero.”
+
+Código da validação: 1410
+
+Mensagem apresentada: O campo "VALOR DOG LEG SEVERITY MAXIMO" foi preenchido com
+valor igual ou inferior a zero.
+
+Situação em que ocorre: Quando o campo "VALOR DOG LEG SEVERITY MAXIMO" for
+preenchido com um valor menor ou igual a O e o campo "Tipo Poço” for preenchido com o valor
+diferente de "V-Vertical”.
+
+Ação corretiva: Preencher o campo "VALOR DOG LEG SEVERITY MAXIMO" com um valor
+maior que zero.
+
+Código da validação: 1411
+
+Mensagem apresentada: O campo "VALOR AFASTAMENTO HORIZONTAL MAXIMO" foi
+preenchido com valor diferente de zero.
+
+Situação em que ocorre: "Quando o campo "VALOR AFASTAMENTO HORIZONTAL MAXIMO”
+for preenchido com um valor diferente O e o campo "Tipo de Poço” for preenchido com o valor "V-
+Vertical”. ”
+
+Ação corretiva: "Preencher o campo "VALOR AFASTAMENTO HORIZONTAL MAXIMO" com 0.”
+
+Código da validação: 1412
+
+Mensagem apresentada: O campo "VALOR AFASTAMENTO HORIZONTAL MAXIMO" foi
+preenchido com valor igual ou inferior a zero.
+
+Situação em que ocorre: 2 - Quando o campo
+"VALOR AFASTAMENTO HORIZONTAL MAXIMO” for preenchido com um valor menor ou igual a
+0 e o campo "Tipo de Poço" for preenchido com o valor diferente de "V-Vertical”.
+
+Ação corretiva: Preencher o campo "VALOR AFASTAMENTO HORIZONTAL MAXIMO" com um
+valor maior que 0.
+
+Código da validação: 1413
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Mensagem apresentada: O campo "VALOR INCLINACAO MAXIMA” foi preenchido com valor
+diferente de zero.
+
+Situação em que ocorre: "Quando o campo "VALOR INCLINACAO MAXIMA" for preenchido com
+um valor diferente 0 e o campo "Tipo de Poço” for preenchido com o valor "V-Vertical”. ”
+
+Ação corretiva: "Preencher o campo "VALOR INCLINACAO MAXIMA" com 0."
+
+Código da validação: 1414
+
+Mensagem apresentada: O campo "VALOR INCLINACAO MAXIMA” foi preenchido com valor
+igual ou inferior a zero.
+
+Situação em que ocorre: Quando o campo "VALOR INCLINACAO MAXIMA" for preenchido com
+um valor menor ou igual a O e o campo "Tipo de Poço" for preenchido com o valor diferente de "V-
+Vertical”.
+
+Ação corretiva: VALOR INCLINACAO MAXIMA" com um valor maior que 0.
+
+Código da validação: 1415
+
+Mensagem apresentada: <Mensagem de erro>
+Situação em que ocorre: <Situação em que ocore>
+
+Ação corretiva: <Como corrigir>
+
+Código da validação: 1416
+
+Mensagem apresentada: O campo "VALOR LAMINA AGUA" foi preenchido com valor diferente
+de zero.
+
+Situação em que ocorre: "Quando o campo "VALOR LAMINA AGUA" for preenchido com um
+valor diferente O e o campo "Poço Submarino" estiver preenchido com "NÃO" .”
+
+Ação corretiva: "Preencher o campo "VALOR LAMINA AGUA" com 0.”
+
+Código da validação: 1417
+
+Mensagem apresentada: O campo "VALOR LAMINA AGUA" foi preenchido com valor igual ou
+inferior a zero.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Situação em que ocorre: 2 -Quando o campo "VALOR LAMINA AGUA" for preenchido com um
+valor menor ou igual a O e o campo "Poço Submarino” estiver preenchido com "SIM".
+
+Ação corretiva: Preencher o campo "VALOR LAMINA AGUA" com um valor maior que 0 e igual
+ou menor que 5250.
+
+Código da validação: 1418
+
+Mensagem apresentada: O campo "VALOR COTA ALTIMETRICA BAP” foi preenchido com
+inferior a zero.
+
+Situação em que ocorre: Quando o campo "VALOR COTA ALTIMETRICA BAP” for preenchido
+com um valor menor que 0 e o campo "Poço Submarino” estiver preenchido com "NÃO".
+
+Ação corretiva: Preencher o campo "VALOR COTA ALTIMETRICA BAP” com um valor maior ou
+igual O.
+
+Código da validação: 1419
+
+Mensagem apresentada: O campo "VALOR COTA ALTIMETRICA BAP” foi preenchido com
+diferente de zero.
+
+Situação em que ocorre: Quando o campo "VALOR COTA ALTIMETRICA BAP” for preenchido
+com um valor diferente de O e o campo "Poço Submarino” estiver preenchido com "SIM”.
+
+Ação corretiva: Preencher o campo "VALOR COTA ALTIMETRICA BAP” com o valor zero.
+
+Código da validação: 1420
+
+Mensagem apresentada: O campo "VALOR COTA MESA ROTATIVA REFERENCIA" foi
+preenchido com valor igual ou inferior ao do campo "Cota Altimétrica BAP” e o campo Poço
+Submarino foi preenchido com o valor SIM.
+
+Situação em que ocorre: Quando o campo "VALOR COTA MESA ROTATIVA REFERENCIA" for
+preenchido com valor igual ou menor que o campo "Cota Altimética BAP” e o campo "Poço
+Submarino” estiver preenchido com "SIM”.
+
+Ação corretiva: Preencher o campo "VALOR COTA MESA ROTATIVA REFERENCIA" com um
+valor maior que o campo "Cota Altimétrica BAP”.
+
+Código da validação: 1421
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Mensagem apresentada: O campo "VALOR PREVISAO PRESSAO MAXIMA” foi preenchido com
+valor inválido.
+
+Situação em que ocorre: Quando o campo "VALOR PREVISAO PRESSAO MAXIMA" for
+preenchido com um valor menor ou igual a O.
+
+Ação corretiva: Preencher o campo "VALOR PREVISAO PRESSAO MAXIMA" com um valor
+maior que 0.
+
+Código da validação: 1422
+
+Mensagem apresentada: O campo "VALOR PREVISAO TEMPERATURA MAXIMA" foi
+preenchido com valor inválido.
+
+Situação em que ocorre: Quando o campo "VALOR PREVISAO TEMPERATURA MAXIMA" for
+preenchido com um valor menor ou igual a O.
+
+Ação corretiva: Preencher o campo "VALOR PREVISAO TEMPERATURA MAXIMA" com um
+valor maior que 0.
+
+Código da validação: 1423
+
+Mensagem apresentada: O campo "OBJETIVO POCO ESPECIAL" deve ser preenchido quando
+ao campo "Categoria" for preenchido com o valor "9 - Especial”.
+
+Situação em que ocorre: Quando o campo "Categoria" for preenchido com valor "9 - Especial" e o
+campo "OBJETIVO POCO ESPECIAL" não for preenchido.
+
+Ação corretiva: Preencher o campo "OBJETIVO POCO ESPECIAL" com valor válido.
+
+Código da validação: 1424
+
+Mensagem apresentada: O campo "OBJETIVO POCO ESPECIAL" não deve ser preenchido
+quando ao campo "Categoria" for preenchido com o valor diferente de "9 - Especial”.
+
+Situação em que ocorre: Quando o campo "Categoria" for preenchido com valor diferente de "9 -
+Especial” e o campo "OBJETIVO POCO ESPECIAL" for preenchido.
+
+Ação corretiva: Não informar o campo "OBJETIVO POCO ESPECIAL”.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 67/84
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Código da validação: 1425
+
+Mensagem apresentada: O campo "VALOR PRESSAO INJECAO MAXIMA PREVISTA" foi
+preenchido com valor inválido.
+
+Situação em que ocorre: Quando o campo "VALOR PRESSAO INJECAO MAXIMA PREVISTA”
+for preenchido com um valor menor ou igual a O e campo categoria for preenchido com o valor "8 -
+Injeção”.
+
+Ação corretiva: Preencher o campo "VALOR PRESSAO INJECAO MAXIMA PREVISTA" com um
+valor maior que 0.
+
+Código da validação: 1426
+
+Mensagem apresentada: O campo "VALOR PRESSAO INJECAO MAXIMA PREVISTA” não
+deve ser preenchido quando ao campo "Categoria" for preenchido com o valor diferente de "8 -
+Injeção”.
+
+Situação em que ocorre: Quando o campo "Categoria" for preenchido com valor diferente de "9 -
+Especial" e o campo "VALOR PRESSAO INJECAO MAXIMA PREVISTA" for preenchido.
+
+Ação corretiva: Não informar o campo "VALOR PRESSAO INJECAO MAXIMA PREVISTA”.
+
+Código da validação: 1427
+
+Mensagem apresentada: O valor informado no campo "NOME POCO OPERADOR" for
+preenchido com um código que não esteja cadastrado no SIGEP.
+
+Situação em que ocorre: Quando o valor informado no campo "NOME POCO OPERADOR" for
+preenchido com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Alterar o valor infomado no campo "NOME POCO ANP”.
+
+Código da validação: 1428
+
+Mensagem apresentada: O campo "Locação" é de preenchimento obrigatório para as categorias:
+1-Pioneiro”, "2-Estratigráfico”, "3 - Extensão”, "4 - Pioneiro adjacente”, "5 - Jazida mais rasa" e "6 -
+Jazida mais profunda”.”
+
+Situação em que ocorre: Quando o campo "Locação" não for preenchido e o campo Categoria for
+preenchido com o valor: "1-Pioneiro”, "2-Estratigráfico”, "3 - Extensão”, "4 - Pioneiro adjacente”, "5 -
+Jazida mais rasa” ou "6 - Jazida mais profunda”
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Ação corretiva: Preencher o campo Locação.
+
+Código da validação: 1429
+
+Mensagem apresentada: O campo "IDENTIFICACAO PAT” é de preenchimento obrigatório
+quando o campo Categoria é preenchido com o valor: "7 - Produção”"= , "8 - Injeção” ou "9 -
+Especial”.
+
+Situação em que ocorre: Quando o campo "IDENTIFICACAO PAT” não for preenchido e o campo
+Categoria for preenchido com o valor: "7 - Produção”=, "8 - Injeção” ou "9 - Especial”.
+
+Ação corretiva: Preencher o campo IDENTIFICACAO PAT.
+
+Código da validação: 1430
+
+Mensagem apresentada: O campo "NOME. POCO PARTILHACAO” é de preenchimento
+obrigatório quando o campo "Partilhado” é preenchido com o valor "S”.
+
+Situação em que ocorre: Quando o campo "NOME POCO PARTILHACAO” for preenchido com o
+valor "S”" e o campo "NOME. POCO PARTILHACAO" não for preenchido.
+
+Ação corretiva: Preencher o campo "NOME POCO PARTILHACAO”.
+
+Código da validação: 1431
+
+Mensagem apresentada: O campo "NOME POCO PARTILHACAO" não deve ser preenchido
+quando ao campo "NOME POCO PARTILHACAO" for preenchido com o valor "N -Não”.
+
+Situação em que ocorre: Quando o campo "NOME POCO PARTILHACAO” for preenchido e o
+campo "NOME, POCO PARTILHACAO" estiver preenchido com valor "N-Não” .
+
+Ação corretiva: Não informar o campo "NOME POCO PARTILHACAO”.
+
+Código da validação: 1432
+
+Mensagem apresentada: O campo "POCO ANTERIOR INVESTIGACAO" foi preenchido com
+valor inválido.
+
+Situação em que ocorre: Quando o "POCO ANTERIOR INVESTIGACAO”" informado não for
+localizado no sistema SIGEP.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 eg
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Ação corretiva: Preencher o campo "POCO ANTERIOR INVESTIGACAO" com um poço que
+esteja cadastrado no sistema SIGEP como poço de investigação.
+
+Código da validação: 1433
+
+Mensagem apresentada: O campo "CODIGO LICENCA AMBIENTAL foi preenchido com valor
+inválido.
+
+Situação em que ocorre: Quando a "CODIGO LICENCA AMBIENTAL" informada não estiver
+cadastrada no SIGEP.
+
+Ação corretiva: Preencher o campo "CODIGO LICENCA AMBIENTAL" com o valor válido.
+
+Código da validação: 1434
+
+Mensagem apresentada: O campo Justificativa é de preenchimento obrigatório quando o campo
+CODIGO LICENCA AMBIENTAL não for informado.
+
+Situação em que ocorre: Quando os campos Justificativa e CODIGO LICENCA AMBIENTAL não
+forem informados.
+
+Ação corretiva: Preencher o campo "Justificativa".
+
+Código da validação: 1435
+
+Mensagem apresentada: É obrigatório o preenchimento de pelo menos 1 prospecto quando o
+campo Categoria for preenchido com o valor: "1 - Pioneiro"=, "2 - Estratigráfico"=, "3 - Extensão"=,
+"4 - Pioneiro adjacente”= , "5 - Jazida mais rasa"=, "6 - Jazida mais profunda” ou ("9 - Especial" e o
+campo "OBJETIVO POCO ESPECIAL" preenchido com o valor "2 - Aquisição de dados de
+reservatório (ADR)").
+
+Situação em que ocorre: Quando nenhum Prospecto for declarado e o campo Categoria for
+preenchido com o valor: 1-Pioneiro= , 2-Estratigráfico= , 3-Extensão= , 4-Pioneiro adjacente= , 5-
+Jazida mais rasa"=, 6-Jazida mais profunda ou (9-Especial e o campo
+"OBJETIVO POCO ESPECIAL" preenchido com o valor 2-ADR).
+
+Ação corretiva: Preencher pelo menos 1 prospecto.
+
+Código da validação: 1436
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TOBA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Mensagem apresentada: O preenchimento do campo GEOCRONOLOGIA CODIGO PERIODO,
+GEOCRONOLOGIA CODIGO EPOCA ou GEOCRONOLOGIA CODIGO IDADE (1 dos 3) ÃO
+obrigatÃsrio para cada prospecto.
+
+Situação em que ocorre: Quando os campos: GEOCRONOLOGIA CODIGO PERIODO=,
+GEOCRONOLOGIA CODIGO EPOCA e GEOCRONOLOGIA CODIGO IDADE de um prospecto
+não forem preenchidos.
+
+Ação corretiva: Preencher o campo GEOCRONOLOGIA CODIGO PERIODO=,
+GEOCRONOLOGIA CODIGO EPOCA ou GEOCRONOLOGIA CODIGO IDADE de cada
+
+prospecto.
+
+Código da validação: 1437
+
+Mensagem apresentada: O preenchimento do campo LITOESTRATIGRAFIA CODIGO GRUPO,
+LITOESTRATIGRAFIA CODIGO FORMACAO e LITOESTRATIGRAFIA CODIGO MEMBRO (1
+dos 3) ÃO obrigatÃºrio para cada prospecto.
+
+Situação em que ocorre: Quando os campos: LITOESTRATIGRAFIA CODIGO GRUPO=,
+LITOESTRATIGRAFIA CODIGO FORMACAO e LITOESTRATIGRAFIA CODIGO MEMBRO de
+um prospecto não forem preenchidos.
+
+Ação corretiva: Preencher o campo LITOESTRATIGRAFIA CODIGO GRUPO=,
+
+LITOESTRATIGRAFIA CODIGO FORMACAO ou LITOESTRATIGRAFIA CODIGO MEMBRO de
+cada prospecto.
+
+Código da validação: 1438
+
+Mensagem apresentada: A carga já possui um propecto com o TIPO OBJETIVO definido como
+"Principal".
+
+Situação em que ocorre: Quando for identificado na mesma carga outro prospecto com o
+TIPO OBJETIVO definido como "Principal".
+
+Ação corretiva: Alterar o valor do campo "TIPO OBJETIVO" para Secundário.
+
+Código da validação: 1439
+
+Mensagem apresentada: O campo "GEOCRONOLOGIA CODIGO PERIODO" foi preenchido com
+valor inválido.
+
+Situação em que ocorre: Quando campo "GEOCRONOLOGIA CODIGO PERIODO" for
+preenchido com um código que não esteja cadastrado no SIGEP.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TUBA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Ação corretiva: Preencher o campo "GEOCRONOLOGIA CODIGO PERIODO” com um código
+cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1440
+
+Mensagem apresentada: O campo "GEOCRONOLOGIA CODIGO EPOCA" foi preenchido com
+valor inválido.
+
+Situação em que ocorre: Quando campo "GEOCRONOLOGIA CODIGO EPOCA” for preenchido
+com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "GEOCRONOLOGIA CODIGO EPOCA" com um código
+cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1441
+
+Mensagem apresentada: O campo "GEOCRONOLOGIA CODIGO IDADE" foi preenchido com
+valor inválido.
+
+Situação em que ocorre: Quando campo "GEOCRONOLOGIA CODIGO IDADE" for preenchido
+com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "GEOCRONOLOGIA CODIGO IDADE” com um código
+cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1442
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA CODIGO GRUPO" foi preenchido com
+valor inválido.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA CODIGO GRUPO" for
+preenchido com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA CODIGO GRUPO” com um código
+cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1443
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA CODIGO FORMACAO" foi preenchido
+com valor inválido.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 T2BA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA CODIGO FORMACAO" for
+preenchido com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA CODIGO FORMACAO" com um
+código cadastrado no sistema SIGEP. Ver consulta de códigos do Engine.
+
+Código da validação: 1444
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA CODIGO MEMBRO” foi preenchido
+com valor inválido.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA CODIGO MEMBRO" for
+preenchido com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA CODIGO MEMBRO" com um código
+cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1445
+
+Mensagem apresentada: O campo "COORDENADAS PROVISORIAS ALVO FINAL LATITUDE”
+é de preechimento obrigatório quando o campo "TIPO POCO" for preenchido com o valor "H -
+Horizontal” ou "D - Direcional”.
+
+Situação em que ocorre: Quando o campo
+"COORDENADAS PROVISORIAS ALVO FINAL LATITUDE" não for preenchido e o campo
+"TIPO POCO" for preenchido com o valor "H - Horizontal” ou "D - Direcional”.
+
+Ação corretiva: Preencher o campo "COORDENADAS PROVISORIAS ALVO FINAL LATITUDE”
+com valor válido.
+
+Código da validação: 1446
+
+Mensagem apresentada: O campo
+"COORDENADAS PROVISORIAS ALVO FINAL LONGITUDE” é de preechimento obrigatório
+quando o campo "Tipo de Poço” for preenchido com o valor "H - Horizontal” ou "D - Direcional”.
+
+Situação em que ocorre: Quando o campo
+"COORDENADAS PROVISORIAS ALVO FINAL LONGITUDE” não for preenchido e o campo
+
+"Tipo de Poço” for preenchido com o valor "H - Horizontal” ou "D - Direcional”.
+
+Ação corretiva: Preencher o campo
+"COORDENADAS PROVISORIAS ALVO FINAL LONGITUDE" com valor válido.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 THA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Código da validação: 1447
+
+Mensagem apresentada: O preenchimento do campo GEOCRONOLOGIA CODIGO PERIODO,
+GEOCRONOLOGIA CODIGO EPOCA ou GEOCRONOLOGIA CODIGO IDADE (1 dos 3) ÃO
+obrigatÃsrio para cada registro de previsÃ£o geolÃºgica.
+
+Situação em que ocorre: Quando os campos: GEOCRONOLOGIA CODIGO PERIODO=,
+GEOCRONOLOGIA CODIGO EPOCA e GEOCRONOLOGIA CODIGO IDADE em uma previsão
+geológica não forem preenchidos.
+
+Ação corretiva: Preencher o campo GEOCRONOLOGIA CODIGO PERIODO=,
+GEOCRONOLOGIA CODIGO EPOCA ou GEOCRONOLOGIA CODIGO IDADE de cada previsão
+geológica.
+
+Código da validação: 1448
+
+Mensagem apresentada: O preenchimento do campo LITOESTRATIGRAFIA CODIGO GRUPO,
+LITOESTRATIGRAFIA CODIGO FORMACAO e LITOESTRATIGRAFIA CODIGO MEMBRO (1
+dos 3) ÃO obrigatÃºrio para cada previsÃ£o geolÁ“gica.
+
+Situação em que ocorre: Quando os campos: LITOESTRATIGRAFIA CODIGO GRUPO=,
+LITOESTRATIGRAFIA CODIGO FORMACAO e LITOESTRATIGRAFIA CODIGO MEMBRO de
+uma previsão geológica não forem preenchidos.
+
+Ação corretiva: Preencher o campo LITOESTRATIGRAFIA CODIGO GRUPO=,
+
+LITOESTRATIGRAFIA CODIGO FORMACAO ou LITOESTRATIGRAFIA CODIGO MEMBRO de
+cada previsão geológica.
+
+Código da validação: 1449
+
+Mensagem apresentada: O campo "GEOCRONOLOGIA CODIGO PERIODO" foi preenchido com
+valor inválido.
+
+Situação em que ocorre: Quando campo "GEOCRONOLOGIA CODIGO PERIODO" for
+preenchido com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "GEOCRONOLOGIA CODIGO PERIODO” com um código
+cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1450
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TABA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Mensagem apresentada: O campo "GEOCRONOLOGIA CODIGO EPOCA" foi preenchido com
+valor inválido.
+
+Situação em que ocorre: Quando campo "GEOCRONOLOGIA CODIGO EPOCA” for preenchido
+com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "GEOCRONOLOGIA CODIGO EPOCA" com um código
+cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1451
+
+Mensagem apresentada: O campo "GEOCRONOLOGIA CODIGO IDADE" foi preenchido com
+valor inválido.
+
+Situação em que ocorre: Quando campo "GEOCRONOLOGIA CODIGO IDADE" for preenchido
+com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "GEOCRONOLOGIA CODIGO IDADE” com um código
+cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1452
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA CODIGO GRUPO" foi preenchido com
+valor inválido.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA CODIGO GRUPO" for
+preenchido com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA CODIGO GRUPO” com um código
+cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1453
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA CODIGO FORMACAO" foi preenchido
+com valor inválido.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA CODIGO FORMACAO" for
+preenchido com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA CODIGO FORMACAO" com um
+código cadastrado no sistema SIGEP. Ver consulta de códigos do Engine.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 T5BA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Código da validação: 1454
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA CODIGO MEMBRO” foi preenchido
+com valor inválido.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA CODIGO MEMBRO" for
+preenchido com um código que não esteja cadastrado no SIGEP.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA CODIGO MEMBRO" com um código
+cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1455
+
+Mensagem apresentada: O campo "NOME. POCO ANP” foi preenchido com um valor inválido.
+
+Situação em que ocorre: Quando o "NOME POCO ANP” foi preenchido com um valor que não foi
+encontrado na base do SIGEP.
+
+Ação corretiva: Preencher o campo "NOME POCO ANP" com um código cadastrado no sistema
+SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1456
+
+Mensagem apresentada: O campo "CODIGO SONDA" foi preenchido com um valor inválido.
+
+Situação em que ocorre: Quando a "CODIGO SONDA" for preenchida com um valor que não foi
+encontrado na base do SIGEP ou o tipo da sonda informada não for compatível com o campo "Poço
+Submarino”.
+
+Ação corretiva: Preencher o campo "CODIGO SONDA" com um código cadastrado no sistema
+SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1457
+
+Mensagem apresentada: O campo "Número Fase" de cada Revestimento deve ser preenchido
+com um número informado na lista de Fases.
+
+Situação em que ocorre: Quando o valor informado no campo "Número Fase” de um
+Revestimento não estiver presente na lista de Fases.
+
+Ação corretiva: Preencher o campo "Número Fase” do Revestimento com um valor tenha sido
+informado na lista de fases.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TOA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Código da validação: 1458
+
+Mensagem apresentada: O campo "NUMERO FASE" de cada Cimentação deve ser preenchido
+com um número informado na lista de Fases.
+
+Situação em que ocorre: Quando o valor informado no campo "NUMERO FASE" de uma
+Cimentação não estiver presente na lista de Fases.
+
+Ação corretiva: Preencher o campo "NUMERO FASE" da Cimentação com um valor tenha sido
+informado na lista de fases.
+
+Código da validação: 1459
+
+Mensagem apresentada: O campo "DATA PREVISAO FIM" foi preenchido com um valor invalido.
+
+Situação em que ocorre: Quando o campo "DATA PREVISAO FIM" for preenchido com uma data
+menor que o campo "DATA PREVISAO INICIO”.
+
+Ação corretiva: Preencher o campo "DATA PREVISAO FIM" com um valor maior ou igual ao
+campo "DATA PREVISAO INICIO”.
+
+Código da validação: 1460
+
+Mensagem apresentada: O campo "CODIGO SONDA" foi preenchido com um valor inválido.
+Situação em que ocorre: Quando a "CODIGO SONDA" for preenchida com um valor que não foi
+encontrado na base do SIGEP ou o tipo da sonda informada não for compatível com o campo "Poço
+
+Submarino”.
+
+Ação corretiva: Preencher o campo "NOME POCO ANP" com um código cadastrado no sistema
+SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1461
+
+Mensagem apresentada: O campo "NOME POCO ANP” foi preenchido com valor inválido.
+
+Situação em que ocorre: Quando o "NOME POCO ANP” informado não foi localizado no sistema
+SIGEP.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TIIBA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Ação corretiva: Preencher com um "NOME POCO ANP” que esteja cadastrado no SIGEP. Ver
+consulta de códigos no i-Engine.
+
+Código da validação: 1462
+
+Mensagem apresentada: O campo "DISTANCIA" é de preenchimento obrigatório quando o campo
+"NOME POCO ANP” da aba "Poço de Correlação” for preenchido.
+
+Situação em que ocorre: Quando o campo "NOME POCO ANP" da aba "Poço de Correlação” for
+preenchido e o campo "Distância" não for preenchido.
+
+Ação corretiva: Preencher o campo "Distância.
+
+Código da validação: 1467
+
+Mensagem apresentada: Não pode existir uma carga NPP "Em Análise” ou Aprovada para o
+mesmo NOME POCO OPERADOR.
+
+Situação em que ocorre: Quando já existir um registro de carga NPP com status "Em Análise" ou
+"Aprovado" para o mesmo NOME POCO OPERADOR.
+
+Ação corretiva: Refazer a carga com outro NOME POCO OPERADOR.
+
+Código da validação: 1469
+
+Mensagem apresentada: Não existe Contrato vinculado a esse Campo.
+
+Situação em que ocorre: Quando não existir um Contrato vinculado com o codigo Campo
+informado.
+
+Ação corretiva: Refazer a carga NPP com codigo Campo vinculado ao Contrato.
+
+Código da validação: 1470
+
+Mensagem apresentada: Não existe Contrato vinculado a esse nome do Bloco.
+
+Situação em que ocorre: Quando não existir um Contrato vinculado com o nome do Bloco
+informado.
+
+Ação corretiva: Refazer a carga NPP com nome do Bloco vinculado ao Contrato.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TUA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Código da validação: 1486
+
+Mensagem apresentada: O campo "Sonda" do Código "([Valor informado])” dentro da ABA
+"OUTRAS ATIVIDADES” foi preenchido com um valor inválido pois não existe ou não esta ativo ou
+aprovado
+
+Situação em que ocorre: Quando a "Sonda" for preenchida com um valor que não foi encontrado
+na base do SIGEP ou o tipo da sonda informada não for compatível com o campo "Poço
+Submarino”.
+
+Ação corretiva: Preencher o campo "Código do Poço” com um código cadastrado no sistema
+SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1489
+
+Mensagem apresentada: O campo "CODIGO BLOCO" ou "CODIGO CAMPO" (um ou outro)
+obrigatoriamente deve ser preenchido.
+
+Situação em que ocorre: O campo "CODIGO BLOCO" ou "CODIGO CAMPO” (um ou outro)
+obrigatoriamente deve ser preenchido.
+
+Ação corretiva: É preciso preencher um dos dois campos para ser validado!
+
+Código da validação: 1492
+
+Mensagem apresentada: O campo "POCO ANTERIOR INVESTIGACAO” não pode ser
+preenchido, pois o campo "POCO INVESTIGACAO" está preenchido como "S”.
+
+Situação em que ocorre: O campo "POCO ANTERIOR INVESTIGACAO" não pode ser
+preenchido, pois o campo "POCO INVESTIGACAO" está preenchido como "S”.
+
+Ação corretiva: Não é necessário preencher esse campo!
+
+Código da validação: 1493
+
+Mensagem apresentada: O campo "CODIGO BACIA PORTARIA” foi preenchido com um valor
+inválido ([Valor informado]).
+
+Situação em que ocorre: Quando o "CODIGO BACIA PORTARIA” é preenchido com um valor
+que não foi encontrado na base do SIGEP.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Ação corretiva: Preencher o campo "CODIGO BACIA PORTARIA" com um código cadastrado no
+sistema SIGEP. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1494
+
+Mensagem apresentada: O campo "POCO ANTERIOR INVESTIGACAO" informado não é um
+poço de investigação, valor inválido ([Valor informado]).
+
+Situação em que ocorre: Quando o "POCO ANTERIOR INVESTIGACAO”" informado não for
+identificado como poço de investigação.
+
+Ação corretiva: Preencher o campo "POCO ANTERIOR INVESTIGACAO" com um Poço que seja
+uma investigação válida. Ver consulta de códigos do i-Engine.
+
+Código da validação: 1497
+
+Mensagem apresentada: O campo "Tipo Categoria Poço" foi preenchido com valor inválido, favor
+inserir um valor válido.
+
+Situação em que ocorre: Quando o "Tipo Categoria Poço” não foi inserido com valor válido.
+
+Ação corretiva: Preencher o campo "Tipo Categoria Poço” para ser validado.
+
+Código da validação: 1816
+
+Mensagem apresentada: As coordenadas do alvo informadas na aba Notificação obrigatoriamente
+devem ser iguais às coordenadas de um dos objetivos informados na aba Prospecto.
+
+Situação em que ocorre: Quando os campos "LATITUDE PROV ALVO" e
+"LONGITUDE PROV ALVO" da aba Notificação não forem simultaneamente correspondentes a
+"LATITUDE PROV ALVO" e "LONGITUDE PROV ALVO" de nenhum dos objetivos informados na
+aba Prospecto.
+
+Ação corretiva: Preencher os campos "LATITUDE PROV ALVO" e "LONGITUDE PROV ALVO"
+
+da aba Notificação com valores iguais a "LATITUDE PROV ALVO" e "LONGITUDE PROV ALVO”
+de um dos objetivos informados na aba Prospecto.
+
+Código da validação: 1817
+
+Mensagem apresentada: O campo "LATITUDE PROV ALVO" não pode ser preenchido quando o
+"TIPO CATEGORIA POCO" for preenchido com valores de 1 a 6.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 BOBA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+
+Situação em que ocorre: Quando a "LATITUDE PROV ALVO" for preenchida para poços das
+categorias: 1 (Pioneiro), 2 (Estratigráfico), 3 (Extensão), 4 (Pioneiro Adjacente), 5 (Prospecto Mais
+Raso) e 6 (Prospecto Mais Fundo).
+
+Ação corretiva: Não preencher o campo "LATITUDE PROV ALVO" para poços das categorias: 1
+(Pioneiro), 2 (Estratigráfico), 3 (Extensão), 4 (Pioneiro Adjacente), 5 (Prospecto Mais Raso) ou 6
+(Prospecto Mais Fundo).
+
+Código da validação: 1818
+
+Mensagem apresentada: O campo "LATITUDE PROV ALVO" é de preechimento obrigatório
+quando o campo "TIPO CATEGORIA POCO" for preenchido com os valores de 7 a 10.
+
+Situação em que ocorre: Quando a "LATITUDE PROV ALVO" não for preenchido e o campo
+"TIPO CATEGORIA POCO" for preenchido com os valores : 7 (Produção), 8 (Injeção), 9 (Especial)
+ou 10 (Estocagem).
+
+Ação corretiva: Preencher o campo "LATITUDE PROV ALVO” para poços das categorias: 7
+(Produção), 8 (Injeção), 9 (Especial) ou 10 (Estocagem).
+
+Código da validação: 1819
+
+Mensagem apresentada: O campo "LONGITUDE PROV ALVO” não pode ser preenchido quando
+o "TIPO CATEGORIA POCO" for preenchido com os valores de 1 a 6.
+
+Situação em que ocorre: Quando a "LONGITUDE PROV ALVO" for preenchida para paços das
+categorias: 1 (Pioneiro), 2 (Estratigráfico), 3 (Extensão), 4 (Pioneiro Adjacente), 5 (Prospecto Mais
+Raso) e 6 (Prospecto Mais Fundo).
+
+Ação corretiva: Não preencher o campo "LONGITUDE PROV ALVO" para poços das categorias:
+
+1 (Pioneiro), 2 (Estratigráfico), 3 (Extensão), 4 (Pioneiro Adjacente), 5 (Prospecto Mais Raso) e 6
+(Prospecto Mais Fundo).
+
+Código da validação: 1820
+
+Mensagem apresentada: O campo "LONGITUDE PROV ALVO” é de preechimento obrigatório
+quando o campo "TIPO CATEGORIA POCO" for preenchido com os valores de 7 a 10.
+
+Situação em que ocorre: Quando a "LONGITUDE PROV ALVO" não for preenchido e o campo
+
+"TIPO CATEGORIA POCO" for preenchido com os valores : 7 (Produção), 8 (Injeção), 9 (Especial)
+ou 10 (Estocagem).
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizar081 BIA
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Ação corretiva: Preencher o campo "LONGITUDE PROV ALVO" para poços das categorias: 7
+(Produção), 8 (Injeção), 9 (Especial) e 10 (Estocagem).
+
+Código da validação: 1821
+
+Mensagem apresentada: Para poços que não são de investigação (Poço Investigação = N) é
+obrigatório o preenchimento de pelo menos um registro na aba Revestimentos.
+
+Situação em que ocorre: Quando o campo "Poço Investigação” for preenchido com valor "N” e não
+for preenchido nenhum registro na aba Revestimentos.
+
+Ação corretiva: Preencher pelo menos um revestimento quando o campo Poço Investigação for
+preenchido com valor "N”.
+
+Código da validação: 1842
+
+Mensagem apresentada: O campo "PREVISAO SHALLOW HAZARD" deve ser preenchido com
+"S" (sim) , quando o campo "POCO INVESTIGACAO" for Sim.
+
+Situação em que ocorre: Quando o campo "POCO INVESTIGACAO”" for preenchido com o valor
+Sim e o campo "PREVISAO SHALLOW HAZARD" estiver preenchido com Não.
+
+Ação corretiva: Preencher o campo "PREVISAO SHALLOW HAZARD" com Sim ou alterar o
+campo "POCO. INVESTIGACAO” para Não.
+
+Código da validação: 1940
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA COD GRUPO" do conjunto de
+informações de "Prospectos” foi preenchido com valor que não está cadastrado na base de dados
+[Valor informado] ou não existe associação com a bacia informada na aba DADOS BASICOS.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA COD GRUPO" for preenchido
+com um código que não esteja cadastrado no SIGEP ou o código não esteja associado à bacia
+informada para este poço.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA COD GRUPO" com um código
+
+cadastrado no sistema SIGEP e que esteja associado à bacia informada no campo "Bacia" (aba
+DADOS BASICOS). Ver consulta de códigos do i-Engine.
+
+Código da validação: 1941
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA COD FORMACAO” do conjunto de
+
+informações de "Prospectos” foi preenchido com valor que não está cadastrado na base de dados
+[Valor informado] ou não existe associação com a bacia informada na aba DADOS BASICOS.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA COD FORMACAO" for
+preenchido com um código que não esteja cadastrado no SIGEP ou o código não esteja associado
+à bacia informada para este poço.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA COD FORMACAO" com um código
+cadastrado no sistema SIGEP e que esteja associado à bacia informada no campo "Bacia" (aba
+DADOS BASICOS). Ver consulta de códigos do i-Engine.
+
+Código da validação: 1942
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA COD MEMBRO” do conjunto de
+informações de "Prospectos” foi preenchido com valor que não está cadastrado na base de dados
+[Valor informado] ou não existe associação com a bacia informada na aba DADOS BASICOS.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA COD MEMBRO" for preenchido
+com um código que não esteja cadastrado no SIGEP ou o código não esteja associado à bacia
+informada para este poço.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA COD MEMBRO” com um código
+cadastrado no sistema SIGEP e que esteja associado à bacia informada no campo "Bacia" (aba
+DADOS BASICOS). Ver consulta de códigos do i-Engine.
+
+Código da validação: 1943
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA COD GRUPO" do conjunto de
+informações de "Formações" foi preenchido com valor que não está cadastrado na base de dados
+[Valor informado] ou não existe associação com a bacia informada na aba DADOS BASICOS.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA COD GRUPO" for preenchido
+com um código que não esteja cadastrado no SIGEP ou o código não esteja associado à bacia
+informada para este poço.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA COD GRUPO" com um código
+cadastrado no sistema SIGEP e que esteja associado à bacia informada no campo "Bacia" (aba
+DADOS BASICOS). Ver consulta de códigos do i-Engine.
+
+Código da validação: 1944
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA COD FORMACAO" do conjunto de
+informações de "Formações" foi preenchido com valor que não está cadastrado na base de dados
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
+[Valor informado] ou não existe associação com a bacia informada na aba DADOS BASICOS.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA COD FORMACAO" for
+preenchido com um código que não esteja cadastrado no SIGEP ou o código não esteja associado
+à bacia informada para este poço.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA COD FORMACAO" com um código
+cadastrado no sistema SIGEP e que esteja associado à bacia informada no campo "Bacia" (aba
+DADOS BASICOS). Ver consulta de códigos do i-Engine.
+
+Código da validação: 1945
+
+Mensagem apresentada: O campo "LITOESTRATIGRAFIA COD MEMBRO” do conjunto de
+informações de "Formações" foi preenchido com valor que não está cadastrado na base de dados
+[Valor informado] ou não existe associação com a bacia informada na aba DADOS BASICOS.
+
+Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA COD MEMBRO" for preenchido
+com um código que não esteja cadastrado no SIGEP ou o código não esteja associado à bacia
+informada para este poço.
+
+Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA COD MEMBRO” com um código
+
+cadastrado no sistema SIGEP e que esteja associado à bacia informada no campo "Bacia" (aba
+DADOS BASICOS). Ver consulta de códigos do i-Engine.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari081
