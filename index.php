@@ -10,11 +10,11 @@ include_once ("env.php");
 
 // ---------- INPUTS
 
-$report = 'NCRP';
+$report = 'NPP';
 
-$excel = './assets/excel/108_ncrp.xlsx';
+$excel = './assets/excel/081_NOTIFICACAO_PERFURACAO_POCO.xlsx';
 
-$pdf = './assets/pdf/crp_ncrp_manual.pdf';
+$pdf = './assets/pdf/NPP.pdf';
 $txt_output_filename = preg_replace('/[\.\/\w\-]+\/(.+)\.(.+)/', '\1', $pdf);
 $txt_output = TXT_OUTPUT_DIR . "/$txt_output_filename.txt";
 
@@ -118,6 +118,13 @@ foreach ($xlsx_sections as $key => $fields) {
         $f = trim(str_replace('_', ' ', $field));
         if (!array_key_exists($f, $txt_fields)) {
             echo "Field $f does not match any fields on TXT" . PHP_EOL;
+            $mapping[$field] = [
+                'field' => $field,
+                'type' => 'UNKNOWN',
+                'length' => 'UNKNOWN',
+                'required' => 'UNKNOWN',
+                'filling_rule' => 'UNKNOWN'
+            ];
         } else {
             $mapping[$field] = $txt_fields[$f];
         }
@@ -200,7 +207,6 @@ foreach ($mapping as $field => $rules)
 {
     $content = <<<EOF
     FIELD "$field" IS {$rules['type']}({$rules['length']}) {$rules['required']} 
-    RULES ARE {$rules['filling_rule']}
 
 
     EOF;
