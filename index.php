@@ -10,9 +10,11 @@ include_once ("env.php");
 
 // ---------- INPUTS
 
-$excel = './assets/excel/102-modelo-nd.xlsx';
+$report = 'NCRP';
 
-$pdf = './assets/pdf/102-modelo-nd.pdf';
+$excel = './assets/excel/108_ncrp.xlsx';
+
+$pdf = './assets/pdf/crp_ncrp_manual.pdf';
 $txt_output_filename = preg_replace('/[\.\/\w\-]+\/(.+)\.(.+)/', '\1', $pdf);
 $txt_output = TXT_OUTPUT_DIR . "/$txt_output_filename.txt";
 
@@ -132,17 +134,21 @@ $applyRules = function ($str) {
         return intval($str);
     }
 
-    if (preg_match('/Sim|Não|Condicional/', $str, $matches)) {
-        switch ($matches[0]) {
-            case 'Sim':
-                return 'REQUIRED';
-            case 'Não':
-                return 'NULLABLE';
-            case 'Condicional':
-                return 'CONDITIONAL';
-            default:
-                return 'UNKNOWN';
+    if (preg_match('/Sim|Não|Condicional/i', $str, $matches)) {
+
+        if (strcasecmp($matches[0], 'Sim') === 0) {
+            return 'REQUIRED';
         }
+
+        if (strcasecmp($matches[0], 'Não') === 0) {
+            return 'NULLABLE';
+        }
+
+        if (strcasecmp($matches[0], 'Condicional') === 0) {
+            return 'CONDITIONAL';
+        }
+
+        return 'UNKNOWN';
     }
 
     if (preg_match('/^(\d+).+(\d+).+/', $str, $matches)) {
@@ -161,7 +167,7 @@ foreach ($mapping as $section => $fields)
 {
     array_walk($fields, function ($field) use ($applyRules, &$mapping, $section, $fields) {
         $mapping[$section]['required'] = $applyRules($fields['required']);
-        $mapping[$section]['type'] = $applyRules($fields['type']);
+        $mapping[$section]['type'] = strtoupper($applyRules($fields['type']));
         $mapping[$section]['length'] = $applyRules($fields['length']);
         $mapping[$section]['filling_rule'] = $applyRules($fields['filling_rule']);
     });
@@ -170,6 +176,25 @@ foreach ($mapping as $section => $fields)
 // ---------- CREATE TXT WITH FIELDS AND THEIR RULES
 
 $output = fopen("./assets/txt/$txt_output_filename-FIELDS.txt", 'w');
+
+$header = <<<EOF
+$report
+
+
+EOF;
+fwrite($output, $header);
+
+foreach ($xlsx_sections as $section => $fields) 
+{
+    $fieldsList = implode(', ', array_filter($fields));
+    $content = <<<EOF
+    FIELDS OF SECTION "$section" ARE $fieldsList;
+    
+    EOF;
+    fwrite($output, $content);
+}
+
+fwrite($output, PHP_EOL);
 
 foreach ($mapping as $field => $rules)
 {
