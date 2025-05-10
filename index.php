@@ -8,16 +8,21 @@ require_once 'functions.php';
 
 include_once ("env.php");
 
+// ---------- INPUTS
+
+$excel = './assets/excel/081_NOTIFICACAO_PERFURACAO_POCO.xlsx';
+
+$pdf = './assets/pdf/NPP.pdf';
+$txt_output_filename = preg_replace('/[\.\/\w\-]+\/(.+)\.(.+)/', '\1', $pdf);
+$txt_output = TXT_OUTPUT_DIR . "/$txt_output_filename.txt";
+
 // ---------- PDF to TXT conversion
 
-$pdfh = new PdfToTxt('NPP', './assets/pdf/NPP.pdf', TXT_PATH);
+$pdfh = new PdfToTxt($txt_output_filename, $pdf, TXT_OUTPUT_DIR);
 $pdfh->setReloadPdf(false);
 $pdfh->convert();
 
-
 // ---------- XLSX PARSING
-
-$excel = EXCEL_PATH . '/081_NOTIFICACAO_PERFURACAO_POCO.xlsx';
 
 $xlsx_sections = [];
 try {
@@ -44,8 +49,6 @@ foreach ($sheetNames as $sn) {
 
 // ---------- TXT PARSING
 
-$txt = TXT_PATH . '/NPP.txt';
-
 $sanitizeStr = function ($str) {
     $find = ['.'];
     $replace = array_map(function ($el) {
@@ -59,14 +62,14 @@ $sanitizeStr = function ($str) {
 };
 
 try {
-    if (!file_exists($txt)) {
-        return new InvalidArgumentException("Path {$txt} does not exit");
+    if (!file_exists($txt_output)) {
+        return new InvalidArgumentException("Path {$txt_output} does not exit");
     }
 } catch (Exception $e) {
     echo $e->getMessage();
 }
 
-$content = file_get_contents($txt);
+$content = file_get_contents($txt_output);
 $chunks = preg_split('/^(Título:\s(.*))|(VALIDAÇÕES\sAPLICADAS\sAUTOMATICAMENTE\sAO\sARQUIVO\s)/m', $content);
 
 // Ignore introduction
@@ -135,6 +138,8 @@ $applyRules = function ($str) {
                 return 'NULLABLE';
             case 'Condicional':
                 return 'CONDITIONAL';
+            default:
+                return 'UNKNOWN';
         }
     }
 
@@ -162,17 +167,19 @@ foreach ($mapping as $section => $fields)
     });
 }
 
-// ---------- CREATE TXT WITH FIELDS AND RULES
+// ---------- CREATE TXT WITH FIELDS AND THEIR RULES
 
-$output = fopen('output.txt', 'w');
+$output = fopen("./assets/txt/$txt_output_filename-FIELDS.txt", 'w');
 
 foreach ($mapping as $field => $rules)
 {
     $content = <<<EOF
-    "$field" IS {$rules['type']}({$rules['length']}) {$rules['required']} 
+    FIELD "$field" IS {$rules['type']}({$rules['length']}) {$rules['required']} 
+    RULES ARE {$rules['filling_rule']}
 
 
     EOF;
-
     fwrite($output, $content);
 }
+
+fclose($output);
