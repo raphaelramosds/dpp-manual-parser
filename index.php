@@ -32,14 +32,13 @@ try {
 $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
 $reader->setReadDataOnly(true);
 $sheet = $reader->load($excel);
-
-$sheets = $sheet->getSheetNames();
+$sheetNames = $sheet->getSheetNames();
 
 // Get fields of each section
-foreach ($sheets as $s) {
-    $worksheet = $sheet->setActiveSheetIndexByName($s);
+foreach ($sheetNames as $sn) {
+    $worksheet = $sheet->setActiveSheetIndexByName($sn);
     $dataArray = $worksheet->toArray();
-    $xlsx_sections[$s] = $dataArray[0];
+    $xlsx_sections[$sn] = $dataArray[0];
 }
 
 
@@ -68,7 +67,7 @@ try {
 }
 
 $content = file_get_contents($txt);
-$chunks = preg_split('/^Título:\s(.*)/m', $content);
+$chunks = preg_split('/^(Título:\s(.*))|(VALIDAÇÕES\sAPLICADAS\sAUTOMATICAMENTE\sAO\sARQUIVO\s)/m', $content);
 
 // Ignore introduction
 array_shift($chunks);
@@ -78,6 +77,8 @@ $fields = [];
 foreach ($chunks as $c)
 {
     $str = trim($c);
+
+    $sec['str'] = $str;
 
     if (preg_match('/^Nome\sXML\:(.+)/m', $str, $matches)) {
         $sec['field'] = $sanitizeStr(trim($matches[1]));
@@ -93,6 +94,11 @@ foreach ($chunks as $c)
 
     if (preg_match('/^Obrigatoriedade\:(.+)/m', $str, $matches)) {
         $sec['required'] = trim($matches[1]);
+    }
+
+    
+    if (preg_match('/Preenchimento:\s*(.+)/s', $str, $matches)) {
+        $sec['filling_rule'] = trim($matches[1]);
     }
 
     $fields[] = $sec ?? [];
@@ -113,29 +119,60 @@ foreach ($xlsx_sections as $key => $fields) {
     });
 }
 
-// ---------- DATA PARSING
+// ---------- APPLY RULES ON MAPPED DATA
 
-$rules = function ($str) {
+$applyRules = function ($str) {
 
-    if (preg_match('/\d+/', $str, $matches)) {
+    if (preg_match('/^\d+$/', $str, $matches)) {
         return intval($str);
     }
 
-    if (preg_match('/(Sim)|(Não)/', $str, $matches)) {
-        return $matches[1] === 'Sim' ? true : false;
+    if (preg_match('/Sim|Não|Condicional/', $str, $matches)) {
+        switch ($matches[0]) {
+            case 'Sim':
+                return 'REQUIRED';
+            case 'Não':
+                return 'NULLABLE';
+            case 'Condicional':
+                return 'CONDITIONAL';
+        }
     }
 
-    if (preg_match('/(\d+).+(\d+).+/', $str, $matches)) {
+    if (preg_match('/^(\d+).+(\d+).+/', $str, $matches)) {
         array_shift($matches);
         if ($matches) {
             $matches = array_map('intval', $matches);
-            return [
-                'digits' => $matches[0] + $matches[1],
-                'dplaces' => $matches[1]
-            ];
+            return $matches[0] + $matches[1] . ',' . $matches[1];
         }
         return null;
     }
 
+    preg_replace('/(https\:\/\/[\w\|\.\/]+)|(.+Visualizar\sManual\sda\sCarga)/', '', $str);
+
     return $str;
 };
+
+foreach ($mapping as $section => $fields) 
+{
+    array_walk($fields, function ($field) use ($applyRules, &$mapping, $section, $fields) {
+        $mapping[$section]['required'] = $applyRules($fields['required']);
+        $mapping[$section]['type'] = $applyRules($fields['type']);
+        $mapping[$section]['length'] = $applyRules($fields['length']);
+        $mapping[$section]['filling_rule'] = $applyRules($fields['filling_rule']);
+    });
+}
+
+// ---------- CREATE TXT WITH FIELDS AND RULES
+
+$output = fopen('output.txt', 'w');
+
+foreach ($mapping as $field => $rules)
+{
+    $content = <<<EOF
+    "$field" IS {$rules['type']}({$rules['length']}) {$rules['required']} 
+
+
+    EOF;
+
+    fwrite($output, $content);
+}
