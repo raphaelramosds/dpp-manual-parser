@@ -10,9 +10,9 @@ include_once ("env.php");
 
 // ---------- INPUTS
 
-$excel = './assets/excel/081_NOTIFICACAO_PERFURACAO_POCO.xlsx';
+$excel = './assets/excel/102-modelo-nd.xlsx';
 
-$pdf = './assets/pdf/NPP.pdf';
+$pdf = './assets/pdf/102-modelo-nd.pdf';
 $txt_output_filename = preg_replace('/[\.\/\w\-]+\/(.+)\.(.+)/', '\1', $pdf);
 $txt_output = TXT_OUTPUT_DIR . "/$txt_output_filename.txt";
 
@@ -126,6 +126,8 @@ foreach ($xlsx_sections as $key => $fields) {
 
 $applyRules = function ($str) {
 
+    preg_replace('/\w+:\/\/[^\s]+|.*?Visualizar\sManual\sda\sCarga.*/', '', $str);
+
     if (preg_match('/^\d+$/', $str, $matches)) {
         return intval($str);
     }
@@ -151,8 +153,6 @@ $applyRules = function ($str) {
         }
         return null;
     }
-
-    preg_replace('/(https\:\/\/[\w\|\.\/]+)|(.+Visualizar\sManual\sda\sCarga)/', '', $str);
 
     return $str;
 };
