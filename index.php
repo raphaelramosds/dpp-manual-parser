@@ -3,9 +3,8 @@
 use raphaelramosds\PdfToTxt\PdfToTxt;
 
 require 'vendor/autoload.php';
-
+require 'TxtParser.php';
 require_once 'functions.php';
-
 include_once ("env.php");
 
 // ---------- INPUTS
@@ -24,7 +23,7 @@ $pdfh = new PdfToTxt($txt_output_filename, $pdf, TXT_OUTPUT_DIR);
 $pdfh->setReloadPdf(false);
 $pdfh->convert();
 
-// ---------- XLSX PARSING
+// ---------- GET FIELDS AND SECTIONS FROM XLSX
 
 $xlsx_sections = [];
 try {
@@ -49,7 +48,7 @@ foreach ($sheetNames as $sn) {
 }
 
 
-// ---------- TXT PARSING
+// ---------- GET FIELDS FROM TXT
 
 $sanitizeStr = function ($str) {
     $find = ['.'];
@@ -182,7 +181,9 @@ foreach ($mapping as $section => $fields)
 
 // ---------- CREATE TXT WITH FIELDS AND THEIR RULES
 
-$output = fopen("./assets/txt/$txt_output_filename-FIELDS.txt", 'w');
+$output_filename = "./assets/txt/$txt_output_filename-FIELDS.txt";
+
+$output = fopen($output_filename, 'w');
 
 $header = <<<EOF
 $report
@@ -214,3 +215,10 @@ foreach ($mapping as $field => $rules)
 }
 
 fclose($output);
+
+// ---------- PARSE SECTIONS AND FIELDS OF TXT
+
+$tp = new TxtParser($output_filename);
+
+echo var_dump($tp->getFieldsRules());
+
