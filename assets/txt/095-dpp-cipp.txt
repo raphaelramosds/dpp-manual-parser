@@ -1,0 +1,863 @@
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+I-Englne
+Serviço de Processamento de Dados da ANP
+
+COMUNICAÇÃO DE INÍCIO DE PERFURAÇÃO DE POÇO - CIPP
+
+OBJETIVOS DA CARGA
+
+O envio deste conjunto de informação atende a Resolução ANP 699/2017, que estabelece, entre os
+documentos de poços devidos durante a vigência dos contratos de E&P, a Comunicação de Início de
+Perturação de Poço (CIPP). O envio da CIPP tem como objetivo informar à ANP o início de perfuração de
+todo poço em território nacional.
+
+SUPERINTENDÊNCIAS RELACIONADAS
+
+GLOSSÁRIO
+
+CONCEITOS RELATIVOS A DADOS COMUNICACAO
+
+Identificador Externo
+
+Código próprio de cada Agente Regulado para identificar sua carga, permitindo que ele rastreie as
+informações enviadas à ANP. Os valores informados não são criticados pela ANP e é devolvido no
+arquivo de log da carga.
+
+Bloco
+
+Nome oficial do bloco onde será perfurado este prospecto, se for o caso de poço dentro de área
+exploratória, incluindo aí plano de avaliação. Ex: RIOP-T-20. Atenção: refere-se ao nome do bloco,
+conforme Edital de Licitação, e não ao nome do contrato.
+
+Campo
+Código do campo onde será perfurado este prospecto, se for o caso de poço dentro de campo de
+produção, conforme consulta no sistema
+
+Nome do Poço para Operador
+
+Identificação do poço dada pelo operador, previamente ao início da perfuração na carga da ANP,
+quando então o poço receberá sua nomenclatura oficial. Ou para poços repetidos, o nome do poço
+operador diferente da carga de NPP realizada para o poço original, ou da CIPP, de repetições
+anteriores.
+
+Poço Repetido?
+Indicação se o poço iniciado trata-se de repetição de outro poço anteriormente perdido.
+
+Nome Poco ANP
+https://dpp.anp.gov.brilengine/Manual/Visualizar095
+
+1118
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Nome do poço, conforme codificação da ANP, que está sendo repetido por aquele cuja CIPP está
+sendo enviada. No caso de não ser a primeira repetição, informar o nome do último poço da
+sequência.
+
+Código da Sonda
+Código da sonda que iniciará a perfuração do poço.
+
+Latitude da Base
+Latitude do ponto onde se localiza a cabeça do poço, pelo datum SIRGAS2000, em formato de
+coordenadas geográficas (+GG:MM:SS,SSS).
+
+Longitude da Base
+Longitude do ponto onde se localiza a cabeça do poço, pelo datum SIRGAS2000, em formato de
+coordenadas geográficas (+GG:MM:SS,SSS).
+
+Cota Altimétrica BAP
+Cota altimétrica da boca do antepoço em relação ao nível do mar, em metros (m).
+
+Lâmina d'água
+Informar a medida da lâmina d'água na locação, em metros (m).
+
+Mesa rotativa
+Informar a cota altimétrica da mesa rotativa em relação ao nível do mar, em metros (m).
+
+Data de Inlclo da perfuração
+Data na qual a perfuração foi iniciada.
+
+Hora de Inlclo da perfuração
+Hora na qual a perfuração foi iniciada.
+
+Código da Ilcença amblental
+Informar um código da "Licença Ambiental" cadastrado na base de dados da ANP com o status
+válido e que autoriza a perfuração deste poço.
+
+Observações
+Preencher este campo com informações complementares, descrevendo quaisquer particularidades
+ou detalhes relevantes relacionados à perfuração do poço.
+
+ETAPAS PARA O PROCEDIMENTO DE ENVIO DE CARGA VIA XML
+
+O procedimento para a “Carga de Dados via Intemet” consiste nas seguintes etapas:
+e Geração do arquivo XML pelo agente regulado;
+* Compactação do arquivo XML em arquivo zip pelo agente regulado;
+e Assinatura digital do arquivo zip (caso necessário) em formato p7s pelo agente regulado;
+* Envio do arquivo zip ou p7s pelo agente regulado via Web Service;
+* Validação automática do arquivo XML feita pela ANP;
+e Reenvio pelo agente regulado dos arquivos não carregados ou posteriormente reprovados
+pela ANP.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 28
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+O formato do arquivo deve ser compatível com o validador XSD da carga que acompanha este
+manual.
+
+A nomenclatura do arquivo é padronizada e obedece ao formato 095 RAIZ-
+CNPJ AAAAMMDDHHMM TTTTTTTITTTITTTddd, onde:
+
+* 095 é o número identificador da carga e não deve ser alterado.
+
+* RAIZ-CNPJ são os 8 primeiros dígitos (sem ponto ou barra) do CNPJ da empresa operadora
+que está enviando os dados para a ANP.
+
+» AAAAMMDD é a data de envio do arquivo, sendo AAAA 4 dígitos correspondentes ao ano
+(ex.: 2011), MM 2 dígitos correspondentes ao mês (ex.: 04 para abril) e DD dois dígitos
+correspondentes ao dia do mês.
+
+» HHMM é a hora de envio do arquivo, sendo HH 2 dígitos correspondentes à hora e MM 2
+dígitos correspondentes ao minuto. Não é necessário que a hora seja exatamente a hora de
+carga. Isso serve apenas para diferenciar as versões carregadas pela mesma empresa
+operadora em determinada data.
+
+e TTTITTTTTITTTTT são 15 dígitos livres para melhor identificação do arquivo. Pode ser
+omitido e não deve conter espaços vazios.
+
+» ddd é a extensão do arquivo: Será 'xml' para o arquivo XML, 'zip' para o arquivo compactado
+e 'p7s' para o arquivo assinado
+
+Exemplo: 095 33000167 201205231523 ABCDEF 123.xml (arquivo enviado pela Petrobrás no dia
+23/05/2012 às 15:23 referente a dado identificado como ABCDEF 123).
+Atenção aos pontos a segulr:
+
+1) Este aquivo pode ser enviado assinado digitalmente. Para isso assine o arquivo ZIP e envie para
+a ANP o arquivo .P7S resultante, com o Zip anexado intemamente. Maiores detalhes no Manual do
+Webservice Externo (../../Ajuda).
+
+2) O arquivo ZIP deve ter o mesmo nome utilizado para o arquivo XML.
+
+3) Caso a carga não tenha sido efetuada por alguma falha no envio ou erro no preenchimento, um
+novo arquivo deverá ser encaminhado com as devidas alterações de data e/ou hora.
+
+4) Os arquivos com status “rejeitado” e “parcialmente carregado” não tiveram seus dados
+carregados no banco de dados da ANP e, portanto, deverão ser corrigidos e enviados novamente. O
+reenvio deve seguir o mesmo processo cujas etapas estão acima enumeradas.
+
+ENVIO DA CARGA VIA ARQUIVO EXCEL
+
+A opção de envio de carga através de planilhas Excel está disponível para esta carga. Para maiores
+informações consulte o Manual para envio de carga por arquivo excel (../../Ajuda).
+
+DESCRIÇÃO DA NATUREZA DOS CAMPOS
+
+A natureza do campo sinaliza o tipo de dado que pode ser informado num determinado campo, as
+principais são:
+* Ano- Ano no formato AMAM.
+* Ano Mês - Ano e mês no formato AAAAMM. Não informar caracteres de separação entre o
+anoeomês.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 18
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+* Ano Trimestre - Ano e trimestre no formato AAAAT. Não informar caracteres de separação
+entre o ano e o trimestre.
+
+e CNPJ - Número válido de um Cadastro Nacional de Pessoa Jurídica. Informar apenas dígitos.
+
+* CPF - Número válido de um Cadastro de Pessoa Física. Informar apenas dígitos.
+
+* Coordenada - Coordenada de um local (Latitude/l ongitude) no formato (+GG:MM:SS,SSS).
+
+e Data - Dia, mês e ano no formato YYYY-MM-DD (Exemplo: 2002-09-24).
+
+» Data hora - Dia, mês, ano, hora, minuto e segundo no formato YYYY-MM-DDThh:mm:ss.
+Deve ter 19 caracteres. (Exemplo: 2002-05-30T09:00:00).
+
+e Domínio - Lista de possíveis valores que podem ser informados, separados por vírgula.
+
+* Imagem - Imagem no formato 'JPG' ou 'GIF".
+
+* Mês - Mês no formato numérico (MM).
+
+* Número Decimal - Número com uma parte inteira e outra fracionária, separado por vírgula.
+(Ex.: (2,3) = 27,354).
+
+* Número Decimal Negativo - Número negativo com uma parte inteira e outra fracionária,
+separado por vírgula. (Ex.: (2,3) = -27,354)
+
+* Número Decimal Positivo - Número positivo com uma parte inteira e outra fracionária,
+separado por vírgula. (Ex.: (2,3) = 27,354)
+
+* Número Natural - É um número inteiro não-negativo (0, 1, 2,3, ...).
+
+* Número Inteiro - São constituídos dos números naturais (0, 1, 2, ...; e dos seus simétricos (0,
+4,2,
+
+* PDF -Arquivo no formato PDF.
+
+* Shapefile - Arquivo no formato SHP a ser gravado num campo do tipo BLOB no banco de
+dados.
+
+* Sim/Não - Preencher com "S” para sim e "N” para não.
+
+* Texto - Texto livre, obedecendo ao tamanho máximo de caracteres definido.
+
+* UF - Sigla da Unidade da Federação. Informar: AC, AL, AM, AP, BA, CE, DF, ES, GO, MA,
+MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP ou TO.
+
+DETALHES DE PREENCHIMENTO DOS CAMPOS
+
+- Neste grupo de Informações devem ser preenchidos os dados da carga de
+Comunicação de Início de Perfuração de Poço — CIPP. Quantidade de registros
+esperados para este grupo de Informação: Mínimo: 1 / Máximo: 1.
+
+Título: Identificador Externo
+Nome XML: IDENTIFICADOR EXTERNO
+Unidade de Medida: N/A
+
+Natureza: Texto
+Tamanho: 50
+Obrigatoriedade: Não
+
+Preenchimento: Código próprio de cada Agente Regulado para identificar sua carga,
+
+permitindo que ele rastreie as informações enviadas à ANP. Os valores informados não são
+criticados pela ANP e é devolvido no arquivo de log da carga.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 48
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Bloco
+Nome XML: COD BLOCO
+Unidade de Medida: N/A
+
+Natureza: Texto
+Tamanho: 10
+Obrigatoriedade: Condicional
+
+Preenchimento: Não é permitido informar os campos Bloco e Campo simultaneamente na
+mesma comunicação de perfuração de poço - carga CIPP. Obrigatório se o campo Campo não
+for preenchido. O código do Bloco só será considerado válido, se estiver cadastrado na base
+de dados da ANP e Ativo. O código de Bloco só será considerado válido, se possuir um
+contrato válido associado a ele na base de dados da ANP. O número da raiz do CNPJ do
+operador do contrato associado ao Bloco deve ser igual a raiz do CNPJ do usuário autenticado
+no sistema que está realizando o envio da carga.
+
+Título: Campo
+Nome XML: COD CAMPO
+Unidade de Medida: N/A
+
+Natureza: Inteiro Positivo
+Tamanho: 10
+Obrigatoriedade: Condicional
+
+Preenchimento: Cadastro de Campos no sistema SIGEP. O código do Campo só será
+considerado válido se estiver cadastrado na base de dados da ANP e o campo estiver ativo. O
+código do Campo só será considerado válido se possuir um contrato válido associado a ele na
+base de dados da ANP. Obrigatório se o campo Bloco não for preenchido. O número da raiz do
+CNPJ do operador do contrato associado ao Campo deve ser igual à raiz do CNPJ associado
+ao usuário autenticado no sistema que está realizando o envio da carga.
+
+Título: Nome do Poço para Operador
+Nome XML: NOM POCO OPERADOR
+Unidade de Medida: N/A
+
+Natureza: Texto
+Tamanho: 20
+Obrigatoriedade: Sim
+
+Preenchimento: O Nome do Poço para o Operador deve ser o mesmo cadastrado na carga
+NPP previamente aprovada pela ANP. Em caso de poço repetido deve ser o nome do poço
+dado pelo operador diferente do carregado na carga NPP realizada para o poço original ou da
+CIPP de repetições anteriores. No caso de poço repetido, o Nome do Poço para o Operador
+não pode pertencer a outro poço já presente na base de dados da ANP, exceto se for uma nova
+versão de CIPP já enviada.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 58
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Poço Repetido?
+Nome XML: IND POCO REPETIDO
+Unidade de Medida: N/A
+
+Natureza: Texto
+Tamanho: 1
+Obrigatoriedade: Sim
+
+Preenchimento: Valores válidos: S — Sim, N — Não.
+
+Título: Nome Poço ANP
+Nome XML: NOM POCO ANP
+Unidade de Medida: N/A
+
+Natureza: Texto
+Tamanho: 20
+Obrigatoriedade: Condicional
+
+Preenchimento: Caso se trate de poço repetido, é obrigatório o preenchimento do "Nome
+Poço ANP”. Caso não se trate de poço repetido, o "Nome Poço ANP” não pode ser preenchido.
+Caso o poço seja repetido, o "Nome Poço ANP" deve estar cadastrado na base de dados da
+ANP e deve estar associado ao Bloco ou Campo informado na carga.
+
+Título: Código da Sonda
+Nome XML: COD SONDA
+Unidade de Medida: N/A
+
+Natureza: Inteiro Positivo
+Tamanho: 10
+Obrigatoriedade: Sim
+
+Preenchimento: O Código da Sonda deve estar previamente cadastrado na base de dados
+ANP.
+
+Título: Latitude da Base
+Nome XML: MED LATITUDE BASE
+Unidade de Medida: N/A
+
+Natureza: Coordenada
+Tamanho: 13
+Obrigatoriedade: Sim
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 8
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato
+“+GG:MM:SS,SSS” onde :GG- Graus, MM minutos, SS segundos parte inteira e SSS parte
+decimal dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “-*
+negativo.
+
+Título: Longitude da Base
+Nome XML: MED LONGITUDE BASE
+Unidade de Medida: N/A
+
+Natureza: Coordenada
+Tamanho: 13
+Obrigatoriedade: Sim
+
+Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato
+“+GG:MM:SS,SSS” onde :GG- Graus, MM minutos, SS segundos parte inteira e SSS parte
+decimal dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “-*
+negativo.
+
+Título: Cota Altimétrica BAP
+Nome XML: VAL COTA ALTIMETRICA
+Unidade de Medida: METROS
+
+Natureza: DECIMAL
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Condicional
+
+Preenchimento: Se o poço informado na carga CIPP for terrestre, então o campo Cota
+Altimétrica BAP deve ser preenchido com valor maior que Zero "0”. Se o poço informado na
+carga CIPP for submarino, então o campo Cota Altimétrica BAP deve ser preenchido com valor
+igual a zero "0".
+
+Título: Lâmina d'água
+Nome XML: VAL LAMINA DAGUA
+Unidade de Medida: METROS
+
+Natureza: Decimal
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
+Obrigatoriedade: Condicional
+
+Preenchimento: Se o poço informado na carga CIPP for terrestre, então o campo Lâmina
+d'água deve ser preenchido com valor igual a zero "0". Se o poço informado na carga CIPP for
+submarino, então o campo Lâmina d'água deve ser preenchido com valor maior que zero "0" e
+menor ou igual a cinco mil duzentos e cinquenta "5250".
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 TnB
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Título: Mesa rotativa
+Nome XML: VAL MESA ROTATIVA
+Unidade de Medida: METROS
+
+Natureza: Decimal
+Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal
+Obrigatoriedade: Sim
+
+Preenchimento: Quando o poço informado na carga CIPP for terrestre, o campo Mesa
+Rotativa só será considerado válido se for preenchido com valor maior do que o valor
+informado no campo Cota Altimétrica BAP.
+
+Título: Data de inicio da perfuração
+Nome XML: DAT INICIO PERFURACAO
+Unidade de Medida: N/A
+
+Natureza: Data
+Tamanho: 10
+Obrigatoriedade: Sim
+
+Preenchimento: Obrigatório o preenchimento da data de início da pefuração do poço, que
+deve ser igual ou anterior à data de envio. Formato:dd/mm/aaaa.
+
+Título: Hora de inicio da perfuração
+Nome XML: HRA INICIO PERFURACAO
+Unidade de Medida: N/A
+
+Natureza: HORA
+Tamanho: 8
+Obrigatoriedade: Sim
+
+Preenchimento: Obrigatório o preenchimento da hora de início da pefuração do poço.Formato:
+HH:MM:SS
+
+Título: Código da licença ambiental
+Nome XML: COD LICENCA AMBIENTAL
+Unidade de Medida: N/A
+
+Natureza: Inteiro Positivo
+Tamanho: 10
+Obrigatoriedade: Condicional
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 BB
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Preenchimento: Obrigatório se o poço não tiver tido a licença ambiental enviada na carga da
+NPP. O código de licença ambiental só será válido se estiver previamente cadastrado na ANP
+com os status iguais a "Aprovado”.
+
+Título: Observações
+
+Nome XML: DSC OBSERVACAO PERFURACAO
+Unidade de Medida: N/A
+
+Natureza: Texto
+
+Tamanho: 1000
+
+Obrigatoriedade: Sim
+
+Preenchimento: N/A
+
+VALIDAÇÕES APLICADAS AUTOMATICAMENTE AO ARQUIVO
+
+Código da validação: 1
+
+Mensagem apresentada: O nome do arquivo não é válido.
+Situação em que ocorre: O nome do arquivo não obedece ao padrão estabelecido pela ANP.
+
+Ação corretiva: A nomenclatura do arquivo deve obedecer ao formato: x RAIZ-
+
+CNPJ AAAAMMDDHHMM TTTTITTTITTTITTddd, onde: ox é o número identificador da
+carga; RAIZ-CNPJ são os 8 primeiros dígitos (sem ponto ou barra) do CNPJ da empresa que
+está carregando os dados; AAAAMMDDHHMM é a data e hora de envio do arquivo no formato
+ano (AAAA), mês (MM), dia (DD), hora (HH) e minuto (MM); TT..T são 15 dígitos livres; ddd é a
+extensão do arquivo: Será 'zip' ou 'p7s' (para arquivos assinados digitalmente).
+
+Código da validação: 2
+
+Mensagem apresentada: A extensão do arquivo não é válida.
+
+Situação em que ocorre: O sistema i-engine foi programado para processar apenas arquivos
+com extensão .ZIP ou .P7S.
+
+Ação corretiva: O arquivo XML deve ser enviado compactado (.zip). Se houver a
+
+obrigatoriedade de assinatura digital, o arquivo 'zip' deve ser assinado, gerando o arquivo com
+extensão 'p7s'.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 ga
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Código da validação: 3
+
+Mensagem apresentada: Problema relacionado a Assinatura Digital.
+
+Situação em que ocorre: Este erro ocorre em duas situações: (1) quando o arquivo foi
+enviado SEM a assinatura digital, mas deveria ser assinado ou (2) quando o arquivo foi
+enviado COM a assinatura digital, mas não deveria ser assinado.
+
+Ação corretiva: Verifique a necessidade de assinatura digital do arquivo para o arquivo de
+carga que está sendo enviado. Tal informação deve constar no manual da carga.
+
+Código da validação: 4
+
+Mensagem apresentada: Assinatura Digital inválida.
+
+Situação em que ocorre: Não foi possível validar os dados do certificado usado para assinar o
+arquivo.
+
+Ação corretiva: É preciso assinar digitalmente o arquivo com um certificado digital emitido
+
+pela Autoridade Certificadora Raiz ICP-BRASIL e que este certificado esteja associado à
+mesma empresa do usuário que está enviando o arquivo.
+
+Código da validação: 5
+
+Mensagem apresentada: Falha ao recuperar informação de arquivo.
+
+Situação em que ocorre: Ao tentar ler os dados do certificado digital usado para assinar o
+arquivo o sistema não encontrou as informações que esperava encontrar.
+
+Ação corretiva: É preciso assinar o arquivo com um certificado digital válido, do tipo e-CNPJ,
+emitido por uma autoridade certificadora raiz brasileira.
+
+Código da validação: 6
+
+Mensagem apresentada: Arquivo ZIP inválido.
+Situação em que ocorre: Não foi possível a leitura e descompactação do arquivo ZIP.
+
+Ação corretiva: O arquivo enviado para a ANP deve estar compactado com o compactador
+ZIP. No caso do arquivo assinado digitalmente, o arquivo ZIP deve ser assinado.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 1018
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Código da validação: 7
+
+Mensagem apresentada: Conteúdo do arquivo Zip não é válido.
+Situação em que ocorre: Não foi encontrado dentro do ZIP o arquivo esperado pelo sistema.
+
+Ação corretiva: Verifique se dentro do arquivo consta apenas um 1 XML.
+
+Código da validação: 9
+
+Mensagem apresentada: O arquivo tem falha de estrutura ou dados.
+
+Situação em que ocorre: O formato do arquivo XML não obedece ao formato exigido para o
+tipo de arquivo. Possivelmente a estrutura do arquivo não está válida conforme as regras
+estabelecidas no arquivo XSD.
+
+Ação corretiva: Verifique o detalhamento da mensagem para verificar os problemas
+encontrados. Também é possível validar o arquivo no site do sistema antes de envia-lo à ANP.
+
+Código da validação: 10
+
+Mensagem apresentada: O nome do XML não é válido.
+
+Situação em que ocorre: O nome do arquivo XML presente no conteúdo do arquivo
+compactado não está no padrão esperado.
+
+Ação corretiva: O arquivo XML deve ter o mesmo nome que o arquivo ZIP, diferenciando
+apenas a extensão.
+
+Código da validação: 11
+
+Mensagem apresentada: Arquivo não encontrado.
+
+Situação em que ocorre: O arquivo XML faz referência um outro arquivo não encontrado no
+conteúdo do arquivo ZIP.
+
+Ação corretiva: Verifique se o arquivo citado no XML realmente está presente no pacote ZIP
+com o mesmo nome.
+
+Código da validação: 12
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 1118
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Mensagem apresentada: Arquivo ZIP inválido.
+Situação em que ocorre: O sistema não conseguiu ler o arquivo como um arquivo ZIP.
+
+Ação corretiva: Verifique se o arquivo realmente está compactado ou se o mesmo não está
+corrompido.
+
+Código da validação: 1994
+
+Mensagem apresentada: Não é possível informar Bloco [Valor informado] e Campo [Valor
+informado] simultaneamente na mesma carga CIPP.
+
+Situação em que ocorre: Quando os campos Bloco e Campo são preenchidos no mesmo
+arquivo da carga CIPP.
+
+Ação corretiva: Preencher somente Bloco ou Campo no arquivo da carga CIPP.
+
+Código da validação: 1995
+
+Mensagem apresentada: O código do bloco é de preenchimento obrigatório se o campo
+Campo não for preenchido.
+
+Situação em que ocorre: Quando os campos Bloco e Campo não são preenchidos.
+
+Ação corretiva: Preencher o campo Bloco quando o campo Campo não for preenchido.
+
+Código da validação: 1996
+
+Mensagem apresentada: O código do Bloco [Valor informado] informado não está cadastrado
+ou não possui uma situação válida na ANP.
+
+Situação em que ocorre: Quando o Bloco informado não estiver cadastrado ou não possuir
+uma situação válida na ANP.
+
+Ação corretiva: Informar um código de Bloco cadastrado na base de dados da ANP com a
+situação válida. Os códigos de bloco válidos podem ser consultados a partir do link: https://dpp-
+api.anp.gov.br/swagger/uifindex
+
+Código da validação: 1997
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 1218
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Mensagem apresentada: O código do Bloco [Valor informado] informado não possui um
+contrato válido associado ao seu cadastro na ANP.
+
+Situação em que ocorre: Quando o Bloco informado não possuir um contrato válido
+associado ao seu cadastro na ANP.
+
+Ação corretiva: Informar um código de Bloco com contrato válido associado ao seu cadastro.
+
+Código da validação: 1998
+
+Mensagem apresentada: A raiz do CNPJ do usuário que está enviando a carga não pode ser
+diferente da raiz do CNPJ do operador do contrato ao qual o bloco [[Valor informado]] pertence.
+
+Situação em que ocorre: Quando a raiz do CNPJ associado ao usuário que esta enviando a
+carga difere da raiz do CNPJ do operador do contrato ao qual o bloco pertence.
+
+Ação corretiva: Declarar apenas o Blocos associados ao operador autenticado no sistema
+DPP.
+
+Código da validação: 1999
+
+Mensagem apresentada: O código do Campo [Valor informado] informado não está
+cadastrado na base de dados ou o campo não possui uma situação válida na ANP.
+
+Situação em que ocorre: Quando o Campo informado não estiver cadastrado ou não estiver
+ativo na ANP.
+
+Ação corretiva: Informar um código de Campo cadastrado na base de dados da ANP com a
+
+situação ativa. Os códigos de campo válidos podem ser consultados a partir do link: https://dpp-
+api.anp.gov.br/swagger/uifindex
+
+Código da validação: 2000
+
+Mensagem apresentada: O código do Campo [Valor informado] informado não possui um
+contrato válido associado ao seu cadastro na ANP.
+
+Situação em que ocorre: Quando o Campo informado não possuir um contrato válido
+associado ao seu cadastro na ANP.
+
+Ação corretiva: Informar um código de Campo com contrato válido associado ao seu cadastro.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 1318
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Código da validação: 2001
+
+Mensagem apresentada: O código do campo é de preenchimento obrigatório se o campo
+Bloco não for preenchido.
+
+Situação em que ocorre: Quando os campos Bloco e Campo não são preenchidos.
+
+Ação corretiva: Preencher o campo Campo quando o campo Bloco não for preenchido.
+
+Código da validação: 2002
+
+Mensagem apresentada: O CNPJ associado ao usuário que está enviando a carga não pode
+ser diferente do CNPJ do operador do contrato ao qual o campo [[Valor informado]] pertence.
+
+Situação em que ocorre: CNPJ associado ao usuário que está fazendo a carga difere do
+CNPJ do operador do contrato ao qual o campo pertence.
+
+Ação corretiva: Verificar o código do campo e a vinculação a CNPJ do acesso do usuário que
+está tentando fazer a carga.
+
+Código da validação: 2003
+
+Mensagem apresentada: O Nome do Poço para Operador [Valor informado] não foi localizado
+na base de dados da ANP.
+
+Situação em que ocorre: Quando o nome do poço para operador informado não tiver sido
+localizado na base de dados da ANP para um poço que não seja poço repetido.
+
+Ação corretiva: Informar um nome do poço para operador cadastrado na base de dados da
+ANP e aprovado. O nome poço operador válido pode ser consultado a partir do link: https://dpp-
+api.anp.gov.br/swagger/uiindex
+
+Código da validação: 2004
+
+Mensagem apresentada: Poço repetido - Já existe um poço cadastrado na base de dados da
+ANP com o Nome Poço para Operador <[Valor informado]>.
+
+Situação em que ocorre: Poço repetido - Quando o Nome Paço para Operador já estiver
+cadastrado na base de dados da ANP.
+
+Ação corretiva: Poço repetido - Informar um nome poço para operador que não esteja
+cadastrado na base de dados da ANP.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 14118
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Código da validação: 2005
+
+Mensagem apresentada: O campo "Nome Poço ANP” é obrigatório para poço repetido = S.
+Situação em que ocorre: Quando o poço for repetido e não for informado o Nome Paço ANP.
+
+Ação corretiva: Preencher o atributo "Nome Poço ANP” quando o poço for repetido.
+
+Código da validação: 2006
+
+Mensagem apresentada: O campo "Nome Poço ANP” não pode ser preenchido quando o
+poço não for repetido.
+
+Situação em que ocorre: Quando o poço não for repetido e o atributo "Nome Poço ANP” tiver
+sido informado.
+
+Ação corretiva: Não preencher o atributo "Nome Poço ANP”.
+
+Código da validação: 2007
+
+Mensagem apresentada: O Nome do Poço ANP [Valor informado] não foi localizado na base
+de dados da ANP.
+
+Situação em que ocorre: Quando o nome do poço ANP informado não tiver sido localizado na
+base de dados da ANP.
+
+Ação corretiva: Informar um nome do poço ANP cadastrado na base de dados da ANP. O
+nome poço ANP válido pode ser consultado a partir do link: https://dpp-
+api.anp.gov.br/swagger/uifindex
+
+Código da validação: 2008
+
+Mensagem apresentada: O Código da Sonda [Valor informado] informado não está
+cadastrado na base de dados da ANP.
+
+Situação em que ocorre: Quando o código da sonda informado não estiver cadastrado na
+base de dados da ANP.
+
+Ação corretiva: Informar um código do nome da sonda cadastrado na base de dados da ANP.
+Os códigos válidos podem ser consultados a partir do link: https://dpp-
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 1518
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+api.anp.gov.br/swagger/uifindex
+
+Código da validação: 2009
+
+Mensagem apresentada: A Latitude da Base [Valor informado] informada é inválida.
+
+Situação em que ocorre: Quando a Latitude da Base não for preenchida com o formato pré-
+definido.
+
+Ação corretiva: Preencher o campo Latitude da Base com o formato de coordenada "-
++GG!MM'SS,SSS".
+
+Código da validação: 2010
+
+Mensagem apresentada: A Longitude da Base [Valor informado] informada é inválida.
+
+Situação em que ocorre: Quando a Longitude da Base não for preenchida com o formato pré-
+definido.
+
+Ação corretiva: Preencher o campo Longitude da Base com o formato de coordenada "-
++GG!MM'SS,SSS".
+
+Código da validação: 2011
+
+Mensagem apresentada: A Cota Altimétrica BAP [Valor informado] informada é inválida para
+poço terrestre.
+
+Situação em que ocorre: Quando a Cota Altimétrica BAP for preenchida com um valor menor
+ou igual a zero para poço terrestre.
+
+Ação corretiva: Informar valor maior que zero para a Cota Altimétrica BAP quando o poço for
+terrestre.
+
+Código da validação: 2012
+
+Mensagem apresentada: A Cota Altimétrica BAP [Valor informado] informada é inválida para
+poço submarino.
+
+Situação em que ocorre: Quando a Cota Altimétrica BAP for preenchida com um valor
+diferente de zero para poço submarino.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 1618
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Ação corretiva: Informar valor igual a zero para a Cota Altimétrica BAP quando o poço for
+submarino.
+
+Código da validação: 2013
+
+Mensagem apresentada: O valor informado de Lâmina d'água [Valor informado] é inválido
+para poço terrestre.
+
+Situação em que ocorre: Quando a Lâmina d'água for preenchida com um valor diferente de
+zero para poço terrestre.
+
+Ação corretiva: Informar valor igual a zero para a Lâmina d'água quando o poço for terrestre.
+
+Código da validação: 2014
+
+Mensagem apresentada: O valor informado de Lâmina d'água [Valor informado] é inválido
+para poço submarino.
+
+Situação em que ocorre: Quando a Lâmina d'água for preenchida com um valor menor ou
+igual a zero ou maior que 5250 para poço submarino.
+
+Ação corretiva: Informar valor maior que zero e menor ou igual a 5250 para a Lâmina d'água
+quando o poço for submarino.
+
+Código da validação: 2015
+
+Mensagem apresentada: O valor informado de Mesa Rotativa [Valor informado] deve ser
+maior que o valor informado no campo Cota Altimétrica BAP para poço terrestre.
+
+Situação em que ocorre: Quando o campo Mesa Rotativa for preenchido com um valor menor
+que o valor informado no campo Cota Altimétrica BAP e o poço informado na carga CIPP for
+terrestre.
+
+Ação corretiva: O campo Mesa Rotativa deve ser preenchido com valor maior que o valor
+informado no campo Cota Altimétrica BAP, caso o poço informado na carga CIPP seja terrestre.
+
+Código da validação: 2016
+
+Mensagem apresentada: A data informada [Valor informado] deve ser igual ou menor que a
+data de envio da carga.
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 1718
+
+12/06/2023, 14:01 Do poço ao posto - Visualizar Manual da Carga
+
+Situação em que ocorre: Quando a Data de Início da Perturação possuir formato inválido ou
+for maior que a data de envio da carga CIPP.
+
+Ação corretiva: Informar uma data de início da perfuração válida.
+
+Código da validação: 2017
+
+Mensagem apresentada: O Código de Licença Ambiental [Valor informado] é de
+preenchimento obrigatório quando o poço informado na carga CIPP não possuir um código de
+licença ambiental previamente cadastrado na NPP.
+
+Situação em que ocorre: Quando o código de licença ambiental não é informado na carga
+CIPP e o poço informado na carga CIPP não possuir um código de licença ambiental
+previamente cadastrado na NPP.
+
+Ação corretiva: Informar um código de licença ambiental cadastrado na base de dados da
+
+ANP com os status "Aprovado”. Em caso de dúvidas entre em contato através do e-mail
+cipp sepanp.gov.br.
+
+Código da validação: 2018
+
+Mensagem apresentada: O Código de Licença Ambiental [Valor informado] informado é
+inválido.
+
+Situação em que ocorre: Quando o código de licença ambiental informado não estiver
+cadastrado na base de dados da ANP ou possuir situação diferente de "Aprovado”.
+
+Ação corretiva: Informar um código de licença ambiental cadastrado na base de dados da
+
+ANP com os status "Aprovado”. Os códigos válidos podem ser consultados a partir do link:
+https://dpp-api.anp.gov.br/swagger/uilindex
+
+https://dpp.anp.gov.br/lengine/Manual/Visualizari095 1818
+

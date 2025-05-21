@@ -46,6 +46,7 @@ Campo texto livre para dissertar sobre o arquivo que será anexado.
 PROCURAR
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 1/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Botão para fazer o upload do arquivo que deve ser em formato de imagem, sendo aceito somente as
 extensões BMP, JPG e GIF e o tamanho máximo aceito é 5Mb. Após escolher o arquivo, deve-se
@@ -107,6 +108,7 @@ VALOR INCLINACAO MAXIMA
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
 
 2184
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Maior ângulo que a tangente à trajetória do poço em cada ponto estabelece em relação a uma linha
@@ -163,6 +165,7 @@ Data em que a presente notificação está sendo enviada.
 NOME POCO OPERADOR
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 vB
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Identificação do poço dada pelo operador previamente ao início da perfuração, quando então o poço
@@ -221,6 +224,7 @@ CONCEITOS RELATIVOS AO PROSPECTO
 TIPO OBJETIVO
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Tipo de Objetivo: "P” Principal; "S” Secundário. Deve haver apenas 1 objetivo principal. Caso haja certa
 dificuldade em se definir apenas 1 principal, arbitrar e colocar o outro como secundário, fazendo as
@@ -276,6 +280,7 @@ Valor esperado da espessura efetiva média da possível acumulação nos limites
 mapeada.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 P50 VALOR POROSIDADE
 Valor esperado da porosidade média da possível acumulação.
@@ -332,6 +337,7 @@ geocronologia, de acordo com os códigos exibidos na seção de Consultas do IEN
 LITOESTRATIGRAFIA CODIGO GRUPO
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Grupo em que foi depositada a camada sedimentar na qual se encontra o objetivo, em termos de
 
@@ -392,6 +398,7 @@ Base do objetivo em profundidade medida (Measured Depth).
 CONCEITOS RELATIVOS A PREVISÕES GEOLÓGICAS
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TIBA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 GEOCRONOLOGIA CODIGO PERIODO
 Período em que foi depositada a camada sedimentar, conforme quadro de previsões, de acordo com os
@@ -448,6 +455,7 @@ Número sequencial da fase informada.
 CODIGO SONDA
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Sonda que perfurará a fase, conforme código do SIGEP.
 
@@ -503,6 +511,7 @@ VALOR GRADIENTE FRATURA MINIMO
 Menor gradiente de fratura previsto para a fase.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 VALOR ECD MAXIMO SAPATA ANTERIOR
@@ -558,6 +567,7 @@ Número da fase a que o tubo de revestimento informado se refere.
 DIAMETRO
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 1084
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Diâmetro extemo do tubo de revestimento indicado.
 
@@ -613,6 +623,7 @@ Topo do revestimento em profundidade medida (Measured Depth).
 BPROFUNDIDADES BASE VERTICAL
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 11/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Base do revestimento em profundidade vertical (True Vertical Depth).
 
@@ -667,6 +678,7 @@ estimulação, teste.
 DATA PREVISAO INICIO
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 1284
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Data de previsão do início da atividade.
 
@@ -717,6 +729,7 @@ ANP.
 O formato do arquivo deve ser compatível com o validador XSD da carga que acompanha este manual.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 1384
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 A nomenclatura do arquivo é padronizada e obedece ao formato 081 RAIZ-
@@ -777,6 +790,7 @@ ano e o trimestre.
 e CNPJ - Número válido de um Cadastro Nacional de Pessoa Jurídica. Informar apenas dígitos.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 14/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 e CPF- Número válido de um Cadastro de Pessoa Física. Informar apenas dígitos.
@@ -842,6 +856,7 @@ Unidade de Medida: Não se aplica
 Natureza: INTEIRO
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 15/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Tamanho: 5
@@ -889,6 +904,7 @@ Natureza: TEXTO
 Tamanho: 4
 Obrigatoriedade: Sim
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 16/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Preenchimento: Não se aplica
@@ -933,6 +949,7 @@ Título: Intensidade da Variação da Trajetória / Dog Leg Severity (DLS)
 Nome XML: VALOR DOG LEG SEVERITY MAXIMO
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 17IBA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Unidade de Medida: graus/30 metros
 
@@ -979,6 +996,7 @@ Unidade de Medida: Não se aplica
 Natureza: DOMÍNIO
 Tamanho: 1
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 18/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Obrigatoriedade: Sim
 
@@ -1023,6 +1041,7 @@ Tamanho: 1000
 Obrigatoriedade: Não
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 1984
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Preenchimento: Não se aplica.
@@ -1067,6 +1086,7 @@ Preenchimento: Quando o campo "Poço Submarino” for preenchido com o valor "SI
 que o da "Cota Altimétrica BAP”.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2084
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Título: Pressão Máxima Prevista
 Nome XML: VALOR PREVISAO PRESSAO MAXIMA
@@ -1113,6 +1133,7 @@ Natureza: DOMÍNIO
 Tamanho: 1
 Obrigatoriedade: Sim
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2184
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Preenchimento: Valores válidos: S — Sim, N — Não.
@@ -1160,6 +1181,7 @@ cadastrado no sistema SIGEP. Para esta regra são considerados os registros da N
 passaram pelas validações do DPP e que estão com situação "EM ANÁLISE" ou "CARREGADO".
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 22/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Locação
@@ -1204,6 +1226,7 @@ Unidade de Medida: Não se aplica
 Natureza: TEXTO
 Tamanho: 12
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2384
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Obrigatoriedade: Não
 
@@ -1248,6 +1271,7 @@ dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo o
 Título: Longitude Provisória Base
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 248.
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Nome XML: LONGITUDE PROVISORIA BASE
@@ -1295,6 +1319,7 @@ Obrigatoriedade: Sim
 Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no formato *-
 +GG:MM:SS,SSS” onde :GG- Graus, MM minutos, SS segundos parte inteira e SSS parte decimal
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 25/84
+
 12/07/2023, 10:23 Do poço ao posto - Visualizar Manual da Carga
 dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “* negativo.
 
@@ -1340,6 +1365,7 @@ Título: Resevatório
 Nome XML: VALOR RESERVATÓRIO
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2684
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Unidade de Medida: Não se aplica
 
@@ -1384,6 +1410,7 @@ Preenchimento: O campo "Trapa" só deve ser considerado válido se for preenchid
 ou maior que 0 e igual ou menor que 1.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2TIBA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: P90 Área
@@ -1428,6 +1455,7 @@ Obrigatoriedade: Sim
 Preenchimento: Não se aplica
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 28/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Título: P90 Satóleo
 Nome XML: P90 VALOR SATOLEO
@@ -1472,6 +1500,7 @@ Preenchimento: Não se aplica
 Título: P50 Espessura
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 2984
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Nome XML: P50 VALOR ESPESSURA
@@ -1517,6 +1546,7 @@ Título: P50 Voip
 Nome XML: P50 VALOR VOIP
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 3084
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Unidade de Medida: milhões de m*
 
@@ -1561,6 +1591,7 @@ Nome XML: P10 VALOR POROSIDADE
 Unidade de Medida: %
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 31/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Natureza: DECIMAL
@@ -1604,6 +1635,7 @@ Nome XML: P10 VALOR VGIP
 Unidade de Medida: milhões de m*?
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 32/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Natureza: DECIMAL
 Tamanho: 13 dígitos na parte inteira e 2 dígitos na parte decimal.
@@ -1648,6 +1680,7 @@ Unidade de Medida: Não se aplica
 Natureza: INTEIRO
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 38
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Tamanho: 10
 Obrigatoriedade: Condicional
@@ -1692,6 +1725,7 @@ Unidade de Medida: Não se aplica
 Natureza: TEXTO
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Tamanho: 13
 Obrigatoriedade: Sim
@@ -1740,6 +1774,7 @@ Preenchimento: Para que a coordenada seja aceita pelo sistema deve estar no form
 
 dos segundos. As coordenadas devem ser indicadas com sinal de “+” positivo ou “* negativo. O
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 campo "Longitude Provisória Alvo Final" passa a ser obrigatório se o campo "Tipo de Poço” for
@@ -1785,6 +1820,7 @@ Unidade de Medida: metros
 Natureza: DECIMAL
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 3684
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
@@ -1831,6 +1867,7 @@ Título: Grupo
 Nome XML: LITOESTRATIGRAFIA CODIGO GRUPO
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 STIBA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Unidade de Medida: Não se aplica
 
@@ -1875,6 +1912,7 @@ preenchido com valor igual ou maior que zero.
 Título: Topo Profundidade Medida
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 au
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Nome XML: PROFUNDIDADES TOPO MEDIDA
@@ -1923,6 +1961,7 @@ Tamanho: 20
 Obrigatoriedade: Sim
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 ag
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Preenchimento: O campo "Nome Poço ANP” só será considerado válido se estiver cadastrado na
@@ -1971,6 +2010,7 @@ Obrigatoriedade: Sim
 Preenchimento: Valores válidos: S — Sim, N — Não.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Técnica de Periuração
@@ -2015,6 +2055,7 @@ Obrigatoriedade: Sim
 Preenchimento: Não se aplica
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 41/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Utilizado alargador?
@@ -2061,6 +2102,7 @@ Preenchimento: Para que o campo "Base Profundidade Vertical” seja considerado 
 preenchido com valor igual ou maior que zero.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 42/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Base Profundidade Medida
@@ -2105,6 +2147,7 @@ Obrigatoriedade: Sim
 Preenchimento: Não se aplica
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Riserless
@@ -2149,6 +2192,7 @@ Obrigatoriedade: Sim
 Preenchimento: Não se aplica
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: ECD Máximo na Sapata Anterior
@@ -2193,6 +2237,7 @@ Obrigatoriedade: Sim
 Preenchimento: Valores válidos: S — Sim, N — Não.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: MSR
@@ -2237,6 +2282,7 @@ Obrigatoriedade: Sim
 Preenchimento: Valores válidos: S — Sim, N — Não.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Título: Perfuração Overbalance
 Nome XML: PERFURACAO OVERBALANCE
@@ -2281,6 +2327,7 @@ Preenchimento: Valores válidos: S — Sim, N — Não.
 Título: Previsão Formações Reativas
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 4TIBA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Nome XML: PREVISAO FORMACOES REATIVAS
@@ -2329,6 +2376,7 @@ Obrigatoriedade: Sim
 Preenchimento: Não se aplica
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Contingente
@@ -2374,6 +2422,7 @@ Preenchimento: Para que o campo "Topo Profundidade Vertical" seja considerado v�
 preenchido com valor igual ou maior que zero.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Topo Profundidade Medida
@@ -2420,6 +2469,7 @@ Obrigatoriedade: Sim
 Preenchimento: Não se aplica
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Peso
@@ -2464,6 +2514,7 @@ Obrigatoriedade: Sim
 Preenchimento: Valores válidos: S — Sim, N — Não.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 51/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Dimensionamento APB
@@ -2508,6 +2559,7 @@ Obrigatoriedade: Sim
 Preenchimento: Valores válidos: S — Sim, N — Não.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 E28A
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Dimensionamento de Revestimentos Baseado em Metodologia Determinística Regime
@@ -2558,6 +2610,7 @@ Tamanho: 1
 Obrigatoriedade: Sim
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 E [ie]
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Preenchimento: Valores válidos: 1 - Primeiro 2 - Segundo
 
@@ -2602,6 +2655,7 @@ Obrigatoriedade: Não
 Preenchimento: Valores válidos: S — Sim, N — Não.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Título: Topo Profundidade Vertical
@@ -2646,6 +2700,7 @@ Tamanho: 6 dígitos na parte inteira e 2 dígitos na parte decimal.
 Obrigatoriedade: Não
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 5584
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Preenchimento: Para que o campo Base Profundidade Medida" seja considerado válido deve ser
@@ -2691,6 +2746,7 @@ Nome XML: DATA PREVISAO FIM
 Unidade de Medida: Não se aplica
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Natureza: DATA
 Tamanho: 10
@@ -2741,6 +2797,7 @@ Natureza: TEXTO
 Tamanho: 1
 Obrigatoriedade: Não
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 STA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Preenchimento: Não se aplica
@@ -2788,6 +2845,7 @@ Título: Nome Poço ANP
 Nome XML: NOME. POCO ANP
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Unidade de Medida: Não se aplica
 
@@ -2834,6 +2892,7 @@ Código da validação: 2
 Mensagem apresentada: A extensão do arquivo não é válida.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Situação em que ocorre: O sistema i-engine foi programado para processar apenas arquivos com
@@ -2880,6 +2939,7 @@ Código da validação: 6
 Mensagem apresentada: Arquivo ZIP inválido.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 60
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Situação em que ocorre: Não foi possível a leitura e descompactação do arquivo ZIP.
@@ -2923,6 +2983,7 @@ Situação em que ocorre: O arquivo XML faz referência um outro arquivo não en
 conteúdo do arquivo ZIP.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 61/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Ação corretiva: Verifique se o arquivo citado no XML realmente está presente no pacote ZIP com o
@@ -2965,6 +3026,7 @@ Situação em que ocorre: Quando o "CODIGO BLOCO" informado não for localizado 
 SIGEP.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 6284
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Ação corretiva: Preencher o campo "CODIGO BLOCO" com um bloco que esteja cadastrado no
@@ -3010,6 +3072,7 @@ Situação em que ocorre: "Quando o campo "VALOR DOG LEG SEVERITY MAXIMO" for
 preenchido com um valor diferente O e o campo "Tipo Poço” for preenchido com o valor "V-Vertical”.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Ação corretiva: "Preencher o campo "VALOR DOG LEG SEVERITY MAXIMO" com zero.”
@@ -3052,6 +3115,7 @@ valor maior que 0.
 Código da validação: 1413
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Mensagem apresentada: O campo "VALOR INCLINACAO MAXIMA” foi preenchido com valor
@@ -3096,6 +3160,7 @@ Mensagem apresentada: O campo "VALOR LAMINA AGUA" foi preenchido com valor igual
 inferior a zero.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Situação em que ocorre: 2 -Quando o campo "VALOR LAMINA AGUA" for preenchido com um
@@ -3141,6 +3206,7 @@ valor maior que o campo "Cota Altimétrica BAP”.
 Código da validação: 1421
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Mensagem apresentada: O campo "VALOR PREVISAO PRESSAO MAXIMA” foi preenchido com
 valor inválido.
@@ -3183,6 +3249,7 @@ Especial” e o campo "OBJETIVO POCO ESPECIAL" for preenchido.
 Ação corretiva: Não informar o campo "OBJETIVO POCO ESPECIAL”.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 67/84
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Código da validação: 1425
@@ -3229,6 +3296,7 @@ preenchido com o valor: "1-Pioneiro”, "2-Estratigráfico”, "3 - Extensão”
 Jazida mais rasa” ou "6 - Jazida mais profunda”
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Ação corretiva: Preencher o campo Locação.
@@ -3273,6 +3341,7 @@ Situação em que ocorre: Quando o "POCO ANTERIOR INVESTIGACAO”" informado nã
 localizado no sistema SIGEP.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 eg
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Ação corretiva: Preencher o campo "POCO ANTERIOR INVESTIGACAO" com um poço que
@@ -3316,6 +3385,7 @@ Ação corretiva: Preencher pelo menos 1 prospecto.
 Código da validação: 1436
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TOBA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Mensagem apresentada: O preenchimento do campo GEOCRONOLOGIA CODIGO PERIODO,
@@ -3365,6 +3435,7 @@ Situação em que ocorre: Quando campo "GEOCRONOLOGIA CODIGO PERIODO" for
 preenchido com um código que não esteja cadastrado no SIGEP.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TUBA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Ação corretiva: Preencher o campo "GEOCRONOLOGIA CODIGO PERIODO” com um código
 cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
@@ -3408,6 +3479,7 @@ Mensagem apresentada: O campo "LITOESTRATIGRAFIA CODIGO FORMACAO" foi preenchido
 com valor inválido.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 T2BA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Situação em que ocorre: Quando campo "LITOESTRATIGRAFIA CODIGO FORMACAO" for
@@ -3455,6 +3527,7 @@ Ação corretiva: Preencher o campo
 "COORDENADAS PROVISORIAS ALVO FINAL LONGITUDE" com valor válido.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 THA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Código da validação: 1447
@@ -3500,6 +3573,7 @@ cadastrado no sistema SIGEP. Ver consulta de códigos do i-Engine.
 Código da validação: 1450
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TABA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Mensagem apresentada: O campo "GEOCRONOLOGIA CODIGO EPOCA" foi preenchido com
@@ -3545,6 +3619,7 @@ Ação corretiva: Preencher o campo "LITOESTRATIGRAFIA CODIGO FORMACAO" com um
 código cadastrado no sistema SIGEP. Ver consulta de códigos do Engine.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 T5BA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Código da validação: 1454
@@ -3591,6 +3666,7 @@ Ação corretiva: Preencher o campo "Número Fase” do Revestimento com um valo
 informado na lista de fases.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TOA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Código da validação: 1458
@@ -3633,6 +3709,7 @@ Situação em que ocorre: Quando o "NOME POCO ANP” informado não foi localiza
 SIGEP.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TIIBA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Ação corretiva: Preencher com um "NOME POCO ANP” que esteja cadastrado no SIGEP. Ver
@@ -3677,6 +3754,7 @@ informado.
 Ação corretiva: Refazer a carga NPP com nome do Bloco vinculado ao Contrato.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 TUA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Código da validação: 1486
@@ -3721,6 +3799,7 @@ Situação em que ocorre: Quando o "CODIGO BACIA PORTARIA” é preenchido com u
 que não foi encontrado na base do SIGEP.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Ação corretiva: Preencher o campo "CODIGO BACIA PORTARIA" com um código cadastrado no
@@ -3767,6 +3846,7 @@ Mensagem apresentada: O campo "LATITUDE PROV ALVO" não pode ser preenchido quan
 "TIPO CATEGORIA POCO" for preenchido com valores de 1 a 6.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 BOBA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 
 Situação em que ocorre: Quando a "LATITUDE PROV ALVO" for preenchida para poços das
@@ -3814,6 +3894,7 @@ Situação em que ocorre: Quando a "LONGITUDE PROV ALVO" não for preenchido e o
 ou 10 (Estocagem).
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizar081 BIA
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Ação corretiva: Preencher o campo "LONGITUDE PROV ALVO" para poços das categorias: 7
 (Produção), 8 (Injeção), 9 (Especial) e 10 (Estocagem).
@@ -3858,6 +3939,7 @@ DADOS BASICOS). Ver consulta de códigos do i-Engine.
 Código da validação: 1941
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 Mensagem apresentada: O campo "LITOESTRATIGRAFIA COD FORMACAO” do conjunto de
 
@@ -3906,6 +3988,7 @@ Mensagem apresentada: O campo "LITOESTRATIGRAFIA COD FORMACAO" do conjunto de
 informações de "Formações" foi preenchido com valor que não está cadastrado na base de dados
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
 12/07/2028, 10:23 Do poço ao posto - Visualizar Manual da Carga
 [Valor informado] ou não existe associação com a bacia informada na aba DADOS BASICOS.
 
@@ -3933,3 +4016,4 @@ cadastrado no sistema SIGEP e que esteja associado à bacia informada no campo "
 DADOS BASICOS). Ver consulta de códigos do i-Engine.
 
 https://dpp.anp.gov.br/lengine/Manual/Visualizari081
+
