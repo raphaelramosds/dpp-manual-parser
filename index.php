@@ -12,7 +12,7 @@ include_once 'env.php';
 
 // ---------- INPUTS
 
-$report = 'NPP';
+$report = 'Manual_NPR';
 $excel = './assets/excel/006_CNPJ_AAAAMMDDHHMMSS_VER.xls';
 $pdf = './assets/pdf/NPP.pdf';
 
@@ -29,17 +29,15 @@ $spreadsheet_fields = (new SpreadsheetContext($excel))->getFields();
 // ---------- GET FIELDS FROM TXT
 
 $textContext = new TxtContext(TXT_OUTPUT_DIR . "/$report.txt"); 
-$textContext->setSplitter(new TitleSplitter());
+$textContext->setSplitter(new FieldFormatSplitter());
 $txtFields = $textContext->parse();
 
 // ---------- TXT and XLSX mapping
-
 $mapping = [];
 foreach ($spreadsheet_fields as $key => $fields) {
     array_walk($fields, function ($field) use (&$mapping, $txtFields) {
-        $f = trim(str_replace('_', ' ', $field));
-        if (!array_key_exists($f, $txtFields)) {
-            echo "Spreadsheet field $f does not match any fields on TXT" . PHP_EOL;
+        if (!array_key_exists($field, $txtFields)) {
+            echo "Spreadsheet field $field does not match any fields on TXT" . PHP_EOL;
             $mapping[$field] = [
                 'field' => $field,
                 'type' => 'UNKNOWN',
@@ -48,7 +46,7 @@ foreach ($spreadsheet_fields as $key => $fields) {
                 'filling_rule' => 'UNKNOWN'
             ];
         } else {
-            $mapping[$field] = $txtFields[$f];
+            $mapping[$field] = $txtFields[$field];
         }
     });
 }
@@ -88,8 +86,12 @@ fwrite($output, PHP_EOL);
 
 foreach ($mapping as $field => $rules)
 {
+    // $content = <<<EOF
+    // FIELD "$field" IS {$rules['type']}({$rules['length']}) {$rules['required']};
+
+    // EOF;
     $content = <<<EOF
-    FIELD "$field" IS {$rules['type']}({$rules['length']}) {$rules['required']}; 
+    FIELD "$field" IS {$rules['type']} {$rules['required']};
 
     EOF;
     fwrite($output, $content);

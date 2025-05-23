@@ -1,1 +1,5 @@
 vendor
+*.pdf
+*.xls
+*.xlsx
+*.txt
