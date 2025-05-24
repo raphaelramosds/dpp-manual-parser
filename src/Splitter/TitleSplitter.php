@@ -19,7 +19,7 @@ class TitleSplitter implements ISplitter
             $sec['str'] = $str;
 
             if (preg_match('/^Nome\sXML\:(.+)/m', $str, $matches)) {
-                $sec['field'] = $this->format($matches[1]);
+                $sec['field'] = str_replace(' ', '_', $this->format($matches[1]));
             }
 
             if (preg_match('/^Natureza\:(.+)/m', $str, $matches)) {
@@ -64,12 +64,12 @@ class TitleSplitter implements ISplitter
             return intval($str);
         }
 
-        if (preg_match('/Sim|Não|Condicional/i', $str, $matches)) {
+        if (preg_match('/Sim|N(a|\ã)o|Condicional/i', $str, $matches)) {
             if (strcasecmp($matches[0], 'Sim') === 0) {
                 return 'REQUIRED';
             }
 
-            if (strcasecmp($matches[0], 'Não') === 0) {
+            if (preg_match('/N(a|\ã)o/i', $matches[0], $matches2) === 1) {
                 return 'NULLABLE';
             }
 

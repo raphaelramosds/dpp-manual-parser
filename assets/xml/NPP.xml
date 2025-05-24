@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<report name="NPP">
+	<section name="NOTIFICACAO_PERFURACAO_POCO">
+		<fields>
+			<field type="INTEIRO(5) REQUIRED">CODIGO_BACIA_PORTARIA</field>
+			<field type="TEXTO(10) NULLABLE">CODIGO_BLOCO</field>
+			<field type="INTEIRO(10) NULLABLE">CODIGO_CAMPO</field>
+			<field type="TEXTO(4) REQUIRED">SIGLA_POCO</field>
+			<field type="NATURAL(2) REQUIRED">TIPO_CATEGORIA_POCO</field>
+			<field type="DOMINIO(1) REQUIRED">TIPO_POCO</field>
+			<field type="DECIMAL(8,2) REQUIRED">VALOR_KICK_OF_POINT</field>
+			<field type="DECIMAL(5,2) REQUIRED">VALOR_DOG_LEG_SEVERITY_MAXIMO</field>
+			<field type="DECIMAL(8,2) REQUIRED">VALOR_AFASTAMENTO_HORIZONTAL_MAXIMO</field>
+			<field type="DECIMAL(5,2) REQUIRED">VALOR_INCLINACAO_MAXIMA</field>
+			<field type="DOMINIO(1) REQUIRED">POCO_PARTILHADO</field>
+			<field type="TEXTO(2) REQUIRED">SIGLA_UF</field>
+			<field type="DOMINIO(1) REQUIRED">POCO_SUBMARINO</field>
+			<field type="DOMINIO(1) REQUIRED">POCO_INVESTIGACAO</field>
+			<field type="TEXTO(1000) NULLABLE">OBSERVACOES</field>
+			<field type="DECIMAL(8,2) REQUIRED">VALOR_LAMINA_AGUA</field>
+			<field type="DECIMAL(8,2) REQUIRED">VALOR_COTA_ALTIMETRICA_BAP</field>
+			<field type="DECIMAL(8,2) REQUIRED">VALOR_COTA_MESA_ROTATIVA_REFERENCIA</field>
+			<field type="DECIMAL(8,2) REQUIRED">VALOR_PREVISAO_PRESSAO_MAXIMA</field>
+			<field type="DECIMAL(5,2) REQUIRED">VALOR_PREVISAO_TEMPERATURA_MAXIMA</field>
+			<field type="DOMINIO(1) CONDITIONAL">OBJETIVO_POCO_ESPECIAL</field>
+			<field type="DOMINIO(1) REQUIRED">PREVISAO_SHALLOW_HAZARD</field>
+			<field type="DATA(10) REQUIRED">VALOR_PRESSAO_INJECAO_MAXIMA_PREVISTA</field>
+			<field type="TEXTO(20) REQUIRED">NOME_POCO_OPERADOR</field>
+			<field type="TEXTO(50) CONDITIONAL">NOME_LOCACAO</field>
+			<field type="TEXTO(50) CONDITIONAL">IDENTIFICACAO_PAT</field>
+			<field type="TEXTO(50) CONDITIONAL">NOME_POCO_PARTILHACAO</field>
+			<field type="TEXTO(12) NULLABLE">POCO_ANTERIOR_INVESTIGACAO</field>
+			<field type="INTEIRO(10) NULLABLE">CODIGO_LICENCA_AMBIENTAL</field>
+			<field type="TEXTO(100) NULLABLE">QUADRICULA</field>
+			<field type="TEXTO(13) REQUIRED">LATITUDE_PROVISORIA_BASE</field>
+			<field type="TEXTO(13) REQUIRED">LONGITUDE_PROVISORIA_BASE</field>
+			<field type="TEXTO(1000) CONDITIONAL">JUSTIFICATIVA</field>
+			<field type="TEXTO(13) REQUIRED">LATITUDE_PROVISORIA_ALVO</field>
+			<field type="TEXTO(13) REQUIRED">LONGITUDE_PROVISORIA_ALVO</field>
+		</fields>
+	</section>
+	<section name="PROSPECTOS">
+		<fields>
+			<field type="DOMINIO(1) REQUIRED">TIPO_OBJETIVO</field>
+			<field type="DECIMAL(15,2) REQUIRED">VALOR_GERACAO</field>
+			<field type="DECIMAL(15,2) REQUIRED">VALOR_MIGRACAO</field>
+			<field type="DECIMAL(15,2) REQUIRED">VALOR_RESERVATORIO</field>
+			<field type="DECIMAL(15,2) REQUIRED">VALOR_SINCRONISMO</field>
+			<field type="DECIMAL(15,2) REQUIRED">VALOR_CAPEADOR</field>
+			<field type="DECIMAL(15,2) REQUIRED">VALOR_TRAPA</field>
+			<field type="UNKNOWN(UNKNOWN) UNKNOWN">P90_VALOR_AREA</field>
+			<field type="DECIMAL(15,2) REQUIRED">P90_VALOR_ESPESSURA</field>
+			<field type="UNKNOWN(UNKNOWN) UNKNOWN">P90_VALOR_POROSIDADE</field>
+			<field type="DECIMAL(15,2) REQUIRED">P90_VALOR_SATGAS</field>
+			<field type="DECIMAL(15,2) REQUIRED">P90_VALOR_SATOLEO</field>
+			<field type="DECIMAL(15,2) REQUIRED">P90_VALOR_VOIP</field>
+			<field type="DECIMAL(15,2) REQUIRED">P90_VALOR_VGIP</field>
+			<field type="DECIMAL(15,2) REQUIRED">P50_VALOR_AREA</field>
+			<field type="DECIMAL(15,2) REQUIRED">P50_VALOR_ESPESSURA</field>
+			<field type="DECIMAL(15,2) REQUIRED">P50_VALOR_POROSIDADE</field>
+			<field type="DECIMAL(15,2) REQUIRED">P50_VALOR_SATGAS</field>
+			<field type="DECIMAL(15,2) REQUIRED">P50_VALOR_SATOLEO</field>
+			<field type="DECIMAL(15,2) REQUIRED">P50_VALOR_VOIP</field>
+			<field type="DECIMAL(15,2) REQUIRED">P50_VALOR_VGIP</field>
+			<field type="DECIMAL(15,2) REQUIRED">P10_VALOR_AREA</field>
+			<field type="DECIMAL(15,2) REQUIRED">P10_VALOR_ESPESSURA</field>
+			<field type="DECIMAL(15,2) REQUIRED">P10_VALOR_POROSIDADE</field>
+			<field type="DECIMAL(15,2) REQUIRED">P10_VALOR_SATGAS</field>
+			<field type="DECIMAL(15,2) REQUIRED">P10_VALOR_SATOLEO</field>
+			<field type="DECIMAL(15,2) REQUIRED">P10_VALOR_VOIP</field>
+			<field type="DECIMAL(15,2) REQUIRED">P10_VALOR_VGIP</field>
+			<field type="INTEIRO(10) NULLABLE">GEOCRONOLOGIA_CODIGO_PERIODO</field>
+			<field type="INTEIRO(10) NULLABLE">GEOCRONOLOGIA_CODIGO_EPOCA</field>
+			<field type="INTEIRO(10) NULLABLE">GEOCRONOLOGIA_CODIGO_IDADE</field>
+			<field type="INTEIRO(10) NULLABLE">LITOESTRATIGRAFIA_CODIGO_GRUPO</field>
+			<field type="INTEIRO(10) NULLABLE">LITOESTRATIGRAFIA_CODIGO_FORMACAO</field>
+			<field type="INTEIRO(8,2) NULLABLE">LITOESTRATIGRAFIA_CODIGO_MEMBRO</field>
+			<field type="TEXTO(500) REQUIRED">DESCRICAO_OBJETIVO</field>
+			<field type="TEXTO(13) REQUIRED">COORDENADAS_PROVISORIAS_ALVO_LATITUDE</field>
+			<field type="TEXTO(13) REQUIRED">COORDENADAS_PROVISORIAS_ALVO_LONGITUDE</field>
+			<field type="TEXTO(13) CONDITIONAL">COORDENADAS_PROVISORIAS_ALVO_FINAL_LATITUDE</field>
+			<field type="TEXTO(13) CONDITIONAL">COORDENADAS_PROVISORIAS_ALVO_FINAL_LONGITUDE</field>
+			<field type="DECIMAL(8,2) REQUIRED">PROFUNDIDADES_TOPO_VERTICAL</field>
+			<field type="DECIMAL(8,2) NULLABLE">PROFUNDIDADES_TOPO_MEDIDA</field>
+			<field type="DECIMAL(8,2) REQUIRED">PROFUNDIDADES_BASE_VERTICAL</field>
+			<field type="DECIMAL(8,2) NULLABLE">PROFUNDIDADES_BASE_MEDIDA</field>
+		</fields>
+	</section>
+	<section name="FORMACOES">
+		<fields>
+			<field type="INTEIRO(10) NULLABLE">GEOCRONOLOGIA_CODIGO_PERIODO</field>
+			<field type="INTEIRO(10) NULLABLE">GEOCRONOLOGIA_CODIGO_EPOCA</field>
+			<field type="INTEIRO(10) NULLABLE">GEOCRONOLOGIA_CODIGO_IDADE</field>
+			<field type="INTEIRO(10) NULLABLE">LITOESTRATIGRAFIA_CODIGO_GRUPO</field>
+			<field type="INTEIRO(10) NULLABLE">LITOESTRATIGRAFIA_CODIGO_FORMACAO</field>
+			<field type="INTEIRO(8,2) NULLABLE">LITOESTRATIGRAFIA_CODIGO_MEMBRO</field>
+			<field type="DECIMAL(8,2) REQUIRED">PROFUNDIDADES_TOPO_VERTICAL</field>
+			<field type="DECIMAL(8,2) NULLABLE">PROFUNDIDADES_TOPO_MEDIDA</field>
+			<field type="DECIMAL(8,2) REQUIRED">PROFUNDIDADES_BASE_VERTICAL</field>
+			<field type="DECIMAL(8,2) NULLABLE">PROFUNDIDADES_BASE_MEDIDA</field>
+		</fields>
+	</section>
+	<section name="RISCOS_COLISOES">
+		<fields>
+			<field type="TEXTO(20) REQUIRED">NOME_POCO_ANP</field>
+		</fields>
+	</section>
+	<section name="FASES">
+		<fields>
+			<field type="INTEIRO(2) REQUIRED">NUMERO_FASE</field>
+			<field type="INTEIRO(10) REQUIRED">CODIGO_SONDA</field>
+			<field type="DOMINIO(1) REQUIRED">EXIGE_MEDIDAS_CONTROLE_ADEQUACAO</field>
+			<field type="DOMINIO(1) REQUIRED">TIPO_TECNICA_PERFURACAO</field>
+			<field type="DATA(10) REQUIRED">DATA_PREVISAO_INICIO</field>
+			<field type="DATA(10) REQUIRED">DATA_PREVISAO_FIM</field>
+			<field type="DECIMAL(8,2) REQUIRED">DIAMETRO</field>
+			<field type="DOMINIO(1) REQUIRED">ALARGADOR</field>
+			<field type="DECIMAL(8,2) REQUIRED">PROFUNDIDADES_TOPO_VERTICAL</field>
+			<field type="DECIMAL(8,2) NULLABLE">PROFUNDIDADES_TOPO_MEDIDA</field>
+			<field type="DECIMAL(8,2) REQUIRED">PROFUNDIDADES_BASE_VERTICAL</field>
+			<field type="DECIMAL(8,2) NULLABLE">PROFUNDIDADES_BASE_MEDIDA</field>
+			<field type="DOMINIO(1) REQUIRED">FLUIDO_TIPO</field>
+			<field type="DECIMAL(4,2) REQUIRED">FLUIDO_VALOR_DENSIDADE_MAXIMA</field>
+			<field type="DECIMAL(4,2) REQUIRED">FLUIDO_VALOR_DENSIDADE_MINIMA</field>
+			<field type="DOMINIO(1) REQUIRED">RISERLESS</field>
+			<field type="DECIMAL(4,2) REQUIRED">VALOR_GRADIENTE_POROS_MAXIMO</field>
+			<field type="DOMINIO(1) REQUIRED">INFLUENCIA_INJETOR</field>
+			<field type="DECIMAL(4,2) REQUIRED">VALOR_GRADIENTE_FRATURA_MINIMO</field>
+			<field type="DECIMAL(4,2) REQUIRED">VALOR_ECD_MAXIMO_SAPATA_ANTERIOR</field>
+			<field type="DECIMAL(4,2) REQUIRED">VALOR_KICK_MAXIMA_PRESSAO_POROS</field>
+			<field type="DECIMAL(5,2) REQUIRED">VALOR_KICK_MAXIMO_VOLUME_GAS</field>
+			<field type="DOMINIO(1) REQUIRED">MSM</field>
+			<field type="DOMINIO(1) REQUIRED">MSR</field>
+			<field type="DECIMAL(5,2) REQUIRED">VALOR_PREVISAO_H2S</field>
+			<field type="DECIMAL(5,2) REQUIRED">VALOR_PREVISAO_CO2</field>
+			<field type="DOMINIO(1) REQUIRED">PREVISAO_PERDAS_SEVERAS</field>
+			<field type="DOMINIO(1) REQUIRED">PERFURACAO_OVERBALANCE</field>
+			<field type="DOMINIO(1) REQUIRED">ESTUDO_ESPECIFICO_GEOMECANICA</field>
+			<field type="DOMINIO(1) REQUIRED">PREVISAO_AQUIFEROS</field>
+			<field type="DOMINIO(1) REQUIRED">PREVISAO_FALHAS_GEOLOGICAS_ZONAS_HC</field>
+			<field type="DOMINIO(1) REQUIRED">PREVISAO_FORMACOES_REATIVAS</field>
+			<field type="DOMINIO(1) REQUIRED">PREVISAO_SAL_ALTA_TAXA_FLUENCIA</field>
+		</fields>
+	</section>
+	<section name="REVESTIMENTOS">
+		<fields>
+			<field type="INTEIRO(2) REQUIRED">NUMERO_FASE</field>
+			<field type="DECIMAL(8,2) REQUIRED">DIAMETRO</field>
+			<field type="DOMINIO(1) REQUIRED">CONTINGENTE</field>
+			<field type="DOMINIO(1) REQUIRED">TIPO_CLASSIFICACAO</field>
+			<field type="DOMINIO(1) REQUIRED">TIPO_REVESTIMENTO</field>
+			<field type="TEXTO(20) REQUIRED">GRAU_ACO</field>
+			<field type="DECIMAL(8,2) REQUIRED">PESO</field>
+			<field type="TEXTO(100) REQUIRED">TIPO_CONEXAO</field>
+			<field type="DOMINIO(1) REQUIRED">CONEXAO_GAS_TIGHT</field>
+			<field type="DOMINIO(1) REQUIRED">ANULAR_CONFINADO</field>
+			<field type="DOMINIO(1) REQUIRED">DIMENSIONAMENTO_APB</field>
+			<field type="DOMINIO(1) REQUIRED">RESISTENTE_H2S</field>
+			<field type="DOMINIO(1) REQUIRED">RESISTENTE_CO2</field>
+			<field type="TEXTO(1) REQUIRED">METALURGIA_ATENDE_CONCESSIONARIO</field>
+			<field type="TEXTO(1) REQUIRED">DIMENSIONAMENTO_REGIME_ELASTICO</field>
+			<field type="TEXTO(1) NULLABLE">DIMENSIONAMENTO_ATENDE_CONCESSIONARIO</field>
+			<field type="DECIMAL(8,2) REQUIRED">PROFUNDIDADES_TOPO_VERTICAL</field>
+			<field type="DECIMAL(8,2) NULLABLE">PROFUNDIDADES_TOPO_MEDIDA</field>
+			<field type="DECIMAL(8,2) REQUIRED">PROFUNDIDADES_BASE_VERTICAL</field>
+			<field type="DECIMAL(8,2) NULLABLE">PROFUNDIDADES_BASE_MEDIDA</field>
+		</fields>
+	</section>
+	<section name="CIMENTACOES">
+		<fields>
+			<field type="INTEIRO(2) REQUIRED">NUMERO_FASE</field>
+			<field type="DOMINIO(1) REQUIRED">TIPO_ESTAGIO</field>
+			<field type="TEXTO(200) REQUIRED">TIPO_PASTA</field>
+			<field type="DECIMAL(4,2) REQUIRED">VALOR_MASSA_ESPECIFICA</field>
+			<field type="DOMINIO(1) REQUIRED">CONTROLE_GAS</field>
+			<field type="DOMINIO(1) NULLABLE">RESISTENCIA_CO2</field>
+			<field type="DECIMAL(8,2) REQUIRED">PROFUNDIDADES_TOPO_VERTICAL</field>
+			<field type="DECIMAL(8,2) NULLABLE">PROFUNDIDADES_TOPO_MEDIDA</field>
+			<field type="DECIMAL(8,2) REQUIRED">PROFUNDIDADES_BASE_VERTICAL</field>
+			<field type="DECIMAL(8,2) NULLABLE">PROFUNDIDADES_BASE_MEDIDA</field>
+			<field type="DOMINIO(1) REQUIRED">PREVISAO_FORMACAO_PERMEAVEL_EXPOSTA</field>
+		</fields>
+	</section>
+	<section name="OUTRAS_ATIVIDADES">
+		<fields>
+			<field type="DOMINIO(1) REQUIRED">TIPO</field>
+			<field type="DATA(10) REQUIRED">DATA_PREVISAO_INICIO</field>
+			<field type="DATA(10) REQUIRED">DATA_PREVISAO_FIM</field>
+			<field type="INTEIRO(10) REQUIRED">CODIGO_SONDA</field>
+			<field type="TEXTO(1) REQUIRED">METALURGIA_ATENDE_CONCESSIONARIO</field>
+			<field type="TEXTO(1) NULLABLE">DIMENSIONAMENTO_ATENDE_CONCESSIONARIO</field>
+			<field type="TEXTO(1) REQUIRED">DIMENSIONAMENTO_REGIME_ELASTICO</field>
+			<field type="DECIMAL(8,2) REQUIRED">VALOR_PRESSAO_FLUXO_SUPERFICIE</field>
+			<field type="DECIMAL(8,2) REQUIRED">VALOR_PRESSAO_FRATURAMENTO_SUPERFICIE</field>
+		</fields>
+	</section>
+	<section name="POCOS_CORRELACOES">
+		<fields>
+			<field type="TEXTO(20) REQUIRED">NOME_POCO_ANP</field>
+			<field type="DECIMAL(8,2) CONDITIONAL">DISTANCIA</field>
+		</fields>
+	</section>
+</report>
