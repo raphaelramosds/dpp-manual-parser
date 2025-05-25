@@ -3,6 +3,7 @@
 class SpreadsheetContext
 {
     private $fields;
+    private $dimensions;
 
     public function __construct(string $file)
     {
@@ -28,12 +29,13 @@ class SpreadsheetContext
             $sheet = $reader->load($file);
 
             $this->fields = $this->extractFields($sheet);
+            $this->dimensions = $this->extractDimensions($sheet);
         } catch (Exception $e) {
             echo $e->getMessage();
         }
     }
 
-    private function extractFields($sheet)
+    private function extractFields(\PhpOffice\PhpSpreadsheet\Spreadsheet $sheet)
     {
         $sections = [];
         $sheetNames = $sheet->getSheetNames();
@@ -48,8 +50,25 @@ class SpreadsheetContext
         return $sections;
     }
 
-    public function getFields()
+
+    private function extractDimensions (\PhpOffice\PhpSpreadsheet\Spreadsheet $sheet)
+    {
+        $field_style = [];
+        $sheetNames = $sheet->getSheetNames();
+        foreach ($sheetNames as $sn) {
+            $worksheet = $sheet->setActiveSheetIndexByName($sn);
+            $field_style[$sn] = $worksheet->getColumnDimensions();
+        }
+        return $field_style;
+    }
+
+    public function getFields ()
     {
         return $this->fields;
+    }
+
+    public function getDimensions ()
+    {
+        return $this->dimensions;
     }
 }

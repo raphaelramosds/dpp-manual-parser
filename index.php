@@ -24,21 +24,25 @@ $pdfh->convert();
 
 // ---------- GET FIELDS AND SECTIONS FROM XLSX
 
-$spreadsheet_fields = (new SpreadsheetContext($excel))->getFields();
+$sc = new SpreadsheetContext($excel);
+$spreadsheet_fields = $sc->getFields();
+$spreadsheet_dimensions = $sc->getDimensions();
 
 // ---------- GET FIELDS FROM TXT
 
-$textContext = new TxtContext(TXT_OUTPUT_DIR . "/$report.txt"); 
+$textContext = new TxtContext(TXT_OUTPUT_DIR . "/$report.txt");
 $textContext->setSplitter(new TitleSplitter());
 $txtFields = $textContext->parse();
 
-
-
 // ---------- TXT and XLSX mapping
 $mapping = [];
-foreach ($spreadsheet_fields as $key => $fields) {
+foreach ($spreadsheet_fields as $section => $fields) {
+    $n = sizeof($fields);
+    $cols = generate_excel_column_index_pattern($n);
+    $fields = array_values($fields);
 
-    array_walk($fields, function ($field) use (&$mapping, $txtFields) {
+    foreach ($fields as $i => $field)
+    {
         if (!array_key_exists($field, $txtFields)) {
             echo "Spreadsheet field $field does not match any fields on TXT" . PHP_EOL;
             $mapping[$field] = [
@@ -51,11 +55,11 @@ foreach ($spreadsheet_fields as $key => $fields) {
         } else {
             $mapping[$field] = $txtFields[$field];
         }
-    });
+        $mapping[$field]['colWidth'] = $spreadsheet_dimensions[$section][$cols[$i]]->getWidth();
+    }
 }
 
-foreach ($mapping as $section => $fields) 
-{
+foreach ($mapping as $section => $fields) {
     array_walk($fields, function ($field) use (&$mapping, $section, $fields) {
         $mapping[$section]['required'] = $fields['required'];
         $mapping[$section]['type'] = strtoupper($fields['type']);
@@ -75,29 +79,26 @@ $header = <<<XML
 XML;
 fwrite($output, $header);
 
-foreach ($spreadsheet_fields as $section => $fields) 
-{
+foreach ($spreadsheet_fields as $section => $fields) {
     $fieldsList = implode(', ', array_filter($fields));
     $content = <<<XML
     \t<section name="{$section}">
-    \t\t<fields>
 
     XML;
     fwrite($output, $content);
 
-    
+
     foreach ($fields as $field) {
         $mf = $mapping[$field];
         $type = $mf['type'] . '(' . $mf['length'] . ') ' . $mf['required'];
         $content = <<<XML
-        \t\t\t<field type="$type">{$mf['field']}</field>
+        \t\t<field type="$type" colWidth="{$mf['colWidth']}">{$mf['field']}</field>
 
         XML;
         fwrite($output, $content);
     }
 
     $content = <<<XML
-    \t\t</fields>
     \t</section>
 
     XML;
@@ -114,20 +115,20 @@ fclose($output);
 
 // ---------- PARSE XML
 
-$xml = simplexml_load_file(XML_OUTPUT_DIR . "/$report.xml");
+// $xml = simplexml_load_file(XML_OUTPUT_DIR . "/$report.xml");
 
-if (!$xml) {
-  echo "Failed loading XML: ";
-  foreach(libxml_get_errors() as $error) {
-    echo "<br>", $error->message;
-  }
-} else {
+// if (!$xml) {
+//   echo "Failed loading XML: ";
+//   foreach(libxml_get_errors() as $error) {
+//     echo "<br>", $error->message;
+//   }
+// } else {
     // Size of sections
-    echo var_dump(sizeof($xml));
+    // echo var_dump(sizeof($xml));
 
     // Get attribute of a section
     // echo var_dump($xml->section[0]['name']);
 
     // List fields of a section
-    echo var_dump($xml->section[0]->fields);
-}
+    // echo var_dump($xml->section[0]->fields);
+// }
