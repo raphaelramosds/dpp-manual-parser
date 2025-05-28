@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<report name="npr">
+#ifndef VERSION1
+    <section name="DADOS_BASICOS" end="3">
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="20.140625">NOM_POCO_OPERADOR</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="17.7109375">COD_CNPJ_EMPRESA</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="19.5703125">COD_CADASTRO_POCO</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="16.5703125">DAT_PERF_FINAL</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="16.140625">IND_PERFILAGEM</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="16">IND_REENTRADA</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="40">DSC_OBSERVACAO</field>
+    </section>
+    <section name="DURANTE_PERFURACAO" end="3">
+        <preheader>
+            <row>
+                <cell repeat="5"/>
+                <cell hmerge="1">Intervalos (m)</cell>
+            </row>
+        </preheader>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="24">DAT_INICIAL_OPERACAO</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="28.7109375">CNPJ_COMPANHIA</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="22">IND_TIPO_OPERACAO</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="23.7109375">DSC_FERRAMENTA</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="13">NOM_PERFIL</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12">MED_TOPO</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12.42578125">MED_BASE</field>
+    </section>
+    <section name="CONVENCIONAL" end="3">
+        <preheader>
+            <row>
+                <cell repeat="5"/>
+                <cell hmerge="1">Intervalos (m)</cell>
+            </row>
+        </preheader>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="24">DAT_INICIAL_OPERACAO</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="21.5703125">IND_AMBIENTE</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="28.7109375">CNPJ_COMPANHIA</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="23.7109375">DSC_FERRAMENTA</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="13">NOM_PERFIL</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12">MED_TOPO</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12.42578125">MED_BASE</field>
+    </section>
+    <section name="ESPECIAL" end="4">
+        <preheader>
+            <row>
+                <cell repeat="4"/>
+                <cell hmerge="2" vmerge="1">Intervalos (m)</cell>
+                <cell hmerge="7">OPERAÇÕES</cell>
+            </row>
+            <row>
+                <cell repeat="8"/>
+                <cell hmerge="2">Amostra</cell>
+                <cell hmerge="1">Pré-Teste</cell>
+                <cell hmerge="1">Teste</cell>
+            </row>
+        </preheader>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="2" required="UNKNOWN" colWidth="24">DAT_INICIAL_OPERACAO</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="2" required="UNKNOWN" colWidth="21.5703125">IND_AMBIENTE</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="2" required="UNKNOWN" colWidth="28.7109375">CNPJ_COMPANHIA</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="2" required="UNKNOWN" colWidth="13">NOM_PERFIL</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12">MED_TOPO</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12.42578125">MED_BASE</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="17.7109375">MED_PROFUNDIDADE_UNICA</field>
+        <field type="UNKNOWN(UNKNOWN)" vmerge="1" required="UNKNOWN" colWidth="17.28515625">QTD_SISMICA</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="26.140625">QTD_AMOSTRA_INTEGRAL</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="26.140625">QTD_AMOSTRA_PARCIAL</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="29.140625">QTD_AMOSTRA_SEM_RECUPERACAO</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="26">QTD_PRE_TESTE_CNCLO</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="24.7109375">QTD_PRE_TESTE_FALHO</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="20.140625">QTD_TESTE_CNCLO</field>
+        <field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="19.28515625">QTD_TESTE_FALHO</field>
+    </section>
+#else /* VERSION1 */
+	<section name="DADOS_BASICOS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="20.140625" ptBr="Nome do Poço">NOM_POCO_OPERADOR</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="17.7109375" ptBr="CNPJ do Operador">COD_CNPJ_EMPRESA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="19.5703125" ptBr="Código Cadastro Poço">COD_CADASTRO_POCO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="16.5703125" ptBr="Data de Término de Perfilagem">DAT_PERF_FINAL</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="16.140625" ptBr="Poço Perfilado?">IND_PERFILAGEM</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="16" ptBr="Operação Realizada em Reentrada">IND_REENTRADA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="40" ptBr="Observações">DSC_OBSERVACAO</field>
+	</section>
+	<section name="DURANTE_PERFURACAO">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="24" ptBr="Data da Perfilagem">DAT_INICIAL_OPERACAO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="28.7109375" ptBr="CNPJ da EAD">CNPJ_COMPANHIA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="22" ptBr="Tipo Operação">IND_TIPO_OPERACAO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="23.7109375" ptBr="Ferramenta">DSC_FERRAMENTA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13" ptBr="Perfis">NOM_PERFIL</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12" ptBr="Topo (m)">MED_TOPO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12.42578125" ptBr="Base (m)">MED_BASE</field>
+	</section>
+	<section name="CONVENCIONAL">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="24" ptBr="Data da Perfilagem">DAT_INICIAL_OPERACAO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="21.5703125" ptBr="Ambiente">IND_AMBIENTE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="28.7109375" ptBr="CNPJ da EAD">CNPJ_COMPANHIA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="23.7109375" ptBr="Ferramenta">DSC_FERRAMENTA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13" ptBr="Perfis">NOM_PERFIL</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12" ptBr="Topo (m)">MED_TOPO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12.42578125" ptBr="Base (m)">MED_BASE</field>
+	</section>
+	<section name="ESPECIAL">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="24" ptBr="Data da Perfilagem">DAT_INICIAL_OPERACAO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="21.5703125" ptBr="Ambiente">IND_AMBIENTE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="28.7109375" ptBr="CNPJ da EAD">CNPJ_COMPANHIA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13" ptBr="Perfis">NOM_PERFIL</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12" ptBr="Topo (m)">MED_TOPO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12.42578125" ptBr="Base (m)">MED_BASE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="17.7109375" ptBr="Prof. única (m)">MED_PROFUNDIDADE_UNICA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="17.28515625" ptBr="Níveis de Sísmica">QTD_SISMICA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="26.140625" ptBr="Integral ">QTD_AMOSTRA_INTEGRAL</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="26.140625" ptBr="Parcial  ">QTD_AMOSTRA_PARCIAL</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="29.140625" ptBr="Sem recuperação">QTD_AMOSTRA_SEM_RECUPERACAO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="26" ptBr="Conclusivo">QTD_PRE_TESTE_CNCLO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="24.7109375" ptBr="Falho">QTD_PRE_TESTE_FALHO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="20.140625" ptBr="Conclusivo">QTD_TESTE_CNCLO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="19.28515625" ptBr="Falho">QTD_TESTE_FALHO</field>
+	</section>
+#endif /* VERSION1 */
+</report>

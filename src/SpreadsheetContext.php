@@ -4,6 +4,7 @@ class SpreadsheetContext
 {
     private $fields;
     private $dimensions;
+    private $labels;
 
     public function __construct(string $file)
     {
@@ -30,6 +31,7 @@ class SpreadsheetContext
 
             $this->fields = $this->extractFields($sheet);
             $this->dimensions = $this->extractDimensions($sheet);
+            $this->labels = $this->extractLabels($sheet);
         } catch (Exception $e) {
             echo $e->getMessage();
         }
@@ -53,13 +55,37 @@ class SpreadsheetContext
 
     private function extractDimensions (\PhpOffice\PhpSpreadsheet\Spreadsheet $sheet)
     {
-        $field_style = [];
+        $field_dimensions = [];
         $sheetNames = $sheet->getSheetNames();
         foreach ($sheetNames as $sn) {
             $worksheet = $sheet->setActiveSheetIndexByName($sn);
-            $field_style[$sn] = $worksheet->getColumnDimensions();
+            $field_dimensions[$sn] = $worksheet->getColumnDimensions();
         }
-        return $field_style;
+        return $field_dimensions;
+    }
+
+    private function extractLabels(\PhpOffice\PhpSpreadsheet\Spreadsheet $sheet)
+    {   
+        $field_label = [];
+        $sheetNames = $sheet->getSheetNames();
+        foreach ($sheetNames as $sn) {
+            $worksheet = $sheet->setActiveSheetIndexByName($sn);
+            $dataArray = $worksheet->toArray(returnCellRef:true);
+            $fields = $dataArray['1'];
+
+            foreach ($fields as $col => $name) {
+                // With a greedy strategy, find index of header's last row and extract the field translated name
+                $guess = 5; // Guessing of the last row index
+                while (true) {
+                    if ($value = $worksheet->getCell($col . $guess)->getValue()) {
+                        $field_label[$name] = $value;
+                        break;
+                    }
+                    $guess--;
+                }
+            }
+        }
+        return $field_label;
     }
 
     public function getFields ()
@@ -70,5 +96,9 @@ class SpreadsheetContext
     public function getDimensions ()
     {
         return $this->dimensions;
+    }
+
+    public function getLabels() {
+        return $this->labels;
     }
 }

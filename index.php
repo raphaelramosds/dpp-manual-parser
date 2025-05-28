@@ -12,9 +12,9 @@ include_once 'env.php';
 
 // ---------- INPUTS
 
-$report = 'NPP';
-$excel = './assets/excel/081-npp.xlsx';
-$pdf = './assets/pdf/081-npp.pdf';
+$report = 'npr';
+$excel = './assets/excel/006_CNPJ_AAAAMMDDHHMMSS_VER.xlsx';
+$pdf = './assets/pdf/Manual_NPR.pdf';
 
 // ---------- PDF to TXT conversion
 
@@ -27,6 +27,7 @@ $pdfh->convert();
 $sc = new SpreadsheetContext($excel);
 $spreadsheet_fields = $sc->getFields();
 $spreadsheet_dimensions = $sc->getDimensions();
+$spreadsheet_labels = $sc->getLabels();
 
 // ---------- GET FIELDS FROM TXT
 
@@ -70,7 +71,7 @@ foreach ($mapping as $section => $fields) {
 
 // ---------- CREATE XML WITH FIELDS AND THEIR RULES
 
-$output = fopen(XML_OUTPUT_DIR . "/$report.xml", 'w');
+$output = fopen(XML_OUTPUT_DIR . "/$report-generated.xml", 'w');
 
 $header = <<<XML
 <?xml version='1.0' encoding='UTF-8'?>
@@ -90,9 +91,11 @@ foreach ($spreadsheet_fields as $section => $fields) {
 
     foreach ($fields as $field) {
         $mf = $mapping[$field];
-        $type = $mf['type'] . '(' . $mf['length'] . ') ' . $mf['required'];
+        $type = $mf['type'];
+        $label = $spreadsheet_labels[$field];
+        if ($mf['length']) $type .= '(' . $mf['length'] . ')';
         $content = <<<XML
-        \t\t<field type="$type" colWidth="{$mf['colWidth']}">{$mf['field']}</field>
+        \t\t<field type="$type" required="{$mf['required']}" colWidth="{$mf['colWidth']}" ptBr="$label">{$mf['field']}</field>
 
         XML;
         fwrite($output, $content);

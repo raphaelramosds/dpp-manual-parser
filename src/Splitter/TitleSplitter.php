@@ -23,7 +23,7 @@ class TitleSplitter implements ISplitter
             }
 
             if (preg_match('/^Natureza\:(.+)/m', $str, $matches)) {
-                $sec['type'] = $this->format($matches[1]);
+                $sec['type'] = $this->transType($this->format($matches[1]));
             }
 
             if (preg_match('/^Tamanho\:(.+)/m', $str, $matches)) {
@@ -33,7 +33,6 @@ class TitleSplitter implements ISplitter
             if (preg_match('/^Obrigatoriedade\:(.+)/m', $str, $matches)) {
                 $sec['required'] = $this->format($matches[1]);
             }
-
 
             if (preg_match('/Preenchimento:\s*(.+)/s', $str, $matches)) {
                 $sec['filling_rule'] = $this->format($matches[1]);
@@ -45,6 +44,16 @@ class TitleSplitter implements ISplitter
         $output = array_combine(array_column($fields, 'field'), $fields);
 
         return $output;
+    }
+
+    private function transType(string $type)
+    {
+        $trans = [
+            'TEXTO' => 'TEXT',
+            'INTEIRO' => 'INTEGER',
+            'DATA' => 'DATE'
+        ];
+        return $trans[$type] ?? $type;
     }
 
     private function format($str)
@@ -66,15 +75,15 @@ class TitleSplitter implements ISplitter
 
         if (preg_match('/Sim|N(a|\ã)o|Condicional/i', $str, $matches)) {
             if (strcasecmp($matches[0], 'Sim') === 0) {
-                return 'REQUIRED';
+                return "1";
             }
 
             if (preg_match('/N(a|\ã)o/i', $matches[0], $matches2) === 1) {
-                return 'NULLABLE';
+                return "0";
             }
 
             if (strcasecmp($matches[0], 'Condicional') === 0) {
-                return 'CONDITIONAL';
+                return "-1";
             }
 
             return 'UNKNOWN';
