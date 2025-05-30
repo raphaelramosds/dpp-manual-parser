@@ -24,7 +24,7 @@ include_once 'env.php';
  * 
  * Notes:
  *  1. Spreadsheets must be in XLSX format.
- *  2. The PDF filename is optional, which is useful when the PDF content has already been extracted into a TXT file.
+ *  2. The PDF filename is optional, which is useful when you already have a TXT version of this PDF
  *  3. Each key defines the TXT filename that will be processed (e.g., 'crp' maps to 'crp.txt').
  */
 $reports = [
@@ -113,7 +113,7 @@ function process($report, $excel, $pdf, $splitter)
 
     // ---------- CREATE XML WITH FIELDS AND THEIR RULES
 
-    $output = fopen(XML_OUTPUT_DIR . "/$report-generated.xml", 'w');
+    $output = fopen(XML_OUTPUT_DIR . "/$report.xml", 'w');
 
     $header = <<<XML
     <?xml version='1.0' encoding='UTF-8'?>
