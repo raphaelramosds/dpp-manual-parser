@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<report name="ncrp">
+	<section name="NCRP">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="24.6640625" ptBr="IDENTIFICADOR_EXTERNO">IDENTIFICADOR_EXTERNO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="9.109375" ptBr=""></field>
+	</section>
+	<section name="DADOS_BASICOS">
+		<field type="INTEIRO POSITIVO(12)" required="1" colWidth="22" ptBr="COD_CADASTRO_POCO">COD_CADASTRO_POCO</field>
+		<field type="NUMERO INTEIRO(10)" required="1" colWidth="17.33203125" ptBr="NUM_REENTRADA">NUM_REENTRADA</field>
+		<field type="DATA(10)" required="1" colWidth="15.44140625" ptBr="DAT_REENTRADA">DAT_REENTRADA</field>
+		<field type="DECIMAL(10,5)" required="0" colWidth="25.44140625" ptBr="MED_PROFUNDIDADE_FINAL">MED_PROFUNDIDADE_FINAL</field>
+		<field type="NUMERO(2)" required="0" colWidth="18.44140625" ptBr="DSC_ESTADO_ATUAL">DSC_ESTADO_ATUAL</field>
+		<field type="TEXTO(2000)" required="1" colWidth="26.5546875" ptBr="DSC_RESULTADO_REENTRADA">DSC_RESULTADO_REENTRADA</field>
+		<field type="TEXTO(4000)" required="0" colWidth="23" ptBr="DSC_DADOS_ADQUIRIDOS">DSC_DADOS_ADQUIRIDOS</field>
+		<field type="TEXTO(2000)" required="0" colWidth="22.33203125" ptBr="DSC_OBSERVACAO_NCRP">DSC_OBSERVACAO_NCRP</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="9.109375" ptBr=""></field>
+	</section>
+</report>

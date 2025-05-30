@@ -10,128 +10,152 @@ require 'src/Splitter/TitleSplitter.php';
 
 include_once 'env.php';
 
-// ---------- INPUTS
+/**
+ * $reports
+ * 
+ * An associative array defining reports for processing.
+ * Each key represents a unique report identifier (e.g., 'crp', 'ncrp').
+ * The value associated with each key is an array with three elements:
+ * 
+ * [0] string   => Spreadsheet filename in XLSX format (required).
+ * [1] ?string  => Related PDF filename (optional; can be null).
+ * [2] object   => An instance of a class that defines how the report content should be split.
+ *                Example: TitleSplitter or FieldFormatSplitter.
+ * 
+ * Notes:
+ *  1. Spreadsheets must be in XLSX format.
+ *  2. The PDF filename is optional, which is useful when the PDF content has already been extracted into a TXT file.
+ *  3. Each key defines the TXT filename that will be processed (e.g., 'crp' maps to 'crp.txt').
+ */
+$reports = [
+    'crp' => ['108_crp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
+    'ncrp' => ['108_ncrp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
+    'nd' => ['102-modelo-nd.xlsx', '102-modelo-nd.pdf', new TitleSplitter()],
+    'sop' => ['007-sop.xlsx', '007-sop.pdf', new TitleSplitter()],
+    'fp' => ['082-fp.xlsx', '082-fp.pdf', new TitleSplitter()],
+    'cipp' => ['095_CIPP.xlsx', '095-dpp-cipp.pdf', new TitleSplitter()],
+    'rfp' => ['098-rfp-exp.xlsx', 'manual-rfp-exp.pdf', new TitleSplitter()],
+    'rfcp' => ['RFCP_NOME_POÇO_V00.xlsx', null, new FieldFormatSplitter()],
+    'la' => ['018-la.xlsx', null, new TitleSplitter()]
+];
 
-$report = 'npr';
-$excel = './assets/excel/006_CNPJ_AAAAMMDDHHMMSS_VER.xlsx';
-$pdf = './assets/pdf/Manual_NPR.pdf';
+foreach ($reports as $report => $files)
+{
+    list($excel, $pdf, $splitter) = $files;
+    process(
+        $report, EXCEL_PATH . '/' . $excel,
+        $pdf ? PDF_PATH . '/' . $pdf : '', 
+        $splitter,
+    );
+}
 
-// ---------- PDF to TXT conversion
+function process($report, $excel, $pdf, $splitter)
+{
+    echo "Generating XML for $report..." . PHP_EOL;
 
-$pdfh = new PdfToTxt($pdf, TXT_OUTPUT_DIR, $report);
-$pdfh->setReloadPdf(false);
-$pdfh->convert();
+    // ---------- PDF to TXT conversion
 
-// ---------- GET FIELDS AND SECTIONS FROM XLSX
-
-$sc = new SpreadsheetContext($excel);
-$spreadsheet_fields = $sc->getFields();
-$spreadsheet_dimensions = $sc->getDimensions();
-$spreadsheet_labels = $sc->getLabels();
-
-// ---------- GET FIELDS FROM TXT
-
-$textContext = new TxtContext(TXT_OUTPUT_DIR . "/$report.txt");
-$textContext->setSplitter(new TitleSplitter());
-$txtFields = $textContext->parse();
-
-// ---------- TXT and XLSX mapping
-$mapping = [];
-foreach ($spreadsheet_fields as $section => $fields) {
-    $n = sizeof($fields);
-    $cols = generate_excel_column_index_pattern($n);
-    $fields = array_values($fields);
-
-    foreach ($fields as $i => $field)
+    if ($pdf)
     {
-        if (!array_key_exists($field, $txtFields)) {
-            echo "Spreadsheet field $field does not match any fields on TXT" . PHP_EOL;
-            $mapping[$field] = [
-                'field' => $field,
-                'type' => 'UNKNOWN',
-                'length' => 'UNKNOWN',
-                'required' => 'UNKNOWN',
-                'filling_rule' => 'UNKNOWN'
-            ];
-        } else {
-            $mapping[$field] = $txtFields[$field];
-        }
-        $mapping[$field]['colWidth'] = $spreadsheet_dimensions[$section][$cols[$i]]->getWidth();
+        $pdfh = new PdfToTxt($pdf, TXT_OUTPUT_DIR, $report);
+        $pdfh->setReloadPdf(true);
+        $pdfh->convert();
     }
-}
 
-foreach ($mapping as $section => $fields) {
-    array_walk($fields, function ($field) use (&$mapping, $section, $fields) {
-        $mapping[$section]['required'] = $fields['required'];
-        $mapping[$section]['type'] = strtoupper($fields['type']);
-        $mapping[$section]['length'] = $fields['length'];
-        $mapping[$section]['filling_rule'] = $fields['filling_rule'];
-    });
-}
+    // ---------- GET FIELDS AND SECTIONS FROM XLSX
 
-// ---------- CREATE XML WITH FIELDS AND THEIR RULES
+    $sc = new SpreadsheetContext($excel);
+    $spreadsheet_fields = $sc->getFields();
+    $spreadsheet_dimensions = $sc->getDimensions();
+    $spreadsheet_labels = $sc->getLabels();
 
-$output = fopen(XML_OUTPUT_DIR . "/$report-generated.xml", 'w');
+    // ---------- GET FIELDS FROM TXT
 
-$header = <<<XML
-<?xml version='1.0' encoding='UTF-8'?>
-<report name="{$report}">
+    $textContext = new TxtContext(TXT_OUTPUT_DIR . "/$report.txt");
+    $textContext->setSplitter($splitter);
+    $txtFields = $textContext->parse();
 
-XML;
-fwrite($output, $header);
+    // ---------- TXT and XLSX mapping
+    $mapping = [];
+    foreach ($spreadsheet_fields as $section => $fields) {
+        $n = sizeof($fields);
+        $cols = generate_excel_column_index_pattern($n);
+        $fields = array_values($fields);
 
-foreach ($spreadsheet_fields as $section => $fields) {
-    $fieldsList = implode(', ', array_filter($fields));
-    $content = <<<XML
-    \t<section name="{$section}">
+        foreach ($fields as $i => $field) {
+            if (!array_key_exists($field, $txtFields)) {
+                // echo "Spreadsheet field $field does not match any fields on TXT" . PHP_EOL;
+                $mapping[$field] = [
+                    'field' => $field,
+                    'type' => 'UNKNOWN',
+                    'length' => 'UNKNOWN',
+                    'required' => 'UNKNOWN',
+                    'filling_rule' => 'UNKNOWN'
+                ];
+            } else {
+                $mapping[$field] = $txtFields[$field];
+            }
+
+            if (array_key_exists($cols[$i], $spreadsheet_dimensions[$section])) {
+                $mapping[$field]['colWidth'] = $spreadsheet_dimensions[$section][$cols[$i]]->getWidth();
+            }
+        }
+    }
+
+    foreach ($mapping as $section => $fields) {
+        array_walk($fields, function ($field) use (&$mapping, $section, $fields) {
+            $mapping[$section]['required'] = $fields['required'];
+            $mapping[$section]['type'] = strtoupper($fields['type']);
+            $mapping[$section]['length'] = $fields['length'];
+            $mapping[$section]['filling_rule'] = $fields['filling_rule'];
+        });
+    }
+
+    // ---------- CREATE XML WITH FIELDS AND THEIR RULES
+
+    $output = fopen(XML_OUTPUT_DIR . "/$report-generated.xml", 'w');
+
+    $header = <<<XML
+    <?xml version='1.0' encoding='UTF-8'?>
+    <report name="{$report}">
 
     XML;
-    fwrite($output, $content);
+    fwrite($output, $header);
 
-
-    foreach ($fields as $field) {
-        $mf = $mapping[$field];
-        $type = $mf['type'];
-        $label = $spreadsheet_labels[$field];
-        if ($mf['length']) $type .= '(' . $mf['length'] . ')';
+    foreach ($spreadsheet_fields as $section => $fields)
+    {
         $content = <<<XML
-        \t\t<field type="$type" required="{$mf['required']}" colWidth="{$mf['colWidth']}" ptBr="$label">{$mf['field']}</field>
+        \t<section name="{$section}">
 
         XML;
+        fwrite($output, $content);
+
+
+        foreach ($fields as $field) {
+            $mf = $mapping[$field];
+            $type = $mf['type'];
+            $colWidth = $mf['colWidth'] ?? '';
+            $label = $spreadsheet_labels[$field] ?? '';
+            if ($mf['length']) $type .= '(' . $mf['length'] . ')';
+            $content = <<<XML
+            \t\t<field type="$type" required="{$mf['required']}" colWidth="$colWidth" ptBr="$label">{$mf['field']}</field>
+
+            XML;
+            fwrite($output, $content);
+        }
+
+        $content = <<<XML
+        \t</section>
+
+        XML;
+
         fwrite($output, $content);
     }
 
     $content = <<<XML
-    \t</section>
-
+    </report>
     XML;
-
     fwrite($output, $content);
+
+    fclose($output);
 }
-
-$content = <<<XML
-</report>
-XML;
-fwrite($output, $content);
-
-fclose($output);
-
-// ---------- PARSE XML
-
-// $xml = simplexml_load_file(XML_OUTPUT_DIR . "/$report.xml");
-
-// if (!$xml) {
-//   echo "Failed loading XML: ";
-//   foreach(libxml_get_errors() as $error) {
-//     echo "<br>", $error->message;
-//   }
-// } else {
-    // Size of sections
-    // echo var_dump(sizeof($xml));
-
-    // Get attribute of a section
-    // echo var_dump($xml->section[0]['name']);
-
-    // List fields of a section
-    // echo var_dump($xml->section[0]->fields);
-// }

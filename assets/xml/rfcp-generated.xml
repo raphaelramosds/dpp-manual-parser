@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<report name="rfcp">
+	<section name="HEADER">
+		<field type="TEXTO" required="NULLABLE" colWidth="10.6640625" ptBr="Filial">COD_FILIAL</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="19.6640625" ptBr="Código Cadastro Poço">COD_CADASTRO_POCO</field>
+		<field type="DATA XX/XX/XXXX" required="NULLABLE" colWidth="21.6640625" ptBr="Data Inicio Completação">DAT_INI_COMPLETACAO</field>
+		<field type="DATA XX/XX/XXXX" required="NULLABLE" colWidth="23.6640625" ptBr="Data Término Completação">DAT_TERMINO_COMPLETACAO</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="20.6640625" ptBr="Unidade Completação">UNIDADE_COMPLETACAO</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="15.6640625" ptBr="Observações">OBSERVACOES</field>
+	</section>
+	<section name="REVESTIMENTOS_PRODUCAO">
+		<field type="TEXTO" required="NULLABLE" colWidth="13.6640625" ptBr="Tipo Conexão">TIPO_CONEXAO</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="13.6640625" ptBr="Diâmetro (pol)">DIAMETRO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="12.6640625" ptBr="Topo (m)">INT_DIAMETRO_TOPO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="12.6640625" ptBr="Base (m)">INT_DIAMETRO_BASE</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="12.6640625" ptBr="Peso (lb/pé)">PESO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="12.6640625" ptBr="Topo (m)">INT_PESO_TOPO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="12.6640625" ptBr="Base (m)">INT_PESO_BASE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="8.6640625" ptBr="º API">GRAU</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="11.6640625" ptBr="Topo (m)">INT_GRAU_TOPO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="11.6640625" ptBr="Base (m)">INT_GRAU_BASE</field>
+	</section>
+	<section name="INTERVALOS_PRODUCAO">
+		<field type="TEXTO" required="NULLABLE" colWidth="20.6640625" ptBr="Unidade Estratigráfica">UNID_ESTRATIGRAFICA</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="8.6640625" ptBr="Topo (m)">TOPO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="10.6640625" ptBr="Base (m)">BASE</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="18.6640625" ptBr="Saturação Água (%)">SATURACAO_AGUA</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="18.6640625" ptBr="Porosidade (%)">POROSIDADE</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="18.6640625" ptBr="Net Pay (m)">NET_PAY</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="14.6640625" ptBr="Tipo de Canhão">TIPO_CANHAO</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="18.6640625" ptBr="Densidade Disparos">DENSIDADE_DISPAROS</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="9.109375" ptBr=""></field>
+	</section>
+	<section name="OP_FRATURAMENTO_ACIDO">
+		<field type="TEXTO" required="NULLABLE" colWidth="20.6640625" ptBr="Unidade Estratigráfica">UNID_ESTRATIGRAFICA</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="8.6640625" ptBr="Topo (m)">TOPO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="10.6640625" ptBr="Base (m)">BASE</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="11.6640625" ptBr="Tipo de Ácido">TIPO_ACIDO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="26.6640625" ptBr="Vol. de Solvente Injetado (m³)">VOL_INJETADO</field>
+	</section>
+	<section name="OP_ACIDIFICACAO_MATRIZ">
+		<field type="TEXTO" required="NULLABLE" colWidth="20.6640625" ptBr="Unidade Estratigráfica">UNID_ESTRATIGRAFICA</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="8.6640625" ptBr="Topo (m)">TOPO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="10.6640625" ptBr="Base (m)">BASE</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="11.6640625" ptBr="Tipo de Ácido">TIPO_ACIDO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="26.6640625" ptBr="Vol. de Solvente Injetado (m³)">VOL_INJETADO</field>
+	</section>
+	<section name="OP_INJECAO_SOLVENTE">
+		<field type="TEXTO" required="NULLABLE" colWidth="20.6640625" ptBr="Unidade Estratigráfica">UNID_ESTRATIGRAFICA</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="8.6640625" ptBr="Topo (m)">TOPO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="10.6640625" ptBr="Base (m)">BASE</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="14.6640625" ptBr="Tipo de Solvente">TIPO_SOLVENTE</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="26.6640625" ptBr="Vol. de Solvente Injetado (m³)">VOL_INJETADO</field>
+	</section>
+	<section name="OP_CONTENCAO_AREIA">
+		<field type="TEXTO" required="NULLABLE" colWidth="20.6640625" ptBr="Unidade Estratigráfica">UNID_ESTRATIGRAFICA</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="8.6640625" ptBr="Topo (m)">TOPO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="10.6640625" ptBr="Base (m)">BASE</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="5.6640625" ptBr="MESH">MESH</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="16.6640625" ptBr="Tipo de Contenção">TIPO_CONTENCAO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="16.6640625" ptBr="Vol. De Gravel (m³)">VOL_GRAVEL</field>
+	</section>
+	<section name="OP_FRATURAMENTO_HIDRAULICO">
+		<field type="TEXTO" required="NULLABLE" colWidth="20.6640625" ptBr="Unidade Estratigráfica">UNID_ESTRATIGRAFICA</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="8.6640625" ptBr="Topo (m)">TOPO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="10.6640625" ptBr="Base (m)">BASE</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="24.6640625" ptBr="Tipo Agente de Sustentação">TIPO_AGENTE_SUSTENTACAO</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="28.6640625" ptBr="Vol. Agente de Sustentação (m³)">VOL_AGENTE_SUSTENTACAO</field>
+	</section>
+	<section name="COLUNAS_PRODUCAO">
+		<field type="TEXTO" required="NULLABLE" colWidth="20.6640625" ptBr="Equipamento">TXT_EQUIPAMENTO</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="10.6640625" ptBr="O.D. (pol)">OD</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="10.6640625" ptBr="I.D. (pol)">ID</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="8.6640625" ptBr="Topo (m)">TOPO</field>
+	</section>
+	<section name="TESTES_FORMACAO">
+		<field type="TEXTO" required="NULLABLE" colWidth="12.6640625" ptBr="Tipo de Teste">TIPO_TESTE</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="12.6640625" ptBr="Abertura (pol)">ABERTURA</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="13.6640625" ptBr="Vazão (m³/dia)">VAZAO</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="21.6640625" ptBr="Pressão a Montante (psi)">PRESSAO_MONTANTE</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="12.6640625" ptBr="RGO (m³/m³)">RGO</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="8.6640625" ptBr="BSW (%)">BSW</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="9.6640625" ptBr="Areia (%)">AREIA</field>
+		<field type="TEXTO" required="NULLABLE" colWidth="16.6640625" ptBr="TIPO">TIPO_HC</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="5.6640625" ptBr="º API">API</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="5.6640625" ptBr="DG">DG</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="15.6640625" ptBr="Prof. Vertical (m)">PROF_VERTICAL</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="27.6640625" ptBr="Pressão Estática Extrapolada (kgf/cm²)">PRESSAO_ESTATICA_ESTRAPOLADA</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="20.6640625" ptBr="Pressão de Fluxo Final (kgf/cm²)">PRESSAO_FLUXO_FINAL</field>
+		<field type="DECIMAL(10,2)" required="NULLABLE" colWidth="6.6640625" ptBr="K (mD)">K</field>
+		<field type="DECIMAL(10,3)" required="NULLABLE" colWidth="18.6640625" ptBr="IP (m³/dia/kgf/cm²)">IP</field>
+		<field type="DECIMAL(10,1)" required="NULLABLE" colWidth="5.6640625" ptBr="Dano">DANO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="9.109375" ptBr=""></field>
+	</section>
+</report>

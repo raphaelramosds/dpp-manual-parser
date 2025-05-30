@@ -71,7 +71,7 @@ class SpreadsheetContext
         foreach ($sheetNames as $sn) {
             $worksheet = $sheet->setActiveSheetIndexByName($sn);
             $dataArray = $worksheet->toArray(returnCellRef:true);
-            $fields = $dataArray['1'];
+            $fields = array_filter($dataArray['1']);
 
             foreach ($fields as $col => $name) {
                 // With a greedy strategy, find index of header's last row and extract the field translated name

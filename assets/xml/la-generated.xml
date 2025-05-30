@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<report name="la">
+	<section name="DADOS_BASICOS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="20.88671875" ptBr="CNPJ">NUM_CNPJ_EMPRESA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="18" ptBr="Número da Licença">NUM_LICENCA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="22" ptBr="Cod. Órgão Emissor">COD_ORGAO_EMISSOR</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="29.109375" ptBr="Cod. Tipo de Licença Ambiental">COD_TIPO_LICENCA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="15.44140625" ptBr="Data de Emissão">DAT_EMISSAO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="16.109375" ptBr="Data de Validade">DAT_VALIDADE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="25.88671875" ptBr="Tipo de Limite">COD_TIPO_LIMITE_LICENCA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="15" ptBr="Limite de Poços">QTD_LIMITE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="26.44140625" ptBr="Descrição da área Licenciada">DSC_AREA_LICENCIADA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12.33203125" ptBr="Observações">DSC_OBS</field>
+	</section>
+	<section name="ATIVIDADES_LICENCIADAS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="20.88671875" ptBr="Tipo de Atividade">COD_TIPO_ATIVIDADE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="22.44140625" ptBr="Data Início de Atividade">DAT_INICIO_ATIVIDADE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="18.6640625" ptBr="Descrição Atividade">DSC_ATIVIDADE</field>
+	</section>
+	<section name="AREAS_LICENCIADAS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="14.6640625" ptBr="Latitude">MED_LATITUDE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="16.6640625" ptBr="Longitude">MED_LONGITUDE</field>
+	</section>
+	<section name="SONDAS_LICENCIADAS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12.33203125" ptBr="Sonda">COD_SONDA</field>
+	</section>
+	<section name="INSTALACOES_LICENCIADAS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="17.44140625" ptBr="Cod. Instalação">COD_INSTALACAO</field>
+	</section>
+	<section name="MUNICIPIOS_LICENCIADOS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="14.5546875" ptBr="Cod. Municipio">COD_UG</field>
+	</section>
+	<section name="BLOCOS_LICENCIADOS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.33203125" ptBr="Cod. Bacia">COD_BACIA</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.88671875" ptBr="Bloco">COD_BLOCO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="15" ptBr="Limite de Poços">QTD_LIMITE</field>
+	</section>
+	<section name="CAMPOS_LICENCIADOS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="12.6640625" ptBr="Cod. Campo">COD_CAMPO</field>
+	</section>
+	<section name="IMAGENS_LICENCA">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="23.5546875" ptBr="Nome Imagem">NOM_IMAGEM_LICENCA</field>
+	</section>
+</report>

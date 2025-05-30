@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<report name="fp">
+	<section name="FINAL_PERFURACAO">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.28515625" ptBr="ORDEM_FP">ORDEM_FP</field>
+		<field type="TEXT(12)" required="1" colWidth="18" ptBr="NOME_POCO_ANP">NOME_POCO_ANP</field>
+		<field type="DECIMAL(5,2)" required="1" colWidth="34.7109375" ptBr="COTA_MESA_ROTATIVA_REFERENCIA">COTA_MESA_ROTATIVA_REFERENCIA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="22.5703125" ptBr="VALOR_KICK_OF_POINT">VALOR_KICK_OF_POINT</field>
+		<field type="DECIMAL(5,2)" required="1" colWidth="28.42578125" ptBr="DOG_LEG_SEVERITY_MAXIMO">DOG_LEG_SEVERITY_MAXIMO</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="37.140625" ptBr="AFASTAMENTO_HORIZONTAL_MAXIMO">AFASTAMENTO_HORIZONTAL_MAXIMO</field>
+		<field type="DECIMAL(5,2)" required="1" colWidth="21.42578125" ptBr="INCLINACAO_MAXIMA">INCLINACAO_MAXIMA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="32" ptBr="PRESSAO_MAXIMA_CONSTATADA">PRESSAO_MAXIMA_CONSTATADA</field>
+		<field type="DECIMAL(5,2)" required="1" colWidth="37.42578125" ptBr="TEMPERATURA_MAXIMA_CONSTATADA">TEMPERATURA_MAXIMA_CONSTATADA</field>
+		<field type="TEXT(1)" required="1" colWidth="31.42578125" ptBr="OBJETIVO_ATIVIDADE_ATENDIDO">OBJETIVO_ATIVIDADE_ATENDIDO</field>
+		<field type="TEXT(1)" required="1" colWidth="32.140625" ptBr="SHALLOW_HAZARD_CONSTATADO">SHALLOW_HAZARD_CONSTATADO</field>
+		<field type="TEXT(1)" required="1" colWidth="10.5703125" ptBr="SURGENTE">SURGENTE</field>
+		<field type="TEXT(1000)" required="0" colWidth="14.28515625" ptBr="OBSERVACOES">OBSERVACOES</field>
+	</section>
+	<section name="FASES">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.28515625" ptBr="ORDEM_FP">ORDEM_FP</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13.42578125" ptBr="ORDEM_FASE">ORDEM_FASE</field>
+		<field type="INTEGER(10)" required="1" colWidth="15" ptBr="NUMERO_FASE">NUMERO_FASE</field>
+		<field type="TEXT(1)" required="1" colWidth="5.42578125" ptBr="MPD">MPD</field>
+		<field type="DECIMAL(15,3)" required="1" colWidth="23" ptBr="DIAMETRO_POLEGADAS">DIAMETRO_POLEGADAS</field>
+		<field type="TEXT(1)" required="1" colWidth="12.5703125" ptBr="ALARGADOR">ALARGADOR</field>
+		<field type="DATE(10)" required="1" colWidth="18.42578125" ptBr="DATA_INICIO_FASE">DATA_INICIO_FASE</field>
+		<field type="DATE(10)" required="1" colWidth="17.85546875" ptBr="DATA_FINAL_FASE">DATA_FINAL_FASE</field>
+		<field type="INTEGER(10)" required="1" colWidth="30.140625" ptBr="UNIDADE_INTERVENCAO_FASES">UNIDADE_INTERVENCAO_FASES</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="24.5703125" ptBr="FASES_NOME_POCO_ANP">FASES_NOME_POCO_ANP</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="30.5703125" ptBr="TOPO_PROFUNDIDADE_MEDIDA">TOPO_PROFUNDIDADE_MEDIDA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="30" ptBr="BASE_PROFUNDIDADE_MEDIDA">BASE_PROFUNDIDADE_MEDIDA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="31.5703125" ptBr="TOPO_PROFUNDIDADE_VERTICAL">TOPO_PROFUNDIDADE_VERTICAL</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="31" ptBr="BASE_PROFUNDIDADE_VERTICAL">BASE_PROFUNDIDADE_VERTICAL</field>
+		<field type="DECIMAL(10,2)" required="1" colWidth="32.5703125" ptBr="TEMPO_PERFURACAO_DIAS_UTEIS">TEMPO_PERFURACAO_DIAS_UTEIS</field>
+		<field type="DECIMAL(10,2)" required="1" colWidth="36.5703125" ptBr="TEMPO_PERFURACAO_DIAS_PERDIDOS">TEMPO_PERFURACAO_DIAS_PERDIDOS</field>
+		<field type="TEXT(20)" required="0" colWidth="22.85546875" ptBr="TESTE_ABSORCAO_TIPO">TESTE_ABSORCAO_TIPO</field>
+		<field type="DECIMAL(10,2)" required="0" colWidth="33.28515625" ptBr="TESTE_ABSORCAO_PROFUNDIDADE">TESTE_ABSORCAO_PROFUNDIDADE</field>
+		<field type="DECIMAL(10,2)" required="0" colWidth="29.7109375" ptBr="TESTE_ABSORCAO_PESO_LAMA">TESTE_ABSORCAO_PESO_LAMA</field>
+		<field type="DECIMAL(10,2)" required="0" colWidth="25" ptBr="TESTE_ABSORCAO_BARRIL">TESTE_ABSORCAO_BARRIL</field>
+		<field type="DECIMAL(10,2)" required="0" colWidth="31.28515625" ptBr="TESTE_ABSORCAO_LIBRA_GALAO">TESTE_ABSORCAO_LIBRA_GALAO</field>
+		<field type="DATE(10)" required="1" colWidth="29.140625" ptBr="DATA_TERMINO_PERFURACAO">DATA_TERMINO_PERFURACAO</field>
+		<field type="TEXT(1)" required="1" colWidth="38.7109375" ptBr="EXIGE_MEDIDA_CONTROLE_ADEQUACAO">EXIGE_MEDIDA_CONTROLE_ADEQUACAO</field>
+		<field type="TEXT(1)" required="1" colWidth="10.140625" ptBr="RISERLESS">RISERLESS</field>
+		<field type="DECIMAL(4,2)" required="1" colWidth="28.28515625" ptBr="GRADIENTE_POROS_MAXIMO">GRADIENTE_POROS_MAXIMO</field>
+		<field type="DECIMAL(4,2)" required="1" colWidth="30" ptBr="GRADIENTE_FRATURA_MINIMO">GRADIENTE_FRATURA_MINIMO</field>
+		<field type="DECIMAL(4,2)" required="1" colWidth="32.5703125" ptBr="ECD_MAXIMO_SAPATA_ANTERIOR">ECD_MAXIMO_SAPATA_ANTERIOR</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.42578125" ptBr="TOTAL_H2S">TOTAL_H2S</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.7109375" ptBr="TOTAL_CO2">TOTAL_CO2</field>
+		<field type="TEXT(1)" required="1" colWidth="17.140625" ptBr="PERDAS_SEVERAS">PERDAS_SEVERAS</field>
+		<field type="TEXT(1)" required="1" colWidth="27.7109375" ptBr="PERFURACAO_OVERBALANCE">PERFURACAO_OVERBALANCE</field>
+		<field type="TEXT(1)" required="1" colWidth="11.5703125" ptBr="AQUIFEROS">AQUIFEROS</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="62.7109375" ptBr="FALHAS_GEOLOGICAS_NAO_SELANTES_ATRAVESSANDO_ZONAS_HC">FALHAS_GEOLOGICAS_NAO_SELANTES_ATRAVESSANDO_ZONAS_HC</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="37.5703125" ptBr="FORMACOES_REATIVAS_CONTENDO_HC">FORMACOES_REATIVAS_CONTENDO_HC</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="25.85546875" ptBr="SAL_ALTA_TAXA_FLUENCIA">SAL_ALTA_TAXA_FLUENCIA</field>
+	</section>
+	<section name="REVESTIMENTOS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.28515625" ptBr="ORDEM_FP">ORDEM_FP</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13.42578125" ptBr="ORDEM_FASE">ORDEM_FASE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="30.140625" ptBr="NUMERO_FASE_REVESTIMENTO">NUMERO_FASE_REVESTIMENTO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="26.28515625" ptBr="DIAMETRO_REVESTIMENTO">DIAMETRO_REVESTIMENTO</field>
+		<field type="TEXT(1)" required="1" colWidth="14.140625" ptBr="CONTINGENTE">CONTINGENTE</field>
+		<field type="DOMINIO(1)" required="1" colWidth="15" ptBr="CLASSIFICACAO">CLASSIFICACAO</field>
+		<field type="DOMINIO(1)" required="1" colWidth="5.28515625" ptBr="TIPO">TIPO</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="27.140625" ptBr="PESO_TUBO_REVESTIMENTO">PESO_TUBO_REVESTIMENTO</field>
+		<field type="TEXT(20)" required="1" colWidth="27.85546875" ptBr="GRAU_TUBO_REVESTIMENTO">GRAU_TUBO_REVESTIMENTO</field>
+		<field type="TEXT(100)" required="1" colWidth="25.28515625" ptBr="CONEXAO_REVESTIMENTO">CONEXAO_REVESTIMENTO</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="30.5703125" ptBr="TOPO_PROFUNDIDADE_MEDIDA">TOPO_PROFUNDIDADE_MEDIDA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="30" ptBr="BASE_PROFUNDIDADE_MEDIDA">BASE_PROFUNDIDADE_MEDIDA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="31.5703125" ptBr="TOPO_PROFUNDIDADE_VERTICAL">TOPO_PROFUNDIDADE_VERTICAL</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="31" ptBr="BASE_PROFUNDIDADE_VERTICAL">BASE_PROFUNDIDADE_VERTICAL</field>
+		<field type="DOMINIO(1)" required="0" colWidth="23.5703125" ptBr="TIPO_CENTRALIZADORES">TIPO_CENTRALIZADORES</field>
+		<field type="INTEGER(10)" required="0" colWidth="31.5703125" ptBr="QUANTIDADE_CENTRALIZADORES">QUANTIDADE_CENTRALIZADORES</field>
+		<field type="TEXT(100)" required="0" colWidth="32.140625" ptBr="CENTRALIZADORES_DISTRIBUICAO">CENTRALIZADORES_DISTRIBUICAO</field>
+		<field type="TEXT(1)" required="1" colWidth="21.42578125" ptBr="CONEXAO_GAS_TIGHT">CONEXAO_GAS_TIGHT</field>
+		<field type="TEXT(1)" required="1" colWidth="20.85546875" ptBr="ANULAR_CONFINADO">ANULAR_CONFINADO</field>
+		<field type="TEXT(1)" required="1" colWidth="24.7109375" ptBr="DIMENSIONAMENTO_APB">DIMENSIONAMENTO_APB</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="31.42578125" ptBr="REVESTIMENTO_RESISTENTE_H2S">REVESTIMENTO_RESISTENTE_H2S</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="31.5703125" ptBr="REVESTIMENTO_RESISTENTE_CO2">REVESTIMENTO_RESISTENTE_CO2</field>
+		<field type="TEXT(1)" required="1" colWidth="75.85546875" ptBr="METALURGIA_REVESTIMENTOS_ATENDE_CRITERIO_ACEITACAO_CONCESSIONARIO">METALURGIA_REVESTIMENTOS_ATENDE_CRITERIO_ACEITACAO_CONCESSIONARIO</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="95.28515625" ptBr="DIMENSIONAMENTO_REVESTIMENTOS_BASEADO_METODOLOGIA_DETERMINISTICA_REGIME_ELASTICO">DIMENSIONAMENTO_REVESTIMENTOS_BASEADO_METODOLOGIA_DETERMINISTICA_REGIME_ELASTICO</field>
+		<field type="TEXT(1)" required="1" colWidth="82.85546875" ptBr="DIMENSIONAMENTO_REVESTIMENTOS_ATENDE_CRITERIO_ACEITACAO_CONCESSIONARIO">DIMENSIONAMENTO_REVESTIMENTOS_ATENDE_CRITERIO_ACEITACAO_CONCESSIONARIO</field>
+	</section>
+	<section name="FLUIDOS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.28515625" ptBr="ORDEM_FP">ORDEM_FP</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13.42578125" ptBr="ORDEM_FASE">ORDEM_FASE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="22.7109375" ptBr="NUMERO_FASE_FLUIDO">NUMERO_FASE_FLUIDO</field>
+		<field type="DECIMAL(10,2)" required="1" colWidth="24.28515625" ptBr="PROFUNDIDADE_MEDIDA">PROFUNDIDADE_MEDIDA</field>
+		<field type="INTEGER(1)" required="1" colWidth="13.140625" ptBr="TIPO_FLUIDO">TIPO_FLUIDO</field>
+		<field type="DECIMAL(4,2)" required="1" colWidth="17" ptBr="PESO_ESPECIFICO">PESO_ESPECIFICO</field>
+		<field type="DECIMAL(10,2)" required="0" colWidth="21.140625" ptBr="VISCOSIDADE_MARSH">VISCOSIDADE_MARSH</field>
+		<field type="DECIMAL(10,2)" required="0" colWidth="16.5703125" ptBr="VISCOSIDADE_CP">VISCOSIDADE_CP</field>
+		<field type="DECIMAL(10,1)" required="0" colWidth="21.140625" ptBr="LIMITE_ESCOAMENTO">LIMITE_ESCOAMENTO</field>
+		<field type="DECIMAL(10,1)" required="0" colWidth="12" ptBr="SALINIDADE">SALINIDADE</field>
+		<field type="TEXT(20)" required="0" colWidth="19.85546875" ptBr="RAZAO_OLEO_AGUA">RAZAO_OLEO_AGUA</field>
+	</section>
+	<section name="BROCAS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.28515625" ptBr="ORDEM_FP">ORDEM_FP</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13.42578125" ptBr="ORDEM_FASE">ORDEM_FASE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="22.42578125" ptBr="NUMERO_FASE_BROCA">NUMERO_FASE_BROCA</field>
+		<field type="TEXT(20)" required="1" colWidth="16.5703125" ptBr="BROCA_MODELO">BROCA_MODELO</field>
+		<field type="DOMINIO(1)" required="1" colWidth="12.7109375" ptBr="TIPO_BROCA">TIPO_BROCA</field>
+		<field type="TEXT(20)" required="0" colWidth="13.85546875" ptBr="CODIGO_IADC">CODIGO_IADC</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="18.42578125" ptBr="DIAMETRO_BROCA">DIAMETRO_BROCA</field>
+		<field type="TEXT(20)" required="0" colWidth="14" ptBr="JATOS_BROCA">JATOS_BROCA</field>
+		<field type="DECIMAL(10,2)" required="1" colWidth="25.5703125" ptBr="PROFUNDIDADE_ENTRADA">PROFUNDIDADE_ENTRADA</field>
+		<field type="DECIMAL(10,2)" required="1" colWidth="22.42578125" ptBr="PROFUNDIDADE_SAIDA">PROFUNDIDADE_SAIDA</field>
+		<field type="DECIMAL(10,2)" required="1" colWidth="16.28515625" ptBr="TEMPO_EFETIVO">TEMPO_EFETIVO</field>
+		<field type="TEXT(20)" required="0" colWidth="21.85546875" ptBr="INDICADOR_DESGASTE">INDICADOR_DESGASTE</field>
+	</section>
+	<section name="BHAS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.28515625" ptBr="ORDEM_FP">ORDEM_FP</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13.42578125" ptBr="ORDEM_FASE">ORDEM_FASE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="19.85546875" ptBr="NUMERO_FASE_BHA">NUMERO_FASE_BHA</field>
+		<field type="INTEGER(10)" required="1" colWidth="9.5703125" ptBr="NUMERO">NUMERO</field>
+		<field type="TEXT(100)" required="1" colWidth="9.85546875" ptBr="OBJETIVO">OBJETIVO</field>
+		<field type="TEXT(100)" required="1" colWidth="14.140625" ptBr="COMPONENTE">COMPONENTE</field>
+		<field type="DECIMAL(15,3)" required="1" colWidth="15.85546875" ptBr="OD_POLEGADAS">OD_POLEGADAS</field>
+		<field type="DECIMAL(15,3)" required="1" colWidth="15" ptBr="ID_POLEGADAS">ID_POLEGADAS</field>
+		<field type="DECIMAL(10,2)" required="1" colWidth="15.42578125" ptBr="COMPRIMENTO">COMPRIMENTO</field>
+		<field type="DECIMAL(10,2)" required="1" colWidth="11.5703125" ptBr="PESO_PESO">PESO_PESO</field>
+	</section>
+	<section name="CIMENTACOES">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.28515625" ptBr="ORDEM_FP">ORDEM_FP</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13.42578125" ptBr="ORDEM_FASE">ORDEM_FASE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="28.42578125" ptBr="NUMERO_FASE_CIMENTACAO">NUMERO_FASE_CIMENTACAO</field>
+		<field type="DOMINIO(1)" required="1" colWidth="9" ptBr="ESTAGIO">ESTAGIO</field>
+		<field type="DECIMAL(10,2)" required="1" colWidth="15.28515625" ptBr="BASE_CIMENTO">BASE_CIMENTO</field>
+		<field type="DECIMAL(10,2)" required="1" colWidth="15.85546875" ptBr="TOPO_CIMENTO">TOPO_CIMENTO</field>
+		<field type="TEXT(100)" required="1" colWidth="22" ptBr="IDENTIFICACAO_PASTA">IDENTIFICACAO_PASTA</field>
+		<field type="TEXT(1)" required="1" colWidth="15.5703125" ptBr="CONTROLE_GAS">CONTROLE_GAS</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="17.28515625" ptBr="RESISTENCIA_CO2">RESISTENCIA_CO2</field>
+		<field type="DECIMAL(4,2)" required="1" colWidth="17" ptBr="PESO_ESPECIFICO">PESO_ESPECIFICO</field>
+		<field type="DECIMAL(10,1)" required="1" colWidth="9" ptBr="VOLUME">VOLUME</field>
+		<field type="TEXT(100)" required="1" colWidth="26.140625" ptBr="LAVADORES_ESPACADORES">LAVADORES_ESPACADORES</field>
+		<field type="TEXT(1000)" required="0" colWidth="14.28515625" ptBr="OBSERVACOES">OBSERVACOES</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="31.5703125" ptBr="TOPO_PROFUNDIDADE_VERTICAL">TOPO_PROFUNDIDADE_VERTICAL</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="31" ptBr="BASE_PROFUNDIDADE_VERTICAL">BASE_PROFUNDIDADE_VERTICAL</field>
+		<field type="TEXT(1)" required="1" colWidth="33.140625" ptBr="FORMACAO_PERMEAVEL_EXPOSTA">FORMACAO_PERMEAVEL_EXPOSTA</field>
+	</section>
+	<section name="RECIMENTACOES">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.28515625" ptBr="ORDEM_FP">ORDEM_FP</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13.42578125" ptBr="ORDEM_FASE">ORDEM_FASE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="30.7109375" ptBr="NUMERO_FASE_RECIMENTACAO">NUMERO_FASE_RECIMENTACAO</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="30.5703125" ptBr="TOPO_PROFUNDIDADE_MEDIDA">TOPO_PROFUNDIDADE_MEDIDA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="30" ptBr="BASE_PROFUNDIDADE_MEDIDA">BASE_PROFUNDIDADE_MEDIDA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="31.5703125" ptBr="TOPO_PROFUNDIDADE_VERTICAL">TOPO_PROFUNDIDADE_VERTICAL</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="31" ptBr="BASE_PROFUNDIDADE_VERTICAL">BASE_PROFUNDIDADE_VERTICAL</field>
+	</section>
+	<section name="PERFILAGENS">
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="11.28515625" ptBr="ORDEM_FP">ORDEM_FP</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="13.42578125" ptBr="ORDEM_FASE">ORDEM_FASE</field>
+		<field type="UNKNOWN(UNKNOWN)" required="UNKNOWN" colWidth="27.5703125" ptBr="NUMERO_FASE_PERFILAGEM">NUMERO_FASE_PERFILAGEM</field>
+		<field type="TEXT(1)" required="1" colWidth="21" ptBr="PERFILAGEM_EFETIVA">PERFILAGEM_EFETIVA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="30.5703125" ptBr="TOPO_PROFUNDIDADE_MEDIDA">TOPO_PROFUNDIDADE_MEDIDA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="30" ptBr="BASE_PROFUNDIDADE_MEDIDA">BASE_PROFUNDIDADE_MEDIDA</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="31.5703125" ptBr="TOPO_PROFUNDIDADE_VERTICAL">TOPO_PROFUNDIDADE_VERTICAL</field>
+		<field type="DECIMAL(8,2)" required="1" colWidth="31" ptBr="BASE_PROFUNDIDADE_VERTICAL">BASE_PROFUNDIDADE_VERTICAL</field>
+	</section>
+</report>
