@@ -23,7 +23,7 @@ require 'vendor/autoload.php';
  *  3. Each key defines the TXT filename that will be processed (e.g., 'crp' maps to 'crp.txt').
  */
 $reports = [
-    'crp' => ['108_crp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
+    // 'crp' => ['108_crp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
     //    'ncrp' => ['108_ncrp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
     //    'nd' => ['102-modelo-nd.xlsx', '102-modelo-nd.pdf', new TitleSplitter()],
     //    'sop' => ['007-sop.xlsx', '007-sop.pdf', new TitleSplitter()],
@@ -33,14 +33,14 @@ $reports = [
     //    'rfcp' => ['RFCP_NOME_POÇO_V00.xlsx', null, new FieldFormatSplitter()],
     //    'la' => ['018-la.xlsx', null, new TitleSplitter()]
     // 'cp' => ['109_CP.xlsx', 'cp.pdf', new TitleSplitter()]
-    // 'rap' => ['rap.json', null, new TitleSplitter()]
+    'rap' => [JSON_PATH . '/rap.json', null, new TitleSplitter()]
 ];
 
 foreach ($reports as $report => $files) {
     list($excel, $pdf, $splitter) = $files;
     process(
         $report,
-        EXCEL_PATH . '/' . $excel,
+        $excel,
         $pdf ? PDF_PATH . '/' . $pdf : '',
         $splitter,
     );
@@ -62,14 +62,18 @@ function process($report, $excel, $pdf, $splitter)
 
     $sc = create_context($excel);
     $spreadsheet_fields = $sc->getFields();
-    $spreadsheet_dimensions = $sc->getDimensions();
+    // $spreadsheet_dimensions = $sc->getDimensions();
     $spreadsheet_labels = $sc->getLabels();
+
+    log_info($spreadsheet_fields);
 
     // ---------- GET FIELDS FROM TXT
 
     $textContext = create_context(TXT_OUTPUT_DIR . "/$report.txt");
     $textContext->setSplitter($splitter);
     $txtFields = $textContext->parse();
+
+    log_info($txtFields);
 
     // ---------- TXT and XLSX mapping
     $mapping = [];
@@ -92,9 +96,9 @@ function process($report, $excel, $pdf, $splitter)
                 $mapping[$field] = $txtFields[$field];
             }
 
-            if (array_key_exists($cols[$i], $spreadsheet_dimensions[$section])) {
-                $mapping[$field]['colWidth'] = $spreadsheet_dimensions[$section][$cols[$i]]->getWidth();
-            }
+            // if (array_key_exists($cols[$i], $spreadsheet_dimensions[$section])) {
+            //     $mapping[$field]['colWidth'] = $spreadsheet_dimensions[$section][$cols[$i]]->getWidth();
+            // }
         }
     }
 

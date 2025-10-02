@@ -7,3 +7,5 @@ define('PDF_PATH', __DIR__ . '/assets/inputs/pdf');
 define('IMG_PATH', __DIR__ . '/assets/outputs/img');
 define('XML_OUTPUT_DIR', __DIR__ . '/assets/outputs/xml');
 define('TXT_OUTPUT_DIR', __DIR__ . '/assets/outputs/txt');
+
+define('LOGS', __DIR__ . '/logs');

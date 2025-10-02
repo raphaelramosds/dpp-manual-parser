@@ -17,7 +17,7 @@ class JsonContext implements ContextInterface
                 throw new InvalidArgumentException("File not found: $file");
             }
             $str = file_get_contents($file);
-            $this->data = json_decode($str);
+            $this->data = (array) json_decode($str);
         } catch (Exception $e) {
             echo $e->getMessage();
         }
