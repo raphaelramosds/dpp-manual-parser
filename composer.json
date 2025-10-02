@@ -10,6 +10,7 @@
         },
         "files": [
             "src/utils.php",
+            "src/helpers.php",
             "config.php"
         ]
     }

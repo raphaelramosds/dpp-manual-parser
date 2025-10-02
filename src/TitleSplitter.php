@@ -2,6 +2,8 @@
 
 namespace DppManualParser;
 
+use DppManualParser\interfaces\SplitterInterface;
+
 class TitleSplitter implements SplitterInterface
 {
     public function handle(string $content) : array

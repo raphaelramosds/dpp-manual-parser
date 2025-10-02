@@ -1,6 +1,6 @@
 <?php
 
-namespace DppManualParser;
+namespace DppManualParser\interfaces;
 
 interface SplitterInterface
 {

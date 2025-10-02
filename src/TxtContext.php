@@ -2,6 +2,7 @@
 
 namespace DppManualParser;
 
+use DppManualParser\interfaces\SplitterInterface;
 use Exception;
 use InvalidArgumentException;
 

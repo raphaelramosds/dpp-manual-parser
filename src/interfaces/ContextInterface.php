@@ -1,9 +1,10 @@
 <?php
 
-namespace DppManualParser;
+namespace DppManualParser\interfaces;
 
-interface ContextInterface {
+interface ContextInterface
+{
     public function getFields();
-    
+
     public function getLabels();
 }

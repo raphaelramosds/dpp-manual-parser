@@ -2,10 +2,11 @@
 
 namespace DppManualParser;
 
+use DppManualParser\interfaces\ContextInterface;
 use Exception;
 use InvalidArgumentException;
 
-class SpreadsheetContext
+class SpreadsheetContext implements ContextInterface
 {
     private $fields;
     private $dimensions;
@@ -58,7 +59,7 @@ class SpreadsheetContext
     }
 
 
-    private function extractDimensions (\PhpOffice\PhpSpreadsheet\Spreadsheet $sheet)
+    private function extractDimensions(\PhpOffice\PhpSpreadsheet\Spreadsheet $sheet)
     {
         $field_dimensions = [];
         $sheetNames = $sheet->getSheetNames();
@@ -70,12 +71,12 @@ class SpreadsheetContext
     }
 
     private function extractLabels(\PhpOffice\PhpSpreadsheet\Spreadsheet $sheet)
-    {   
+    {
         $field_label = [];
         $sheetNames = $sheet->getSheetNames();
         foreach ($sheetNames as $sn) {
             $worksheet = $sheet->setActiveSheetIndexByName($sn);
-            $dataArray = $worksheet->toArray(returnCellRef:true);
+            $dataArray = $worksheet->toArray(returnCellRef: true);
             $fields = array_filter($dataArray['1']);
 
             foreach ($fields as $col => $name) {
@@ -93,17 +94,18 @@ class SpreadsheetContext
         return $field_label;
     }
 
-    public function getFields ()
+    public function getFields()
     {
         return $this->fields;
     }
 
-    public function getDimensions ()
+    public function getDimensions()
     {
         return $this->dimensions;
     }
 
-    public function getLabels() {
+    public function getLabels()
+    {
         return $this->labels;
     }
 }

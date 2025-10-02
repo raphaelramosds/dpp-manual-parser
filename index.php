@@ -1,8 +1,6 @@
 <?php
 
-use DppManualParser\SpreadsheetContext;
 use DppManualParser\TitleSplitter;
-use DppManualParser\TxtContext;
 use raphaelramosds\PdfToTxt\PdfToTxt;
 
 require 'vendor/autoload.php';
@@ -25,25 +23,25 @@ require 'vendor/autoload.php';
  *  3. Each key defines the TXT filename that will be processed (e.g., 'crp' maps to 'crp.txt').
  */
 $reports = [
-   'crp' => ['108_crp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
-//    'ncrp' => ['108_ncrp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
-//    'nd' => ['102-modelo-nd.xlsx', '102-modelo-nd.pdf', new TitleSplitter()],
-//    'sop' => ['007-sop.xlsx', '007-sop.pdf', new TitleSplitter()],
-//    'fp' => ['082-fp.xlsx', '082-fp.pdf', new TitleSplitter()],
-//    'cipp' => ['095_CIPP.xlsx', '095-dpp-cipp.pdf', new TitleSplitter()],
-//    'rfp' => ['098-rfp-exp.xlsx', 'manual-rfp-exp.pdf', new TitleSplitter()],
-//    'rfcp' => ['RFCP_NOME_POÇO_V00.xlsx', null, new FieldFormatSplitter()],
-//    'la' => ['018-la.xlsx', null, new TitleSplitter()]
+    'crp' => ['108_crp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
+    //    'ncrp' => ['108_ncrp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
+    //    'nd' => ['102-modelo-nd.xlsx', '102-modelo-nd.pdf', new TitleSplitter()],
+    //    'sop' => ['007-sop.xlsx', '007-sop.pdf', new TitleSplitter()],
+    //    'fp' => ['082-fp.xlsx', '082-fp.pdf', new TitleSplitter()],
+    //    'cipp' => ['095_CIPP.xlsx', '095-dpp-cipp.pdf', new TitleSplitter()],
+    //    'rfp' => ['098-rfp-exp.xlsx', 'manual-rfp-exp.pdf', new TitleSplitter()],
+    //    'rfcp' => ['RFCP_NOME_POÇO_V00.xlsx', null, new FieldFormatSplitter()],
+    //    'la' => ['018-la.xlsx', null, new TitleSplitter()]
     // 'cp' => ['109_CP.xlsx', 'cp.pdf', new TitleSplitter()]
     // 'rap' => ['rap.json', null, new TitleSplitter()]
 ];
 
-foreach ($reports as $report => $files)
-{
+foreach ($reports as $report => $files) {
     list($excel, $pdf, $splitter) = $files;
     process(
-        $report, EXCEL_PATH . '/' . $excel,
-        $pdf ? PDF_PATH . '/' . $pdf : '', 
+        $report,
+        EXCEL_PATH . '/' . $excel,
+        $pdf ? PDF_PATH . '/' . $pdf : '',
         $splitter,
     );
 }
@@ -54,8 +52,7 @@ function process($report, $excel, $pdf, $splitter)
 
     // ---------- PDF to TXT conversion
 
-    if ($pdf)
-    {
+    if ($pdf) {
         $pdfh = new PdfToTxt($pdf, TXT_OUTPUT_DIR, $report);
         $pdfh->setReloadPdf(true);
         $pdfh->convert();
@@ -63,14 +60,14 @@ function process($report, $excel, $pdf, $splitter)
 
     // ---------- GET FIELDS AND SECTIONS FROM XLSX
 
-    $sc = new SpreadsheetContext($excel);
+    $sc = create_context($excel);
     $spreadsheet_fields = $sc->getFields();
     $spreadsheet_dimensions = $sc->getDimensions();
     $spreadsheet_labels = $sc->getLabels();
 
     // ---------- GET FIELDS FROM TXT
 
-    $textContext = new TxtContext(TXT_OUTPUT_DIR . "/$report.txt");
+    $textContext = create_context(TXT_OUTPUT_DIR . "/$report.txt");
     $textContext->setSplitter($splitter);
     $txtFields = $textContext->parse();
 
@@ -121,8 +118,7 @@ function process($report, $excel, $pdf, $splitter)
     XML;
     fwrite($output, $header);
 
-    foreach ($spreadsheet_fields as $section => $fields)
-    {
+    foreach ($spreadsheet_fields as $section => $fields) {
         $content = <<<XML
         \t<section name="{$section}">
 
