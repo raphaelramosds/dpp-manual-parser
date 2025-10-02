@@ -1,7 +1,7 @@
 vendor
-*.pdf
-*.xls
-*.xlsx
-*.txt
-*.xml
+**/*.pdf
+**/*.xls
+**/*.xlsx
+**/*.txt
+**/*.xml
 .vscode
