@@ -1,10 +1,13 @@
 <?php
 
-require_once 'Splitter/ISplitter.php';
+namespace DppManualParser;
+
+use Exception;
+use InvalidArgumentException;
 
 class TxtContext
 {
-    private ISplitter $splitter;
+    private SplitterInterface $splitter;
     private $content;
 
     public function __construct(string $file)
@@ -24,7 +27,7 @@ class TxtContext
         return $this->splitter->handle($this->content);
     }
 
-    public function setSplitter (ISplitter $splitter) : void
+    public function setSplitter (SplitterInterface $splitter) : void
     {
         $this->splitter = $splitter;
     }

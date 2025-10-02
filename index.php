@@ -1,14 +1,11 @@
 <?php
 
+use DppManualParser\SpreadsheetContext;
+use DppManualParser\TitleSplitter;
+use DppManualParser\TxtContext;
 use raphaelramosds\PdfToTxt\PdfToTxt;
 
 require 'vendor/autoload.php';
-require 'src/TxtContext.php';
-require 'src/SpreadsheetContext.php';
-require 'src/Splitter/FieldFormatSplitter.php';
-require 'src/Splitter/TitleSplitter.php';
-
-include_once 'env.php';
 
 /**
  * $reports
@@ -28,15 +25,17 @@ include_once 'env.php';
  *  3. Each key defines the TXT filename that will be processed (e.g., 'crp' maps to 'crp.txt').
  */
 $reports = [
-    'crp' => ['108_crp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
-    'ncrp' => ['108_ncrp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
-    'nd' => ['102-modelo-nd.xlsx', '102-modelo-nd.pdf', new TitleSplitter()],
-    'sop' => ['007-sop.xlsx', '007-sop.pdf', new TitleSplitter()],
-    'fp' => ['082-fp.xlsx', '082-fp.pdf', new TitleSplitter()],
-    'cipp' => ['095_CIPP.xlsx', '095-dpp-cipp.pdf', new TitleSplitter()],
-    'rfp' => ['098-rfp-exp.xlsx', 'manual-rfp-exp.pdf', new TitleSplitter()],
-    'rfcp' => ['RFCP_NOME_POÇO_V00.xlsx', null, new FieldFormatSplitter()],
-    'la' => ['018-la.xlsx', null, new TitleSplitter()]
+   'crp' => ['108_crp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
+//    'ncrp' => ['108_ncrp.xlsx', 'crp_ncrp_manual.pdf', new TitleSplitter()],
+//    'nd' => ['102-modelo-nd.xlsx', '102-modelo-nd.pdf', new TitleSplitter()],
+//    'sop' => ['007-sop.xlsx', '007-sop.pdf', new TitleSplitter()],
+//    'fp' => ['082-fp.xlsx', '082-fp.pdf', new TitleSplitter()],
+//    'cipp' => ['095_CIPP.xlsx', '095-dpp-cipp.pdf', new TitleSplitter()],
+//    'rfp' => ['098-rfp-exp.xlsx', 'manual-rfp-exp.pdf', new TitleSplitter()],
+//    'rfcp' => ['RFCP_NOME_POÇO_V00.xlsx', null, new FieldFormatSplitter()],
+//    'la' => ['018-la.xlsx', null, new TitleSplitter()]
+    // 'cp' => ['109_CP.xlsx', 'cp.pdf', new TitleSplitter()]
+    // 'rap' => ['rap.json', null, new TitleSplitter()]
 ];
 
 foreach ($reports as $report => $files)
@@ -134,11 +133,10 @@ function process($report, $excel, $pdf, $splitter)
         foreach ($fields as $field) {
             $mf = $mapping[$field];
             $type = $mf['type'];
-            $colWidth = $mf['colWidth'] ?? '';
             $label = $spreadsheet_labels[$field] ?? '';
-            if ($mf['length']) $type .= '(' . $mf['length'] . ')';
+            // if ($mf['length']) $type .= '(' . $mf['length'] . ')';
             $content = <<<XML
-            \t\t<field type="$type" required="{$mf['required']}" colWidth="$colWidth" ptBr="$label">{$mf['field']}</field>
+            \t\t<field type="$type" required="{$mf['required']}" ptBr="$label">{$mf['field']}</field>
 
             XML;
             fwrite($output, $content);

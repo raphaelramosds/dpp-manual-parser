@@ -3,5 +3,14 @@
         "phpoffice/phpspreadsheet": "^4.2",
         "thiagoalessio/tesseract_ocr": "^2.13",
         "raphaelramosds/pdf-to-txt": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "DppManualParser\\": "src/"
+        },
+        "files": [
+            "src/utils.php",
+            "config.php"
+        ]
     }
 }

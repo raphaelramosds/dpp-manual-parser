@@ -1,5 +1,10 @@
 <?php
 
+namespace DppManualParser;
+
+use Exception;
+use InvalidArgumentException;
+
 class SpreadsheetContext
 {
     private $fields;

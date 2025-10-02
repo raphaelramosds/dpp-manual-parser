@@ -1,8 +1,8 @@
 <?php
 
-require_once dirname(__DIR__) . '/utils/functions.php';
+namespace DppManualParser;
 
-class FieldFormatSplitter implements ISplitter
+class FieldFormatSplitter implements SplitterInterface
 {
     public function handle(string $content): array
     {

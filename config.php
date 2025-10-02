@@ -5,3 +5,4 @@ define('PDF_PATH', __DIR__ . '/assets/pdf');
 define('TXT_OUTPUT_DIR', __DIR__ . '/assets/txt');
 define('EXCEL_PATH', __DIR__ . '/assets/excel');
 define('XML_OUTPUT_DIR', __DIR__ . '/assets/xml');
+define('JSON_PATH', __DIR__ . '/assets/json');
